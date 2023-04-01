@@ -1,3 +1,10 @@
+nav {
+  display: flex;
+  text-align: end;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .navBG {
   position: absolute;
   right: 0;
@@ -5,4 +12,5 @@
   width: 65%;
   height: auto;
   align-self: end;
+  z-index: -999;
 }/*# sourceMappingURL=index.css.map */

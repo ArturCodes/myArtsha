@@ -1,3 +1,9 @@
+nav {
+    display: flex;
+    text-align: end;
+    width: 80%;
+    margin: 0 auto;
+}
 
 .navBG {
     position: absolute;
@@ -6,5 +12,6 @@
     width: 65%;
     height: auto;
     align-self: end;
+    z-index: -999;
 }
 
