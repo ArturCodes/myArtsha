@@ -1,17 +1,41 @@
-nav {
-    display: flex;
-    text-align: end;
-    width: 80%;
-    margin: 0 auto;
-}
 
-.navBG {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 65%;
-    height: auto;
-    align-self: end;
-    z-index: -999;
-}
+header {
 
+    nav {
+        display: flex;
+        text-align: end;
+        justify-content: space-between;
+        max-width: 85%;
+        margin: 0 auto;
+        // logo
+        a {
+            margin-top: 25px;
+        }
+        // nav
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 75px;
+            width: 50%;
+            li {
+                    a {
+                    font-weight: 800;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    
+    .navBG {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 65%;
+        height: auto;
+        align-self: end;
+        z-index: -999;
+    }
+    
+}
