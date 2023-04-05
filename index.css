@@ -1,31 +1,6 @@
-header nav {
-  display: flex;
-  text-align: end;
-  justify-content: space-between;
-  max-width: 85%;
-  margin: 0 auto;
+#navigation {
+  height: 200px;
 }
-header nav a {
-  margin-top: 25px;
-}
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 75px;
-  width: 50%;
-}
-header nav ul li a {
-  font-weight: 800;
-  text-decoration: none;
-  color: white;
-}
-header .navBG {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 65%;
-  height: auto;
-  align-self: end;
-  z-index: -999;
+#navigation h1 {
+  font-size: clamp(2rem, 5vw, 5rem);
 }/*# sourceMappingURL=index.css.map */
