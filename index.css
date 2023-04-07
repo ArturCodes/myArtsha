@@ -21,15 +21,15 @@
     height: 250px;
   }
   .navbar-container .navbar-links {
-    width: 50%;
+    position: absolute;
+    top: max(4vw, 35px);
+    right: 4vw;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
     margin-top: 5px;
+    width: 50%;
     height: 40px;
-    right: 4vw;
-    top: max(4vw, 35px);
   }
   .navbar-container .navbar-links li {
     font-size: max(0.85rem, 1.25vw);
@@ -37,7 +37,7 @@
   .navbar-container .navbar-links li a {
     text-decoration: none;
     color: white;
-    padding: 15px;
+    padding: 10px 15px;
     text-shadow: 1px 1px 1px black;
   }
   .navbar-container .navbar-links li a span {
@@ -53,14 +53,19 @@
     text-decoration-thickness: 0.2vw;
     text-underline-position: under;
   }
+  .navbar-container .navbar-links li:last-child {
+    position: relative;
+  }
   .navbar-container .navbar-links li:last-child a {
     position: relative;
-    color: black;
+    color: #050505;
+    z-index: 1;
+    background-color: #f2c513;
+    border-radius: 2.5%;
+    text-shadow: none;
   }
-  .navbar-container .navbar-links li:last-child a::after {
-    z-index: 5;
-    height: 50px;
-    width: 150px;
-    background-color: #f2c613;
+  .navbar-container .navbar-links li:last-child a:hover {
+    color: #ffffff;
+    text-decoration: none;
   }
 }/*# sourceMappingURL=index.css.map */
