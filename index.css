@@ -1,6 +1,66 @@
-#navigation {
-  height: 200px;
-}
-#navigation h1 {
-  font-size: clamp(2rem, 5vw, 5rem);
+@media screen and (min-width: 850px) {
+  header {
+    background-image: url("./images/indexFull.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: 100vw;
+    position: absolute;
+  }
+  .navbar-container {
+    position: relative;
+  }
+  .navbar-container .navbar-logo {
+    position: absolute;
+    top: max(25px, 2vw);
+    left: 4vw;
+    background-image: url("./images/logo-index.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 250px;
+  }
+  .navbar-container .navbar-links {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-top: 5px;
+    height: 40px;
+    right: 4vw;
+    top: max(4vw, 35px);
+  }
+  .navbar-container .navbar-links li {
+    font-size: max(0.85rem, 1.25vw);
+  }
+  .navbar-container .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-shadow: 1px 1px 1px black;
+  }
+  .navbar-container .navbar-links li a span {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 0.2vw;
+    text-decoration-color: #38c6e5;
+    font-weight: bold;
+  }
+  .navbar-container .navbar-links li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #38c6e5;
+    text-decoration-thickness: 0.2vw;
+    text-underline-position: under;
+  }
+  .navbar-container .navbar-links li:last-child a {
+    position: relative;
+    color: black;
+  }
+  .navbar-container .navbar-links li:last-child a::after {
+    z-index: 5;
+    height: 50px;
+    width: 150px;
+    background-color: #f2c613;
+  }
 }/*# sourceMappingURL=index.css.map */

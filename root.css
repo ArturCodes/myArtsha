@@ -1,30 +1,31 @@
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
-@media only screen and (min-width: 0em) {
-  :root {
-    --primary: #0B4D9D;
-    --primaryLight: #5496D0;
-    --secondary: #FFCC75;
-    --bodyTextColor: #4E4B66;
-    --label: #7D799C;
-    --bodyTextColorWhite: #FAFBFC;
-    --headerColor: #1a1a1a;
-    /* 39px - 49px */
-    --bannerFontSize: clamp(2.4375rem, 3.9vw, 3.0625rem);
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem);
-    /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
-  }
+:root {
+  /* roboto-regular - latin */
+  /* roboto-700 - latin */
 }
-html, body {
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("./fonts/roboto-v30-latin-regular.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/roboto-v30-latin-700.woff2") format("woff2"), url("./fonts/roboto-v30-latin-700.woff") format("woff");
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html,
+body {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  font-size: 18px;
+  font-family: "Roboto", "arial", "san-serif";
 }/*# sourceMappingURL=root.css.map */
