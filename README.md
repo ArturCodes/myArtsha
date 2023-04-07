@@ -23,4 +23,4 @@ Purple - 804DD4
          
 Orange - E38025
 
-yellow - F2C613
+yellow - ffcc00

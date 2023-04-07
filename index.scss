@@ -14,7 +14,7 @@
 
     .navbar-container {
         position: relative;
-
+ 
         .navbar-logo {
             position: absolute;
             top: max(25px, 2vw);
@@ -23,6 +23,8 @@
             background-image: url("./images/logo-index.png");
             background-size: contain;
             background-repeat: no-repeat;
+
+            margin-top: 10px;
             width: 20vw;
             height: 250px;
         }
@@ -35,46 +37,68 @@
             list-style: none;
             display: flex;
             justify-content: space-evenly;
-            margin-top: 5px;
+            margin-top: 10px;
             width: 50%;
             height: 40px;
-
-            // Navigation Links
-            
+            //-----------------------------//
+            //      Navigation Menu        //
+            //-----------------------------//
             li {
                 font-size: max(0.85rem, 1.25vw);
                 a {
                     text-decoration: none;
                     color: white;
                     padding: 10px 15px;
-                    text-shadow: 1px 1px 1px black;
-                    span {
+                    text-shadow: 2px 2px 2px black;
+                    .home {
                         text-decoration: underline;
                         text-underline-position: under;
-                        text-decoration-thickness: 0.2vw;
                         text-decoration-color: #38c6e5;
-                        font-weight: bold;
+                        text-decoration-thickness: 0.2vw;
                     }
-                    &:hover {
-                        text-decoration: underline;
-                        text-decoration-color: #38c6e5;
-                        text-decoration-thickness: 0.2vw;
-                        text-underline-position: under;
+                    .about {
+                        &:hover {
+                            text-decoration: underline;
+                            text-underline-position: under;
+                            text-decoration-color: #7fd378;
+                            text-decoration-thickness: 0.2vw;
+                        }
+                    }
+                    .services {
+                        &:hover {
+                            text-decoration: underline;
+                            text-underline-position: under;
+                            text-decoration-color: #804dd4;
+                            text-decoration-thickness: 0.2vw;
+                        }
+                    }
+                    .blog {
+                        &:hover {
+                            text-decoration: underline;
+                            text-underline-position: under;
+                            text-decoration-color: #e38025;
+                            text-decoration-thickness: 0.2vw;
+                        }
                     }
                 }
+            }
+            //-----------------------//
+            //    Contact Button     //
+            //-----------------------//
+            li {
                 &:last-child {
                     position: relative;
                     a {
                         position: relative;
-                        color: #050505;
+                        color: #000000;
                         z-index: 1;
-                        background-color: #f2c513;
-                        border-radius: 2.5%;
+                        background-color: #ffcc00;
+                        border-radius: 5%;
+                        box-shadow: 2px 2px 2px black;
                         text-shadow: none;
                         &:hover {
                             color: #ffffff;
                             text-decoration: none;
-                            
                         }
                     }
                 }
