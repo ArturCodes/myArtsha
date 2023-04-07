@@ -2,7 +2,7 @@
 //      HOME - PAGE       //
 ////////////////////////////
 
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 900px) {
     header {
         background-image: url("./images/indexFull.webp");
         background-size: contain;
@@ -14,22 +14,24 @@
 
     .navbar-container {
         position: relative;
+        max-width: 90%;
+        margin: 0 auto;
         .navbar-logo {
             position: absolute;
             top: max(25px, 2vw);
-            left: 4vw;
+            left: 3vw;
             background-image: url("./images/logo-index.png");
             background-size: contain;
             background-repeat: no-repeat;
             margin-top: 10px;
             width: 20vw;
-            height: 250px;
+            height: calc(250px + 10vw);
         }
 
         .navbar-links {
             position: absolute;
             top: max(4vw, 35px);
-            right: 4vw;
+            right: 3vw;
             list-style: none;
             display: flex;
             justify-content: space-evenly;
@@ -107,15 +109,27 @@
 
     .header-text {
         position: absolute;
-        top: calc(10vw + 75px);
-        left: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: calc(15vw + 50px);
+        left: 8vw;
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0.192);
+        height: auto;
         h1 {
-            font-size: clamp(30px, 4vw, 80px);
-            width: 100%;
+            margin: 0;
+            font-size: clamp(30px, 4vw, 40rem);
+            width: auto;
+        }
+        p {
+            margin: 35px 0 ;
+            font-size: clamp(1em, 18px, 4em);
+            line-height: 1.75em;
         }
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1023px) {
 
 }
