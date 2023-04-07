@@ -1,11 +1,11 @@
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 851px) {
   header {
     background-image: url("./images/indexFull.webp");
     background-size: contain;
     background-repeat: no-repeat;
     min-width: 100%;
     height: 100vw;
-    position: absolute;
+    position: relative;
   }
   .navbar-container {
     position: relative;
@@ -32,53 +32,68 @@
     width: 50%;
     height: 40px;
   }
+  .navbar-container .navbar-links .home {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #38C6E5;
+    text-decoration-thickness: 0.2vw;
+  }
+  .navbar-container .navbar-links .about:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #7fd378;
+    text-decoration-thickness: 0.2vw;
+  }
+  .navbar-container .navbar-links .services:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #804dd4;
+    text-decoration-thickness: 0.2vw;
+  }
+  .navbar-container .navbar-links .blog:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #e38025;
+    text-decoration-thickness: 0.2vw;
+  }
+  .navbar-container .navbar-links .contact {
+    position: relative;
+  }
+  .navbar-container .navbar-links .contact a {
+    position: relative;
+    color: #000000;
+    z-index: 1;
+    background-color: #ffcc00;
+    border-radius: 7.5px;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: none;
+  }
+  .navbar-container .navbar-links .contact a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
   .navbar-container .navbar-links li {
     font-size: max(0.85rem, 1.25vw);
   }
   .navbar-container .navbar-links li a {
     text-decoration: none;
     color: white;
-    padding: 10px 15px;
+    padding: 0.75vw 1.5vw;
     text-shadow: 2px 2px 2px black;
   }
-  .navbar-container .navbar-links li a .home {
+  .navbar-container .navbar-links li a .home a {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
     text-decoration-thickness: 0.2vw;
   }
-  .navbar-container .navbar-links li a .about:hover {
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: #7fd378;
-    text-decoration-thickness: 0.2vw;
+  .header-text {
+    position: absolute;
+    top: calc(10vw + 75px);
+    left: 5vw;
   }
-  .navbar-container .navbar-links li a .services:hover {
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: #804dd4;
-    text-decoration-thickness: 0.2vw;
-  }
-  .navbar-container .navbar-links li a .blog:hover {
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: #e38025;
-    text-decoration-thickness: 0.2vw;
-  }
-  .navbar-container .navbar-links li:last-child {
-    position: relative;
-  }
-  .navbar-container .navbar-links li:last-child a {
-    position: relative;
-    color: #000000;
-    z-index: 1;
-    background-color: #ffcc00;
-    border-radius: 5%;
-    box-shadow: 2px 2px 2px black;
-    text-shadow: none;
-  }
-  .navbar-container .navbar-links li:last-child a:hover {
-    color: #ffffff;
-    text-decoration: none;
+  .header-text h1 {
+    font-size: clamp(30px, 4vw, 80px);
+    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */
