@@ -27,3 +27,4 @@ yellow - ffcc00
 
 
 Shadow - 3F3B51
+Background - 3F3B51

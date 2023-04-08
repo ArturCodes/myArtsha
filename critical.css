@@ -1,5 +1,5 @@
 @media screen and (min-width: 900px) {
-  header {
+  #index-header {
     background-image: url("./images/indexFull.webp");
     background-size: contain;
     background-repeat: no-repeat;
@@ -32,7 +32,6 @@
     justify-content: space-evenly;
     margin-top: 10px;
     width: 50%;
-    height: 40px;
   }
   .navbar-container .navbar-links li {
     font-size: max(0.85rem, 1.25vw);
@@ -55,17 +54,29 @@
     text-decoration-color: #38c6e5;
     text-decoration-thickness: 0.2vw;
   }
+  .navbar-container .navbar-links .home a:hover {
+    text-shadow: 1px 1px 5px #38c6e5;
+  }
+  .navbar-container .navbar-links .about a:hover {
+    text-shadow: 1px 1px 5px #7fd378;
+  }
   .navbar-container .navbar-links .about:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #7fd378;
     text-decoration-thickness: 0.2vw;
   }
+  .navbar-container .navbar-links .services a:hover {
+    text-shadow: 1px 1px 5px #804dd4;
+  }
   .navbar-container .navbar-links .services:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #804dd4;
     text-decoration-thickness: 0.2vw;
+  }
+  .navbar-container .navbar-links .blog a:hover {
+    text-shadow: 1px 1px 5px #e38025;
   }
   .navbar-container .navbar-links .blog:hover {
     text-decoration: underline;
@@ -89,6 +100,10 @@
     color: white;
     text-decoration: none;
     box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
+    text-shadow: 1px 1px 5px #3f3b51;
+  }
+  .navbar-container .hamburger {
+    display: none;
   }
   .header-text {
     position: absolute;
@@ -98,7 +113,6 @@
     top: calc(15vw + 50px);
     left: 8vw;
     width: 100%;
-    height: auto;
   }
   .header-text h1 {
     margin: 0;
@@ -106,9 +120,9 @@
     width: 30%;
   }
   .header-text p {
-    margin: 3vw 0 calc(3vw + 15px);
+    margin: 2vw 0 calc(3vw + 15px);
     font-size: clamp(16px, 1vw, 40rem);
-    line-height: 1.75em;
+    line-height: 2em;
     overflow-wrap: wrap;
     width: 35%;
   }
@@ -135,4 +149,49 @@
   .header-text .buttons a:last-child:hover {
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
   }
-}/*# sourceMappingURL=index.css.map */
+}
+@media screen and (max-width: 899px) {
+  #index-header {
+    background-image: url("./images/navbarBG-m.webp");
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 400px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .navbar-container .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 3vw;
+    background-image: url("./images/logo-w-index.png");
+    background-size: 300px 100px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    width: 100%;
+    height: calc(250px + 10vw);
+  }
+  .navbar-container .navbar-links {
+    margin: 0;
+  }
+  .navbar-container .navbar-links li {
+    list-style: none;
+  }
+  .navbar-container .navbar-links li a {
+    color: white;
+  }
+  .navbar-container .hamburger {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .navbar-container .hamburger div {
+    background-color: white;
+    height: 3px;
+    width: 20spx;
+    margin: 3px;
+  }
+  .header-text {
+    display: none;
+  }
+}/*# sourceMappingURL=critical.css.map */

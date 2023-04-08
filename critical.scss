@@ -1,30 +1,22 @@
 ////////////////////////////
 //       Variables        //
 ////////////////////////////
- 
+
 $box-shadow-color: rgba(63, 59, 81, 0.25);
 
-$box-shadow:         
-1px 1px 3px $box-shadow-color, 
-1px -1px 3px $box-shadow-color,
--1px 1px 3px $box-shadow-color, 
--1px -1px 3px $box-shadow-color;
-
+$box-shadow: 1px 1px 3px $box-shadow-color, 1px -1px 3px $box-shadow-color, -1px 1px 3px $box-shadow-color,
+    -1px -1px 3px $box-shadow-color;
 
 $box-shadow-color-hover: rgba(63, 59, 81, 0.5);
-$box-shadow-hover:
-1px 1px 3px $box-shadow-color-hover, 
-1px -1px 3px $box-shadow-color-hover,
--1px 1px 3px $box-shadow-color-hover, 
--1px -1px 3px $box-shadow-color-hover;
- 
+$box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow-color-hover,
+    -1px 1px 3px $box-shadow-color-hover, -1px -1px 3px $box-shadow-color-hover;
 
 ////////////////////////////
 //      HOME - PAGE       //
 ////////////////////////////
 
 @media screen and (min-width: 900px) {
-    header {
+    #index-header {
         background-image: url("./images/indexFull.webp");
         background-size: contain;
         background-repeat: no-repeat;
@@ -58,7 +50,6 @@ $box-shadow-hover:
             justify-content: space-evenly;
             margin-top: 10px;
             width: 50%;
-            height: 40px;
 
             li {
                 font-size: max(0.85rem, 1.25vw);
@@ -83,9 +74,15 @@ $box-shadow-hover:
                     text-underline-position: under;
                     text-decoration-color: #38c6e5;
                     text-decoration-thickness: 0.2vw;
+                    &:hover {
+                        text-shadow: 1px 1px 5px #38c6e5;
+                    }
                 }
             }
             .about {
+                a:hover {
+                    text-shadow: 1px 1px 5px #7fd378;
+                }
                 &:hover {
                     text-decoration: underline;
                     text-underline-position: under;
@@ -94,6 +91,9 @@ $box-shadow-hover:
                 }
             }
             .services {
+                a:hover {
+                    text-shadow: 1px 1px 5px #804dd4;
+                }
                 &:hover {
                     text-decoration: underline;
                     text-underline-position: under;
@@ -102,6 +102,9 @@ $box-shadow-hover:
                 }
             }
             .blog {
+                a:hover {
+                    text-shadow: 1px 1px 5px #e38025;
+                }
                 &:hover {
                     text-decoration: underline;
                     text-underline-position: under;
@@ -122,11 +125,15 @@ $box-shadow-hover:
                     &:hover {
                         color: white;
                         text-decoration: none;
-                        box-shadow: 
-                        1px 1px 25px rgba(135, 195, 223, 0.25);
+                        box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
+                        text-shadow: 1px 1px 5px #3f3b51;
                     }
                 }
             }
+        }
+
+        .hamburger {
+            display: none;
         }
     }
 
@@ -138,19 +145,17 @@ $box-shadow-hover:
         top: calc(15vw + 50px);
         left: 8vw;
         width: 100%;
-        // background-color: rgba(255, 0, 0, 0.192);
-        height: auto;
         h1 {
             margin: 0;
             font-size: clamp(30px, 4vw, 40rem);
             width: 30%;
         }
         p {
-            margin: 3vw 0 calc(3vw + 15px);
+            margin: 2vw 0 calc(3vw + 15px);
             font-size: clamp(16px, 1vw, 40rem);
-            line-height: 1.75em;
+            line-height: 2em;
             overflow-wrap: wrap;
-            width:35%;
+            width: 35%;
         }
         .buttons {
             a:first-child {
@@ -180,5 +185,52 @@ $box-shadow-hover:
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 899px) {
+    #index-header {
+        background-image: url("./images/navbarBG-m.webp");
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        min-width: 100%;
+        min-height: 400px;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .navbar-container {
+        .navbar-logo {
+            position: absolute;
+            top: 0;
+            left: 3vw;
+            background-image: url("./images/logo-w-index.png");
+            background-size: 300px 100px;
+            background-repeat: no-repeat;
+            margin-top: 10px;
+            width: 100%;
+            height: calc(250px + 10vw);
+        }
+        .navbar-links {
+            li {
+                list-style: none;
+                a {
+                    color: white;
+                }
+            }
+            margin: 0;
+        }
+        .hamburger {
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            div {
+                background-color: white;
+                height: 3px;
+                width: 20spx;
+                margin: 3px;
+            }
+
+        }
+    }
+         
+    .header-text {
+        display: none;
+    }
 }
