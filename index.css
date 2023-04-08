@@ -34,10 +34,25 @@
     width: 50%;
     height: 40px;
   }
+  .navbar-container .navbar-links li {
+    font-size: max(0.85rem, 1.25vw);
+  }
+  .navbar-container .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.75vw 1.5vw;
+    text-shadow: 2px 2px 2px black;
+  }
   .navbar-container .navbar-links .home {
     text-decoration: underline;
     text-underline-position: under;
-    text-decoration-color: #38C6E5;
+    text-decoration-color: #38c6e5;
+    text-decoration-thickness: 0.2vw;
+  }
+  .navbar-container .navbar-links .home a {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #38c6e5;
     text-decoration-thickness: 0.2vw;
   }
   .navbar-container .navbar-links .about:hover {
@@ -67,27 +82,13 @@
     z-index: 1;
     background-color: #ffcc00;
     border-radius: 7.5px;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25), 1px -1px 3px rgba(63, 59, 81, 0.25), -1px 1px 3px rgba(63, 59, 81, 0.25), -1px -1px 3px rgba(63, 59, 81, 0.25);
     text-shadow: none;
   }
   .navbar-container .navbar-links .contact a:hover {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  .navbar-container .navbar-links li {
-    font-size: max(0.85rem, 1.25vw);
-  }
-  .navbar-container .navbar-links li a {
-    text-decoration: none;
     color: white;
-    padding: 0.75vw 1.5vw;
-    text-shadow: 2px 2px 2px black;
-  }
-  .navbar-container .navbar-links li a .home a {
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-color: #38c6e5;
-    text-decoration-thickness: 0.2vw;
+    text-decoration: none;
+    box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
   }
   .header-text {
     position: absolute;
@@ -97,17 +98,41 @@
     top: calc(15vw + 50px);
     left: 8vw;
     width: 100%;
-    background-color: rgba(255, 0, 0, 0.192);
     height: auto;
   }
   .header-text h1 {
     margin: 0;
     font-size: clamp(30px, 4vw, 40rem);
-    width: auto;
+    width: 30%;
   }
   .header-text p {
-    margin: 35px 0;
-    font-size: clamp(1em, 18px, 4em);
+    margin: 3vw 0 calc(3vw + 15px);
+    font-size: clamp(16px, 1vw, 40rem);
     line-height: 1.75em;
+    overflow-wrap: wrap;
+    width: 35%;
+  }
+  .header-text .buttons a:first-child {
+    padding: 0.75vw 2vw;
+    background-color: #ffcc00;
+    border-radius: 7.5px;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25), 1px -1px 3px rgba(63, 59, 81, 0.25), -1px 1px 3px rgba(63, 59, 81, 0.25), -1px -1px 3px rgba(63, 59, 81, 0.25);
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  .header-text .buttons a:first-child:hover {
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
+  }
+  .header-text .buttons a:last-child {
+    padding: 0.75vw 2vw;
+    background-color: white;
+    border-radius: 7.5px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25), 1px -1px 3px rgba(63, 59, 81, 0.25), -1px 1px 3px rgba(63, 59, 81, 0.25), -1px -1px 3px rgba(63, 59, 81, 0.25);
+  }
+  .header-text .buttons a:last-child:hover {
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
   }
 }/*# sourceMappingURL=index.css.map */
