@@ -12,16 +12,12 @@
     max-width: 90%;
     margin: 0 auto;
   }
-  .navbar-container .navbar-logo {
+  .navbar-container .navbar-logo a img {
     position: absolute;
     top: max(25px, 2vw);
     left: 3vw;
-    background-image: url("./images/logo-index.png");
-    background-size: contain;
-    background-repeat: no-repeat;
     margin-top: 10px;
     width: 20vw;
-    height: calc(250px + 10vw);
   }
   .navbar-container .navbar-links {
     position: absolute;
@@ -160,36 +156,56 @@
     position: relative;
     overflow-x: hidden;
   }
-  .navbar-container .navbar-logo {
+  .navbar-container {
+    display: absolute;
+  }
+  .navbar-container .navbar-logo a img {
     position: absolute;
-    top: 0;
-    left: 3vw;
-    background-image: url("./images/logo-w-index.png");
-    background-size: 300px 100px;
-    background-repeat: no-repeat;
+    top: -5px;
+    left: 5px;
     margin-top: 10px;
-    width: 100%;
-    height: calc(250px + 10vw);
+    width: 150px;
+    height: 50px;
   }
   .navbar-container .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vw;
+    background-color: #38c6e5;
     margin: 0;
   }
   .navbar-container .navbar-links li {
     list-style: none;
+    padding: 15px;
+    margin: 10px;
+    background-color: green;
+    width: 100%;
   }
   .navbar-container .navbar-links li a {
-    color: white;
+    color: rgb(44, 14, 14);
   }
   .navbar-container .hamburger {
     position: absolute;
     right: 25px;
     top: 25px;
+    float: right;
   }
   .navbar-container .hamburger div {
-    background-color: white;
+    cursor: pointer;
+    width: 24px;
     height: 3px;
-    width: 20spx;
-    margin: 3px;
+    margin: 4px 0;
+    background-color: rgb(255, 255, 255);
+  }
+  .navbar-container .hamburger div:nth-child(2) {
+    width: 20px;
+    margin-left: 4px;
+  }
+  .navbar-container .hamburger div:nth-child(3) {
+    width: 24px;
   }
   .header-text {
     display: none;
