@@ -4,12 +4,20 @@
 
 $box-shadow-color: rgba(63, 59, 81, 0.25);
 
-$box-shadow: 1px 1px 3px $box-shadow-color, 1px -1px 3px $box-shadow-color, -1px 1px 3px $box-shadow-color,
-    -1px -1px 3px $box-shadow-color;
+$box-shadow: 
+1px 1px 3px $box-shadow-color, 
+1px -1px 3px $box-shadow-color, 
+-1px 1px 3px $box-shadow-color,
+-1px -1px 3px $box-shadow-color;
 
-$box-shadow-color-hover: rgba(63, 59, 81, 0.5);
-$box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow-color-hover,
-    -1px 1px 3px $box-shadow-color-hover, -1px -1px 3px $box-shadow-color-hover;
+$box-shadow-color-hover:
+ rgba(63, 59, 81, 0.5);
+
+$box-shadow-hover: 
+1px 1px 3px $box-shadow-color-hover, 
+1px -1px 3px $box-shadow-color-hover,
+-1px 1px 3px $box-shadow-color-hover, 
+-1px -1px 3px $box-shadow-color-hover;
 
 ////////////////////////////
 //      HOME - PAGE       //
@@ -29,12 +37,18 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
         position: relative;
         max-width: 90%;
         margin: 0 auto;
-        .navbar-logo a img  {
-            position: absolute;
-            top: max(25px, 2vw);
-            left: 3vw;
-            margin-top: 10px;
-            width: 20vw;
+        .navbar-logo {
+            a {
+                background-image: url('./images/logo-index.png');
+                background-size: 20vw 8vw;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: max(25px, 2vw);
+                left: 3vw;
+                margin-top: 10px;
+                width: 25vw;
+                min-height: 8vw;
+            }
         }
 
         .navbar-links {
@@ -49,6 +63,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
 
             li {
                 font-size: max(0.85rem, 1.25vw);
+
                 a {
                     text-decoration: none;
                     color: white;
@@ -56,6 +71,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                     text-shadow: 2px 2px 2px black;
                 }
             }
+
             //-----------------------------//
             //      Navigation Menu        //
             //-----------------------------//
@@ -65,20 +81,24 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                 text-underline-position: under;
                 text-decoration-color: #38c6e5;
                 text-decoration-thickness: 0.2vw;
+
                 a {
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #38c6e5;
                     text-decoration-thickness: 0.2vw;
+
                     &:hover {
                         text-shadow: 1px 1px 5px #38c6e5;
                     }
                 }
             }
+
             .about {
                 a:hover {
                     text-shadow: 1px 1px 5px #7fd378;
                 }
+
                 &:hover {
                     text-decoration: underline;
                     text-underline-position: under;
@@ -86,10 +106,12 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                     text-decoration-thickness: 0.2vw;
                 }
             }
+
             .services {
                 a:hover {
                     text-shadow: 1px 1px 5px #804dd4;
                 }
+
                 &:hover {
                     text-decoration: underline;
                     text-underline-position: under;
@@ -97,10 +119,12 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                     text-decoration-thickness: 0.2vw;
                 }
             }
+
             .blog {
                 a:hover {
                     text-shadow: 1px 1px 5px #e38025;
                 }
+
                 &:hover {
                     text-decoration: underline;
                     text-underline-position: under;
@@ -108,8 +132,10 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                     text-decoration-thickness: 0.2vw;
                 }
             }
+
             .contact {
                 position: relative;
+
                 a {
                     position: relative;
                     color: #000000;
@@ -118,6 +144,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                     border-radius: 7.5px;
                     box-shadow: $box-shadow;
                     text-shadow: none;
+
                     &:hover {
                         color: white;
                         text-decoration: none;
@@ -140,12 +167,14 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
         justify-content: space-around;
         top: calc(15vw + 50px);
         left: 8vw;
-        width: 100%;
+        width: 75vw;
+
         h1 {
             margin: 0;
             font-size: clamp(30px, 4vw, 40rem);
-            width: 30%;
+            width: 40%;
         }
+
         p {
             margin: 2vw 0 calc(3vw + 15px);
             font-size: clamp(16px, 1vw, 40rem);
@@ -153,6 +182,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
             overflow-wrap: wrap;
             width: 35%;
         }
+
         .buttons {
             a:first-child {
                 padding: 0.75vw 2vw;
@@ -162,10 +192,12 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                 color: black;
                 text-decoration: none;
                 margin-right: 15px;
+
                 &:hover {
                     box-shadow: $box-shadow-hover;
                 }
             }
+
             a:last-child {
                 padding: 0.75vw 2vw;
                 background-color: white;
@@ -173,6 +205,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                 color: black;
                 text-decoration: none;
                 box-shadow: $box-shadow;
+
                 &:hover {
                     box-shadow: $box-shadow-hover;
                 }
@@ -191,17 +224,24 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
         position: relative;
         overflow-x: hidden;
     }
+
     .navbar-container {
         display: absolute;
-        .navbar-logo a img {
-            position: absolute;
-            top: -5px;
-            left: 5px;
-         
-            margin-top: 10px;
-            width: 150px;
-            height: 50px;
+
+        .navbar-logo {
+            a {
+                background-image: url('./images/logo-w-index.png'); 
+                background-size: 300px 100px;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: max(25px, 2vw);
+                left: 3vw;
+                width: 300px;
+                height: 100px;
+                margin-top: -15px;
+            }
         }
+
         .navbar-links {
             display: none;
             flex-direction: column;
@@ -218,17 +258,21 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                 margin: 10px;
                 background-color: green;
                 width: 100%;
+
                 a {
                     color: rgb(44, 14, 14);
                 }
             }
+
             margin: 0;
         }
+
         .hamburger {
             position: absolute;
             right: 25px;
             top: 25px;
             float: right;
+
             div {
                 cursor: pointer;
                 width: 24px;
@@ -241,27 +285,14 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover, 1px -1px 3px $box-shadow
                 width: 20px;
                 margin-left: 4px;
             }
+
             div:nth-child(3) {
                 width: 24px;
             }
-            // div {
-            //     background-color: white;
-            //     height: 3px;
-            //     width: 28px;
-            //     margin: 6px;
-            //     &:nth-child(2) {
-            //         display: flex;
-            //         justify-self: flex-end;
-            //     }
-            // }
         }
     }
 
     .header-text {
         display: none;
-    }
-
-    main {
-        // display: none;
     }
 }
