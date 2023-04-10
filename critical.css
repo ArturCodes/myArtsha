@@ -1,5 +1,5 @@
 @media screen and (min-width: 900px) {
-  #index-header {
+  #header-index {
     background-image: url("./images/indexFull.webp");
     background-size: contain;
     background-repeat: no-repeat;
@@ -149,19 +149,19 @@
   .header-text .buttons a:last-child:hover {
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
   }
+  .navbar-container-mobile {
+    display: none;
+  }
 }
 @media screen and (max-width: 899px) {
-  #index-header {
-    background-image: url("./images/navbarBG-m.webp");
-    background-size: 100% 150px;
+  #header-index {
+    background-image: url("./images/navbarBG-m2.png");
+    background-size: 100% 125px;
     background-repeat: no-repeat;
     min-width: 100%;
     min-height: 400px;
     position: relative;
     overflow-x: hidden;
-  }
-  .navbar-container {
-    display: absolute;
   }
   .navbar-container .navbar-logo a {
     background-image: url("./images/logo-w-index.png");
@@ -169,39 +169,28 @@
     background-repeat: no-repeat;
     position: absolute;
     top: max(25px, 2vw);
-    left: 3vw;
+    left: 5px;
     width: 300px;
     height: 100px;
-    margin-top: -15px;
+    margin-top: -22px;
   }
   .navbar-container .navbar-links {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    right: 0;
-    width: 80vw;
-    height: 100vw;
-    background-color: #38c6e5;
-    margin: 0;
-  }
-  .navbar-container .navbar-links li {
-    list-style: none;
-    padding: 15px;
-    margin: 10px;
-    background-color: green;
-    width: 100%;
-  }
-  .navbar-container .navbar-links li a {
-    color: rgb(44, 14, 14);
   }
   .navbar-container .hamburger {
     position: absolute;
-    right: 25px;
-    top: 25px;
+    right: 15px;
+    top: 15px;
     float: right;
+    padding: 15px;
+    border-radius: 75%;
+    cursor: pointer;
+  }
+  .navbar-container .hamburger:hover {
+    border: 1px white;
+    background-color: #38C6E5;
   }
   .navbar-container .hamburger div {
-    cursor: pointer;
     width: 24px;
     height: 3px;
     margin: 4px 0;
@@ -213,6 +202,23 @@
   }
   .navbar-container .hamburger div:nth-child(3) {
     width: 24px;
+  }
+  .navbar-container-mobile {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(14, 14, 14, 0.87);
+    position: fixed;
+  }
+  .navbar-container-mobile .navbar-mobile {
+    width: calc(30px + 65vw);
+    height: 100vh;
+    left: 0;
+    background-color: rgba(63, 59, 81, 0.8784313725);
+    float: right;
+    list-style: none;
+  }
+  .navbar-container-mobile .navbar-mobile li a {
+    color: white;
   }
   .header-text {
     display: none;
