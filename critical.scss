@@ -16,6 +16,8 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     -1px 1px 3px $box-shadow-color-hover,
     -1px -1px 3px $box-shadow-color-hover;
 
+
+
 ////////////////////////////
 //      HOME - PAGE       //
 ////////////////////////////
@@ -153,7 +155,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             }
         }
 
-        .hamburger {
+        .nav-open-button-mobile {
             display: none;
         }
     }
@@ -228,7 +230,6 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     }
 
     .navbar-container {
-
         .navbar-logo {
             a {
                 background-image: url('./images/logo-w-index.png');
@@ -246,37 +247,37 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         .navbar-links {
             display: none;
         }
+    }
 
-        .hamburger {
-            position: absolute;
-            right: 15px;
-            top: 15px;
-            float: right;
-            padding: 15px;
-            border-radius: 75%;
-            // background-color: #e38025;
-            cursor: pointer;
+    // Open Button - Mobile
+    .nav-open-button-mobile {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        float: right;
+        padding: 15px;
+        border-radius: 75%;
+        cursor: pointer;
 
-            &:hover {
-                border: 1px white;
-                background-color: #38C6E5;
-            }
+        &:hover {
+            border: 1px white;
+            background-color: #38C6E5;
+        }
 
-            div {
-                width: 24px;
-                height: 3px;
-                margin: 4px 0;
-                background-color: rgb(255, 255, 255);
-            }
+        div {
+            width: 24px;
+            height: 3px;
+            margin: 4px 0;
+            background-color: rgb(255, 255, 255);
+        }
 
-            div:nth-child(2) {
-                width: 20px;
-                margin-left: 4px;
-            }
+        div:nth-child(2) {
+            width: 20px;
+            margin-left: 4px;
+        }
 
-            div:nth-child(3) {
-                width: 24px;
-            }
+        div:nth-child(3) {
+            width: 24px;
         }
     }
 
@@ -286,20 +287,61 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         background-color: rgba(14, 14, 14, 0.87);
         position: fixed;
 
-        .navbar-mobile {
-            width: calc(30px + 65vw);
+        // Menu - Mobile
+        .navbar-links-mobile {
+            width: 200px;
             height: 100vh;
             left: 0;
-            background-color: #3f3b51e0;
+            background-color: #38C6E5;
             float: right;
             list-style: none;
 
-            li a {
-                color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 25vh;
+
+            li {
+                margin: 0 auto 35px;
+
+                a {
+                    color: white;
+
+                }
+            }
+
+            .mobile-nav-close-button {
+                position: absolute;
             }
         }
 
+        // Close Button - Mobile
+        .mobile-nav-close-button {
+            position: absolute;
+            float: right;
+            cursor: pointer;
+            top: 20px;
+            right: 20px;
+
+            div {
+                top: 15px;
+                width: 24px;
+                height: 3px;
+                margin: 4px 0;
+                background-color: rgb(255, 255, 255);
+                transform: rotate(45deg);
+            }
+
+            div:nth-child(2) {
+                width: 24px;
+                margin-left: 4px;
+                transform: rotate(-45deg);
+            }
+
+        }
     }
+
+
 
     .header-text {
         display: none;

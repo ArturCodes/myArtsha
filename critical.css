@@ -102,7 +102,7 @@
     box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
     text-shadow: 1px 1px 5px #3f3b51;
   }
-  .navbar-container .hamburger {
+  .navbar-container .nav-open-button-mobile {
     display: none;
   }
   .header-text {
@@ -177,7 +177,7 @@
   .navbar-container .navbar-links {
     display: none;
   }
-  .navbar-container .hamburger {
+  .nav-open-button-mobile {
     position: absolute;
     right: 15px;
     top: 15px;
@@ -186,21 +186,21 @@
     border-radius: 75%;
     cursor: pointer;
   }
-  .navbar-container .hamburger:hover {
+  .nav-open-button-mobile:hover {
     border: 1px white;
     background-color: #38C6E5;
   }
-  .navbar-container .hamburger div {
+  .nav-open-button-mobile div {
     width: 24px;
     height: 3px;
     margin: 4px 0;
     background-color: rgb(255, 255, 255);
   }
-  .navbar-container .hamburger div:nth-child(2) {
+  .nav-open-button-mobile div:nth-child(2) {
     width: 20px;
     margin-left: 4px;
   }
-  .navbar-container .hamburger div:nth-child(3) {
+  .nav-open-button-mobile div:nth-child(3) {
     width: 24px;
   }
   .navbar-container-mobile {
@@ -209,16 +209,46 @@
     background-color: rgba(14, 14, 14, 0.87);
     position: fixed;
   }
-  .navbar-container-mobile .navbar-mobile {
-    width: calc(30px + 65vw);
+  .navbar-container-mobile .navbar-links-mobile {
+    width: 200px;
     height: 100vh;
     left: 0;
-    background-color: rgba(63, 59, 81, 0.8784313725);
+    background-color: #38C6E5;
     float: right;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25vh;
   }
-  .navbar-container-mobile .navbar-mobile li a {
+  .navbar-container-mobile .navbar-links-mobile li {
+    margin: 0 auto 35px;
+  }
+  .navbar-container-mobile .navbar-links-mobile li a {
     color: white;
+  }
+  .navbar-container-mobile .navbar-links-mobile .mobile-nav-close-button {
+    position: absolute;
+  }
+  .navbar-container-mobile .mobile-nav-close-button {
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+  }
+  .navbar-container-mobile .mobile-nav-close-button div {
+    top: 15px;
+    width: 24px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+  }
+  .navbar-container-mobile .mobile-nav-close-button div:nth-child(2) {
+    width: 24px;
+    margin-left: 4px;
+    transform: rotate(-45deg);
   }
   .header-text {
     display: none;
