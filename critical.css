@@ -205,7 +205,7 @@
   #navbar-container-mobile {
     position: fixed;
     right: 0;
-    z-index: 1;
+    z-index: 20;
   }
   #navbar-container-mobile #nav-close-button-mobile {
     position: absolute;
@@ -256,26 +256,35 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(14, 14, 14, 0.87);
+    z-index: 10;
   }
   .header-text {
     position: absolute;
     flex-direction: column;
     justify-content: space-around;
-    top: calc(15vw + 50px);
+    top: 25vh;
     left: 8vw;
     width: 75vw;
+    z-index: 1;
   }
   .header-text h1 {
     margin: 0;
     font-size: clamp(30px, 4vw, 40rem);
-    width: 40%;
+    width: 100%;
   }
   .header-text p {
     margin: 2vw 0 calc(3vw + 15px);
     font-size: clamp(16px, 1vw, 40rem);
     line-height: 2em;
     overflow-wrap: wrap;
-    width: 35%;
+    width: calc(250px + 20vw);
+  }
+  .header-text p::after {
+    background-image: url("./images/header-guy.png");
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
   }
   .header-text .buttons a:first-child {
     padding: 0.75vw 2vw;
