@@ -163,9 +163,6 @@
     position: relative;
     overflow-x: hidden;
   }
-  .navbar-container {
-    position: static;
-  }
   .navbar-container .navbar-logo a {
     background-image: url("./images/logo-w-index.png");
     background-size: 300px 100px;
