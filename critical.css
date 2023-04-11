@@ -209,11 +209,30 @@
     background-color: rgba(14, 14, 14, 0.87);
     position: fixed;
   }
+  .navbar-container-mobile .mobile-nav-close-button {
+    position: absolute;
+    cursor: pointer;
+    top: 42px;
+    right: 25px;
+  }
+  .navbar-container-mobile .mobile-nav-close-button div {
+    height: 3px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+  }
+  .navbar-container-mobile .mobile-nav-close-button div:nth-child(2) {
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    transform: rotate(-45deg);
+    top: 1px;
+  }
   .navbar-container-mobile .navbar-links-mobile {
     width: 200px;
     height: 100vh;
     left: 0;
-    background-color: #38C6E5;
+    background-color: #38c5e5;
     float: right;
     list-style: none;
     display: flex;
@@ -225,30 +244,17 @@
     margin: 0 auto 35px;
   }
   .navbar-container-mobile .navbar-links-mobile li a {
+    font-weight: 700;
     color: white;
+  }
+  .navbar-container-mobile .navbar-links-mobile li a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #ffffff;
+    text-decoration-thickness: 0.2vw;
   }
   .navbar-container-mobile .navbar-links-mobile .mobile-nav-close-button {
     position: absolute;
-  }
-  .navbar-container-mobile .mobile-nav-close-button {
-    position: absolute;
-    float: right;
-    cursor: pointer;
-    top: 20px;
-    right: 20px;
-  }
-  .navbar-container-mobile .mobile-nav-close-button div {
-    top: 15px;
-    width: 24px;
-    height: 3px;
-    margin: 4px 0;
-    background-color: rgb(255, 255, 255);
-    transform: rotate(45deg);
-  }
-  .navbar-container-mobile .mobile-nav-close-button div:nth-child(2) {
-    width: 24px;
-    margin-left: 4px;
-    transform: rotate(-45deg);
   }
   .header-text {
     display: none;

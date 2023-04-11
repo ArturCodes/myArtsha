@@ -287,12 +287,36 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         background-color: rgba(14, 14, 14, 0.87);
         position: fixed;
 
+        // Close Button - Mobile
+        .mobile-nav-close-button {
+            position: absolute;
+            cursor: pointer;
+            top: 42px;
+            right: 25px;
+
+            div {
+                height: 3px;
+                width: 30px;
+                background-color: rgb(255, 255, 255);
+                transform: rotate(45deg);
+            }
+
+            div:nth-child(2) {
+                position: absolute;
+                height: 3px;
+                width: 30px;
+                transform: rotate(-45deg);
+                top: 1px;
+            }
+
+        }
+
         // Menu - Mobile
         .navbar-links-mobile {
             width: 200px;
             height: 100vh;
             left: 0;
-            background-color: #38C6E5;
+            background-color: #38c5e5;
             float: right;
             list-style: none;
 
@@ -303,9 +327,15 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
             li {
                 margin: 0 auto 35px;
-
                 a {
+                    font-weight: 700;
                     color: white;
+                    &:hover {
+                        text-decoration: underline;
+                        text-underline-position: under;
+                        text-decoration-color: #ffffff;
+                        text-decoration-thickness: 0.2vw;
+                    }
 
                 }
             }
@@ -315,30 +345,6 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             }
         }
 
-        // Close Button - Mobile
-        .mobile-nav-close-button {
-            position: absolute;
-            float: right;
-            cursor: pointer;
-            top: 20px;
-            right: 20px;
-
-            div {
-                top: 15px;
-                width: 24px;
-                height: 3px;
-                margin: 4px 0;
-                background-color: rgb(255, 255, 255);
-                transform: rotate(45deg);
-            }
-
-            div:nth-child(2) {
-                width: 24px;
-                margin-left: 4px;
-                transform: rotate(-45deg);
-            }
-
-        }
     }
 
 
