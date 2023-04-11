@@ -159,8 +159,7 @@
     background-size: 100% 125px;
     background-repeat: no-repeat;
     min-width: 100%;
-    min-height: 400px;
-    position: relative;
+    min-height: calc(100vw + 50px);
     overflow-x: hidden;
   }
   .navbar-container .navbar-logo a {
@@ -259,7 +258,47 @@
     background-color: rgba(14, 14, 14, 0.87);
   }
   .header-text {
-    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    top: calc(15vw + 50px);
+    left: 8vw;
+    width: 75vw;
+  }
+  .header-text h1 {
+    margin: 0;
+    font-size: clamp(30px, 4vw, 40rem);
+    width: 40%;
+  }
+  .header-text p {
+    margin: 2vw 0 calc(3vw + 15px);
+    font-size: clamp(16px, 1vw, 40rem);
+    line-height: 2em;
+    overflow-wrap: wrap;
+    width: 35%;
+  }
+  .header-text .buttons a:first-child {
+    padding: 0.75vw 2vw;
+    background-color: #ffcc00;
+    border-radius: 7.5px;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25), 1px -1px 3px rgba(63, 59, 81, 0.25), -1px 1px 3px rgba(63, 59, 81, 0.25), -1px -1px 3px rgba(63, 59, 81, 0.25);
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  .header-text .buttons a:first-child:hover {
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
+  }
+  .header-text .buttons a:last-child {
+    padding: 0.75vw 2vw;
+    background-color: white;
+    border-radius: 7.5px;
+    color: black;
+    text-decoration: none;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25), 1px -1px 3px rgba(63, 59, 81, 0.25), -1px 1px 3px rgba(63, 59, 81, 0.25), -1px -1px 3px rgba(63, 59, 81, 0.25);
+  }
+  .header-text .buttons a:last-child:hover {
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
   }
   .closeNav {
     display: none;
