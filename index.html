@@ -21,6 +21,9 @@
     <link rel="preload" as="font" type="font/woff2" href="./fonts/roboto-regular.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" href="./fonts/Roboto-bold.woff2" crossorigin />
 
+    <!--  JS -->
+    <script src="mobile-menu-button.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="critical.css" />
@@ -31,15 +34,16 @@
     <!--         NAVIGATION           -->
     <!-- ============================ -->
     <header id="header-index">
- 
+
 
         <nav>
+            <!-- Navbar Container -->
             <div class="navbar-container">
-                <!-- Logo Desktop/Mobile -->
+
                 <div class="navbar-logo">
                     <a href="index.html"></a>
                 </div>
-                <!-- Menu Desktop -->
+
                 <ul class="navbar-links">
                     <li class="home"><a href="index.html">Home</a></li>
                     <li class="about"><a href="./about/about.html">About</a></li>
@@ -47,21 +51,22 @@
                     <li class="blog"><a href="./blog/blog.html">Blog</a></li>
                     <li class="contact"><a href="./contact/contact.html">Contact</a></li>
                 </ul>
-                <!-- Open Mobile Button -->
-                <div class="nav-open-button-mobile">
+
+                <div id="nav-open-button-mobile" onclick="openNav()">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
-            
-            <div class="navbar-container-mobile">
-                <!-- Close Mobile Button -->
-                <div class="mobile-nav-close-button">
+
+            <!-- Navbar Mobile Container -->
+            <div id="navbar-container-mobile" class="closeNav">
+
+                <div id="nav-close-button-mobile" onclick="closeNav()">
                     <div></div>
                     <div></div>
                 </div>
-                <!-- Menu Mobile -->
+
                 <ul class="navbar-links-mobile">
                     <li class="home"><a href="index.html">Home</a></li>
                     <li class="about"><a href="./about/about.html">About</a></li>
@@ -70,6 +75,10 @@
                     <li class="contact"><a href="./contact/contact.html">Contact</a></li>
                 </ul>
             </div>
+
+            <!-- Dark BG Opacity -->
+            <div id="opacity-bg" class="closeNav" onclick="closeNav()"></div>
+            
         </nav>
 
         <div class="header-text">

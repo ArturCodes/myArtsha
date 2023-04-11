@@ -213,7 +213,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         }
     }
 
-    .navbar-container-mobile {
+    #navbar-container-mobile {
         display: none;
     }
 }
@@ -230,6 +230,8 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     }
 
     .navbar-container {
+        position: static;
+
         .navbar-logo {
             a {
                 background-image: url('./images/logo-w-index.png');
@@ -244,55 +246,56 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             }
         }
 
+        #nav-open-button-mobile {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            float: right;
+            padding: 15px;
+            border-radius: 75%;
+            cursor: pointer;
+
+
+            &:hover {
+                border: 1px white;
+                background-color: #38C6E5;
+            }
+
+            div {
+                width: 24px;
+                height: 3px;
+                margin: 4px 0;
+                background-color: rgb(255, 255, 255);
+            }
+
+            div:nth-child(2) {
+                width: 20px;
+                margin-left: 4px;
+            }
+
+            div:nth-child(3) {
+                width: 24px;
+            }
+        }
+
         .navbar-links {
             display: none;
         }
     }
 
-    // Open Button - Mobile
-    .nav-open-button-mobile {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        float: right;
-        padding: 15px;
-        border-radius: 75%;
-        cursor: pointer;
 
-        &:hover {
-            border: 1px white;
-            background-color: #38C6E5;
-        }
-
-        div {
-            width: 24px;
-            height: 3px;
-            margin: 4px 0;
-            background-color: rgb(255, 255, 255);
-        }
-
-        div:nth-child(2) {
-            width: 20px;
-            margin-left: 4px;
-        }
-
-        div:nth-child(3) {
-            width: 24px;
-        }
-    }
-
-    .navbar-container-mobile {
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(14, 14, 14, 0.87);
+    // Menu Navbar - Mobile
+    #navbar-container-mobile {
         position: fixed;
+        right: 0;
+        z-index: 1;
 
-        // Close Button - Mobile
-        .mobile-nav-close-button {
+        #nav-close-button-mobile {
             position: absolute;
             cursor: pointer;
             top: 42px;
             right: 25px;
+            z-index: 5;
 
             div {
                 height: 3px;
@@ -311,45 +314,54 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
         }
 
-        // Menu - Mobile
         .navbar-links-mobile {
+
+            list-style: none;
             width: 200px;
             height: 100vh;
-            left: 0;
             background-color: #38c5e5;
             float: right;
-            list-style: none;
+            z-index: 6;
 
             display: flex;
             flex-direction: column;
             justify-content: center;
-            margin-bottom: 25vh;
 
             li {
-                margin: 0 auto 35px;
+                margin: 20px auto;
+
                 a {
                     font-weight: 700;
                     color: white;
+
                     &:hover {
                         text-decoration: underline;
                         text-underline-position: under;
                         text-decoration-color: #ffffff;
-                        text-decoration-thickness: 0.2vw;
+                        text-decoration-thickness: 3px;
                     }
 
                 }
-            }
-
-            .mobile-nav-close-button {
-                position: absolute;
             }
         }
 
     }
 
-
+    // Dark BG Opacity
+    #opacity-bg {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(14, 14, 14, 0.87);
+    }
 
     .header-text {
         display: none;
     }
+
+    // Conditional Classes
+    .closeNav{display: none;}
+    .openNav{display: block;}
+
+
 }
