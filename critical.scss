@@ -3,7 +3,6 @@
 ////////////////////////////
 
 $box-shadow-color: rgba(63, 59, 81, 0.25);
-$text-shadow-color: rgb(255, 255, 255);
 
 $box-shadow: 1px 1px 3px $box-shadow-color,
     1px -1px 3px $box-shadow-color,
@@ -16,16 +15,6 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     1px -1px 3px $box-shadow-color-hover,
     -1px 1px 3px $box-shadow-color-hover,
     -1px -1px 3px $box-shadow-color-hover;
-
-$text-shadow-white:  2px 2px 1px $text-shadow-color,
-2px -2px 1px $text-shadow-color,
--2px 2px 1px $text-shadow-color,
--2px -2px 1px $text-shadow-color,
-
-1px 1px 9px $text-shadow-color,
-1px -1px 9px $text-shadow-color,
--1px 1px 9px $text-shadow-color,
--1px -1px 9px $text-shadow-color;
 
 ////////////////////////////
 //      HOME - PAGE       //
@@ -225,6 +214,10 @@ $text-shadow-white:  2px 2px 1px $text-shadow-color,
     #navbar-container-mobile {
         display: none;
     }
+
+    #laptop-guy {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 899px) {
@@ -374,32 +367,19 @@ $text-shadow-white:  2px 2px 1px $text-shadow-color,
         width: 75vw;
         z-index: 1;
         h1 {
-            font-size: clamp(40px, 4vw, 40rem);
+            display: flex;
+            margin: 0 auto;
+            align-self: center;
+            font-size: clamp(32px, 4vw, 40rem);
             width: 100%;
-            text-shadow: $text-shadow-white;
         }
 
         p {
             margin: 25px 0 45px;
-            font-size: clamp(16px, 1vw, 40rem);
+            font-size: clamp(12px, 1vw, 40rem);
             line-height: 2em;
             overflow-x: hidden;
             width: calc(250px + 5vw);
-            text-shadow: $text-shadow-white;
-
-            &::after {
-
-                content: "";
-                display: inline-block;
-                background-image: url("./images/header-guy.png");
-                background-size: 450px 450px;
-                width: 450px;
-                height: 450px;
-                z-index: -1;
-                position: absolute;
-                right: -155px;
-                top: -35px;
-            }
         }
 
         .buttons {
@@ -430,6 +410,10 @@ $text-shadow-white:  2px 2px 1px $text-shadow-color,
                 }
             }
         }
+    }
+
+    #laptop-guy {
+        width: 100%;
     }
 
     // Conditional Classes

@@ -152,6 +152,9 @@
   #navbar-container-mobile {
     display: none;
   }
+  #laptop-guy {
+    display: none;
+  }
 }
 @media screen and (max-width: 899px) {
   #header-index {
@@ -270,29 +273,18 @@
     z-index: 1;
   }
   .header-text h1 {
-    font-size: clamp(40px, 4vw, 40rem);
+    display: flex;
+    margin: 0 auto;
+    align-self: center;
+    font-size: clamp(32px, 4vw, 40rem);
     width: 100%;
-    text-shadow: 2px 2px 1px rgb(255, 255, 255), 2px -2px 1px rgb(255, 255, 255), -2px 2px 1px rgb(255, 255, 255), -2px -2px 1px rgb(255, 255, 255), 1px 1px 9px rgb(255, 255, 255), 1px -1px 9px rgb(255, 255, 255), -1px 1px 9px rgb(255, 255, 255), -1px -1px 9px rgb(255, 255, 255);
   }
   .header-text p {
     margin: 25px 0 45px;
-    font-size: clamp(16px, 1vw, 40rem);
+    font-size: clamp(12px, 1vw, 40rem);
     line-height: 2em;
     overflow-x: hidden;
     width: calc(250px + 5vw);
-    text-shadow: 2px 2px 1px rgb(255, 255, 255), 2px -2px 1px rgb(255, 255, 255), -2px 2px 1px rgb(255, 255, 255), -2px -2px 1px rgb(255, 255, 255), 1px 1px 9px rgb(255, 255, 255), 1px -1px 9px rgb(255, 255, 255), -1px 1px 9px rgb(255, 255, 255), -1px -1px 9px rgb(255, 255, 255);
-  }
-  .header-text p::after {
-    content: "";
-    display: inline-block;
-    background-image: url("./images/header-guy.png");
-    background-size: 450px 450px;
-    width: 450px;
-    height: 450px;
-    z-index: -1;
-    position: absolute;
-    right: -155px;
-    top: -35px;
   }
   .header-text .buttons a:first-child {
     padding: 1.5vw 2.5vw;
@@ -316,6 +308,9 @@
   }
   .header-text .buttons a:last-child:hover {
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
+  }
+  #laptop-guy {
+    width: 100%;
   }
   .closeNav {
     display: none;
