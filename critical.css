@@ -209,31 +209,34 @@
     position: fixed;
     width: 60vw;
     height: 100vh;
-    background-color: rgba(56, 197, 229, 0.3176470588);
     top: 0;
     right: 0;
     flex-direction: column;
+    background-color: #38C6E5;
   }
   #mobile-navbar-container .mobile-nav-close {
     position: absolute;
     cursor: pointer;
-    background-color: rgba(227, 129, 37, 0.3921568627);
     top: 10px;
     right: 25px;
     padding: 15px;
+    margin-top: 15px;
   }
   #mobile-navbar-container .mobile-nav-close div {
+    position: absolute;
     height: 4px;
     width: 30px;
     background-color: rgb(255, 255, 255);
     transform: rotate(45deg);
+    top: 15px;
+    right: 0;
   }
   #mobile-navbar-container .mobile-nav-close div:nth-child(2) {
     position: absolute;
-    height: 3px;
+    height: 4px;
     width: 30px;
     transform: rotate(-45deg);
-    top: 1px;
+    top: 15.5px;
   }
   #mobile-navbar-container .mobile-nav-links {
     width: 100%;
