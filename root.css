@@ -26,22 +26,11 @@
   /*-- -------------------------- -->
   <---       RESET Styles         -->
   <--- -------------------------- -*/
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p,
-  a,
-  menu,
-  div,
-  li,
-  ul {
+  * {
     padding: 0;
     margin: 0;
     font-family: "Roboto", "arial", "san-serif";
     text-decoration: none;
+    list-style: none;
   }
 }/*# sourceMappingURL=root.css.map */

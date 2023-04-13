@@ -21,7 +21,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 ////////////////////////////
 
 @media screen and (min-width: 900px) {
-    #header-index {
+    header {
         background-image: url("./images/indexFull.webp");
         background-size: contain;
         background-repeat: no-repeat;
@@ -137,7 +137,6 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
                 a {
                     position: relative;
                     color: #000000;
-                    z-index: 1;
                     background-color: #ffcc00;
                     border-radius: 7.5px;
                     box-shadow: $box-shadow;
@@ -153,12 +152,12 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             }
         }
 
-        .nav-open-button-mobile {
+        .mobile-nav-open {
             display: none;
         }
     }
 
-    .header-text {
+    .text-container {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -211,17 +210,17 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         }
     }
 
-    #navbar-container-mobile {
+    // Display none in Desktop
+    #laptop-guy,
+    .mobile-nav-links,
+    .mobile-nav-open {
         display: none;
     }
 
-    #laptop-guy {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 899px) {
-    #header-index {
+    header {
         background-image: url("./images/navbarBG-m2.png");
         background-size: 100% 125px;
         background-repeat: no-repeat;
@@ -230,8 +229,8 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
     .navbar-container {
         margin: 0 auto;
-        background-color: rgba(255, 0, 0, 0.192);
-        height: 100vh;
+        height: 25vh;
+
         .navbar-logo {
             a {
                 background-image: url('./images/logo-w-index.png');
@@ -246,7 +245,13 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             }
         }
 
-        #nav-open-button-mobile {
+        // display none
+        .navbar-links {
+            display: none;
+        }
+
+        // open button
+        .mobile-nav-open {
             position: absolute;
             right: 15px;
             top: 15px;
@@ -276,28 +281,29 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
                 width: 24px;
             }
         }
-
-        .navbar-links {
-            display: none;
-        }
     }
 
-
-    // Menu Navbar - Mobile
-    #navbar-container-mobile {
+    // Mobile Navbar Menu
+    #mobile-navbar-container {
         position: fixed;
+        width: 60vw;
+        height: 100vh;
+        background-color: #38c5e551;
+        top: 0;
         right: 0;
-        z-index: 20;
+        flex-direction: column;
 
-        #nav-close-button-mobile {
+        // close button
+        .mobile-nav-close {
             position: absolute;
             cursor: pointer;
-            top: 42px;
+            background-color: #e3812564;
+            top: 10px;
             right: 25px;
-            z-index: 5;
+            padding: 15px;
 
             div {
-                height: 3px;
+                height: 4px;
                 width: 30px;
                 background-color: rgb(255, 255, 255);
                 transform: rotate(45deg);
@@ -313,15 +319,10 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
         }
 
-        .navbar-links-mobile {
-
-            list-style: none;
-            width: 200px;
+        .mobile-nav-links {
+            width: 100%;
             height: 100vh;
             background-color: #38c5e5;
-            float: right;
-            z-index: 6;
-
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -349,15 +350,20 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     // Dark BG Opacity
     #opacity-bg {
         position: fixed;
-        top: 0;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
-        background-color: rgba(14, 14, 14, 0.87);
-        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: rgba(14, 14, 14, 0.5);
     }
 
-    .header-text {
+    .header-text-container {
         h1 {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
             margin: 0 auto;
             font-size: clamp(32px, 4vw, 40rem);
         }
@@ -404,14 +410,12 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         width: 100%;
     }
 
-    // Conditional Classes
-    .closeNav {
+    .hide {
         display: none;
     }
 
-    .openNav {
-        display: block;
+    .show {
+        display: flex;
+        flex-direction: column;
     }
-
-
 }

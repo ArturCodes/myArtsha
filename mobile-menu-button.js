@@ -1,9 +1,9 @@
-function openNav() {
-    document.getElementById('opacity-bg').classList.replace('closeNav', 'openNav');
-    document.getElementById('navbar-container-mobile').classList.replace('closeNav', 'openNav');
+function show() {
+    document.getElementById('opacity-bg').classList.replace('hide', 'show');
+    document.getElementById('mobile-navbar-container').classList.replace('hide', 'show');
 }
 
-function closeNav() {
-    document.getElementById('opacity-bg').classList.replace('openNav', 'closeNav');
-    document.getElementById('navbar-container-mobile').classList.replace('openNav', 'closeNav');
+function hide() {
+    document.getElementById('opacity-bg').classList.replace('show', 'hide');
+    document.getElementById('mobile-navbar-container').classList.replace('show', 'hide');
 }
