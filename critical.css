@@ -161,9 +161,12 @@
     background-image: url("./images/navbarBG-m2.png");
     background-size: 100% 125px;
     background-repeat: no-repeat;
-    min-width: 100%;
-    min-height: 85vh;
     overflow-x: hidden;
+  }
+  .navbar-container {
+    margin: 0 auto;
+    background-color: rgba(255, 0, 0, 0.192);
+    height: 100vh;
   }
   .navbar-container .navbar-logo a {
     background-image: url("./images/logo-w-index.png");
@@ -256,28 +259,15 @@
   }
   #opacity-bg {
     position: fixed;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(14, 14, 14, 0.87);
     z-index: 10;
   }
-  .header-text {
-    height: -moz-fit-content;
-    height: fit-content;
-    position: absolute;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 25vh;
-    left: 8vw;
-    width: 75vw;
-    z-index: 1;
-  }
   .header-text h1 {
-    display: flex;
     margin: 0 auto;
-    align-self: center;
     font-size: clamp(32px, 4vw, 40rem);
-    width: 100%;
   }
   .header-text p {
     margin: 25px 0 45px;

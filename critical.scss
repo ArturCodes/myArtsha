@@ -225,14 +225,13 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         background-image: url("./images/navbarBG-m2.png");
         background-size: 100% 125px;
         background-repeat: no-repeat;
-        min-width: 100%;
-        min-height: 85vh;
-        // position: relative;
         overflow-x: hidden;
     }
 
     .navbar-container {
-
+        margin: 0 auto;
+        background-color: rgba(255, 0, 0, 0.192);
+        height: 100vh;
         .navbar-logo {
             a {
                 background-image: url('./images/logo-w-index.png');
@@ -255,7 +254,6 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             padding: 15px;
             border-radius: 75%;
             cursor: pointer;
-
 
             &:hover {
                 border: 1px white;
@@ -351,6 +349,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     // Dark BG Opacity
     #opacity-bg {
         position: fixed;
+        top: 0;
         width: 100vw;
         height: 100vh;
         background-color: rgba(14, 14, 14, 0.87);
@@ -358,20 +357,9 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     }
 
     .header-text {
-        height: fit-content;
-        position: absolute;
-        flex-direction: column;
-        justify-content: space-around;
-        top: 25vh;
-        left: 8vw;
-        width: 75vw;
-        z-index: 1;
         h1 {
-            display: flex;
             margin: 0 auto;
-            align-self: center;
             font-size: clamp(32px, 4vw, 40rem);
-            width: 100%;
         }
 
         p {
