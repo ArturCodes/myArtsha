@@ -229,7 +229,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
     .navbar-container {
         margin: 0 auto;
-        height: 25vh;
+        height: 200px;
 
         .navbar-logo {
             a {
@@ -331,9 +331,9 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             justify-content: center;
 
             li {
-                margin: 20px auto;
-
+                margin: 25px auto;
                 a {
+                    padding: 15px;
                     font-weight: 700;
                     color: white;
 
@@ -360,26 +360,37 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         background-color: rgba(14, 14, 14, 0.5);
     }
 
-    .header-text-container {
+    .text-container {
         h1 {
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
-            margin: 0 auto;
-            font-size: clamp(32px, 4vw, 40rem);
+            line-height: 1.25;
+            font-size: clamp(40px, 5vw, 40rem);
+            margin-bottom:  25px;
         }
 
         p {
-            margin: 25px 0 45px;
+            margin: 0 auto;
             font-size: clamp(12px, 1vw, 40rem);
             line-height: 2em;
             overflow-x: hidden;
             width: calc(250px + 5vw);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
         }
 
         .buttons {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
             a:first-child {
                 padding: 1.5vw 2.5vw;
                 background-color: #ffcc00;

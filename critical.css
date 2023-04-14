@@ -163,7 +163,7 @@
   }
   .navbar-container {
     margin: 0 auto;
-    height: 25vh;
+    height: 200px;
   }
   .navbar-container .navbar-logo a {
     background-image: url("./images/logo-w-index.png");
@@ -247,9 +247,10 @@
     justify-content: center;
   }
   #mobile-navbar-container .mobile-nav-links li {
-    margin: 20px auto;
+    margin: 25px auto;
   }
   #mobile-navbar-container .mobile-nav-links li a {
+    padding: 15px;
     font-weight: 700;
     color: white;
   }
@@ -267,23 +268,36 @@
     left: 0;
     background-color: rgba(14, 14, 14, 0.5);
   }
-  .header-text-container h1 {
+  .text-container h1 {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
-    font-size: clamp(32px, 4vw, 40rem);
+    line-height: 1.25;
+    font-size: clamp(40px, 5vw, 40rem);
+    margin-bottom: 25px;
   }
-  .header-text-container p {
-    margin: 25px 0 45px;
+  .text-container p {
+    margin: 0 auto;
     font-size: clamp(12px, 1vw, 40rem);
     line-height: 2em;
     overflow-x: hidden;
     width: calc(250px + 5vw);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
   }
-  .header-text-container .buttons a:first-child {
+  .text-container .buttons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .text-container .buttons a:first-child {
     padding: 1.5vw 2.5vw;
     background-color: #ffcc00;
     border-radius: 7.5px;
@@ -292,10 +306,10 @@
     text-decoration: none;
     margin-right: 15px;
   }
-  .header-text-container .buttons a:first-child:hover {
+  .text-container .buttons a:first-child:hover {
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
   }
-  .header-text-container .buttons a:last-child {
+  .text-container .buttons a:last-child {
     padding: 1.5vw 2.5vw;
     background-color: white;
     border-radius: 7.5px;
@@ -303,7 +317,7 @@
     text-decoration: none;
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25), 1px -1px 3px rgba(63, 59, 81, 0.25), -1px 1px 3px rgba(63, 59, 81, 0.25), -1px -1px 3px rgba(63, 59, 81, 0.25);
   }
-  .header-text-container .buttons a:last-child:hover {
+  .text-container .buttons a:last-child:hover {
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.5), 1px -1px 3px rgba(63, 59, 81, 0.5), -1px 1px 3px rgba(63, 59, 81, 0.5), -1px -1px 3px rgba(63, 59, 81, 0.5);
   }
   #laptop-guy {
