@@ -1,9 +1,9 @@
-@media screen and (max-width: 899px) {
+@media screen and (min-width: 0px) and (max-width: 899px) {
   #what-we-do-section {
     color: white;
     background-color: #3F3B51;
     position: relative;
-    top: -25px;
+    top: -15px;
   }
   #what-we-do-section .header {
     margin: 0 auto;
@@ -13,13 +13,14 @@
   }
   #what-we-do-section .header h1 {
     font-size: 40px;
+    margin-top: 25px;
     margin-bottom: 15px;
   }
   #what-we-do-section .header h1 span {
     color: #3BD3F4;
   }
   #what-we-do-section .header p {
-    width: 80%;
+    width: min(85%, 500px);
     margin: 0 auto;
     text-align: center;
   }

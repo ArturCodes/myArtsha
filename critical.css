@@ -183,7 +183,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     min-width: 100%;
-    height: 100vw;
+    min-height: 67vw;
     position: relative;
   }
   .navbar-container {
@@ -294,7 +294,7 @@
   }
   .text-container h1 {
     margin: 0;
-    font-size: clamp(60px, 4vw, 40rem);
+    font-size: clamp(40px, 4vw, 40rem);
     width: 100%;
   }
   .text-container p {

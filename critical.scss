@@ -241,7 +241,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         background-size: contain;
         background-repeat: no-repeat;
         min-width: 100%;
-        height: 100vw;
+        min-height: 67vw;
         position: relative;
     }
 
@@ -383,7 +383,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
         h1 {
             margin: 0;
-            font-size: clamp(60px, 4vw, 40rem);
+            font-size: clamp(40px, 4vw, 40rem);
             width: 100%;
         }
 

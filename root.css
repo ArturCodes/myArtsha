@@ -33,4 +33,7 @@
     text-decoration: none;
     list-style: none;
   }
+  p {
+    line-height: 1.75;
+  }
 }/*# sourceMappingURL=root.css.map */
