@@ -4,6 +4,8 @@
     background-size: 100% 125px;
     background-repeat: no-repeat;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
   .navbar-container {
     margin: 0 auto;
@@ -119,7 +121,7 @@
     align-items: center;
     width: 100%;
     line-height: 1.25;
-    font-size: clamp(60px, 5vw, 40rem);
+    font-size: clamp(40px + 5vw, 40px, 60px);
     margin-bottom: 25px;
   }
   .text-container p {

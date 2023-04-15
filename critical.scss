@@ -25,6 +25,8 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         background-size: 100% 125px;
         background-repeat: no-repeat;
         overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
 
     .navbar-container {
@@ -168,7 +170,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             align-items: center;
             width: 100%;
             line-height: 1.25;
-            font-size: clamp(60px, 5vw, 40rem);
+            font-size: clamp(calc(40px + 5vw), 40px, 60px);
             margin-bottom:  25px;
         }
 

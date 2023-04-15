@@ -1,7 +1,33 @@
 
 
 @media screen and (max-width: 899px) {
-    
+    #what-we-do-section {
+        color: white;
+        background-color: #3F3B51;
+        position: relative;
+        top: -25px;
+
+        .header {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 40px;
+                margin-bottom: 15px;
+                span {
+                    color: #3BD3F4;
+                }
+            }
+            p {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+
+    .what-we-do {}
 }
 
 
