@@ -19,7 +19,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 ////////////////////////////
 //      HOME - PAGE       //
 ////////////////////////////
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 768px) {
     header {
         background-image: url("./images/navbarBG-m2.png");
         background-size: 100% 125px;
@@ -170,9 +170,8 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             align-items: center;
             width: 100%;
             line-height: 1.25;
-            font-size: clamp(45px, 10vw, 65px);
+            font-size: clamp(35px, 10vw, 40px);
             margin-bottom:  25px;
-            font-weight: 700;
         }
 
         p {
@@ -237,7 +236,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 769px) {
     header {
         background-image: url("./images/indexFull.webp");
         background-size: contain;
