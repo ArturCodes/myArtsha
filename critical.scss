@@ -170,16 +170,17 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             align-items: center;
             width: 100%;
             line-height: 1.25;
-            font-size: clamp(calc(40px + 5vw), 40px, 60px);
+            font-size: clamp(45px, 10vw, 65px);
             margin-bottom:  25px;
+            font-weight: 700;
         }
 
         p {
             margin: 0 auto;
-            font-size: clamp(12px, 1vw, 40rem);
-            line-height: 2em;
+            font-size: clamp(16px, 8vw, 24px);
+            line-height: 1.75;
             overflow-x: hidden;
-            width: calc(250px + 5vw);
+            width: calc(250px + 25vw);
             text-align: center;
             display: flex;
             justify-content: center;
@@ -235,6 +236,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
         flex-direction: column;
     }
 }
+
 @media screen and (min-width: 900px) {
     header {
         background-image: url("./images/indexFull.webp");
