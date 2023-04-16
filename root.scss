@@ -1,47 +1,81 @@
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
-:root {
+
+@media only screen and (min-width: 0em) {
+
+  :root {
+    // Colors 
+    $background: #3F3B51;
+    $btn-yellow: #ffcc00;
+
+    $blue: #38C6E5;
+    $green: #7FD378;
+    $purple: #804DD4;
+    $orange: #E38025;
+
+    // Paddings 
+    $section-Padding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+    $button-Padding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
+
+    // Font Size
+    $headerHeader: clamp(1.9375rem, 4.5vw, 3.0625rem);
+    $headerP: clamp(1.9375rem, 4.5vw, 3.0625rem);
+
+    $sectionHeader: clamp(1.9375rem, 4.5vw, 3.0625rem);
+    $sectionP: clamp(1.9375rem, 4.5vw, 3.0625rem);
+
+  }
 
   /* roboto-regular - latin */
   @font-face {
-    font-family: "Roboto";
-    src: url("./fonts/roboto-v30-latin-regular.woff2") format("woff2"),
-      url("./fonts/roboto-v30-latin-regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
     font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('') url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+      url('../fonts/roboto-v30-latin-regular.woff') format('woff');
   }
+
   /* roboto-700 - latin */
   @font-face {
-    font-family: "Roboto";
-    src: url("./fonts/roboto-v30-latin-700.woff2") 
-    format("woff2"), url("./fonts/roboto-v30-latin-700.woff") format(" woff");
-    font-weight: 700;
-    font-style: normal;
     font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+      url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+      url('../fonts/roboto-v30-latin-700.woff') format('woff');
   }
 
-}
 
-
-@media only screen and (min-width: 0em) {
-  /*-- -------------------------- -->
-  <---       RESET Styles         -->
-  <--- -------------------------- -*/
-
-  * {
-    padding: 0;
+  *,
+  *:before,
+  *:after {
     margin: 0;
-    font-family: "Roboto", "arial", "san-serif";
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    overflow-x: hidden;
   }
 
-  p {
-    line-height: 1.75;
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #1a1a1a;
   }
+
+  p, li, a {
+    font-size: 18/16em;
+    line-height: 27/18em;
+    margin: 0;
+  }
+
+  button:hover, a:hover {
+    cursor: pointer;  
+  }
+
 }
 
 @media only screen and (min-width: 48em) {}
@@ -49,4 +83,3 @@
 @media only screen and (min-width: 64em) {}
 
 @media only screen and (min-width: 1300px) {}
-
