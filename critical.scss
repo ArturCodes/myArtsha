@@ -176,7 +176,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
         p {
             margin: 0 auto;
-            font-size: clamp(16px, 8vw, 24px);
+            font-size: clamp(12px, 2vw, 16px);
             line-height: 1.75;
             overflow-x: hidden;
             width: calc(250px + 25vw);
@@ -384,16 +384,16 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
         h1 {
             margin: 0;
-            font-size: clamp(40px, 4vw, 40rem);
+            font-size: clamp(32px, 5em, 5vw);
             width: 100%;
         }
-
+        
         p {
             margin: 2vw 0 calc(3vw + 15px);
-            font-size: clamp(16px, 1vw, 40rem);
+            font-size: clamp(16px, 1vw, 16px);
             line-height: 2em;
             overflow-wrap: wrap;
-            width: 40%;
+            width: 50%;
         }
 
         .buttons {
