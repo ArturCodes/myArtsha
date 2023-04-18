@@ -1,0 +1,25 @@
+@import url("./core.css");
+@media only screen and (min-width: 0em) {
+  #navbar {
+    height: 100px;
+    background-color: #3F3B51;
+  }
+  .navbar-menu {
+    position: absolute;
+    right: 0;
+    width: min(65vw, 300px);
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-menu li {
+    padding: 15px;
+    margin: 10px;
+  }
+  .navbar-menu li a {
+    color: white;
+  }
+}/*# sourceMappingURL=hero.css.map */

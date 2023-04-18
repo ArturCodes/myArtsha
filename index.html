@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:title" content="ARTSHA Web Design | Affordable Websites For Small Businesses" />
-    <meta property="og:description"
-        content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
+    <meta property="og:description" content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.artsha-web-design.com/" />
-    <meta property="description"
-        content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
+    <meta property="description" content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
 
     <title>ARTSHA Web Design</title>
 
@@ -24,8 +22,8 @@
     <script src="mobile-menu-button.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="root.css" />
-    <link rel="stylesheet" href="critical.css" />
+    <link rel="stylesheet" href="core.css" />
+    <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -34,64 +32,46 @@
     <!--         NAVIGATION           -->
     <!-- ============================ -->
     <header>
-
-        <!-- Desktop Container -->
-        <div class="navbar-container">
+        <!-- -------------- -->
+        <!--     Navbar     -->
+        <!-- -------------- -->
+        <nav id="navbar">
 
             <div class="navbar-logo">
                 <a href="index.html"></a>
             </div>
 
-            <ul class="navbar-links">
+            <ul class="navbar-menu">
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="about"><a href="./about/about.html">About</a></li>
                 <li class="services"><a href="./services/services.html">Services</a></li>
                 <li class="blog"><a href="./blog/blog.html">Blog</a></li>
                 <li class="contact"><a href="./contact/contact.html">Contact</a></li>
             </ul>
+            
+            <button class="hamburger-menu" onclick="show()" aria-label="mobile menu toggle">
+                <span></span>
+            </button>
 
-            <!-- Mobile Navigation -->
-            <div class="mobile-nav-open" onclick="show()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <div id="opacity-bg" class="hide" onclick="hide()"></div>
+        </nav>
 
-        </div>
+        <!-- -------------- -->
+        <!--      Hero      -->
+        <!-- -------------- -->
+        <div id="hero">
+            <h1> Affordable Websites for Small Business </h1>
+            <p>Professionally designed and developed websites. Priced at $150/month with full transparency and no hidden fees.</p>
 
-        <div id="opacity-bg" class="hide" onclick="hide()"></div>
-
-        <!-- Mobile Container -->
-        <div id="mobile-navbar-container" class="hide">
-
-            <div class="mobile-nav-close" onclick="hide()">
-                <div></div>
-                <div></div>
-            </div>
-
-            <ul class="mobile-nav-links">
-                <li class="home"><a href="index.html">Home</a></li>
-                <li class="about"><a href="./about/about.html">About</a></li>
-                <li class="services"><a href="./services/services.html">Services</a></li>
-                <li class="blog"><a href="./blog/blog.html">Blog</a></li>
-                <li class="contact"><a href="./contact/contact.html">Contact</a></li>
-            </ul>
-
-        </div>
-
-        <div class="text-container">
-            <h1> Affordable <br /> Websites for <br /> Small Business </h1>
-            <p>
-                Professionally designed and developed websites. Priced at $150/month
-                with full transparency and no hidden fees.
-            </p>
             <div class="buttons">
                 <a href="./contact/contact.html">Contact</a>
                 <a href="./services/services.html">Services</a>
             </div>
-        </div>
 
+        </div>
+        
         <img id="laptop-guy" src="./images/laptop-guy-mobile.png" alt="guy with a laptop sitting at a desk">
+
 
     </header>
 
