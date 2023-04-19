@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:title" content="ARTSHA Web Design | Affordable Websites For Small Businesses" />
-    <meta property="og:description" content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
+    <meta property="og:description"
+        content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.artsha-web-design.com/" />
-    <meta property="description" content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
+    <meta property="description"
+        content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
 
     <title>ARTSHA Web Design</title>
 
@@ -24,7 +26,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="core.css" />
     <link rel="stylesheet" href="hero.css">
-    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
+
 </head>
 
 <body>
@@ -35,33 +39,36 @@
         <!-- -------------- -->
         <!--     Navbar     -->
         <!-- -------------- -->
-        <nav id="navbar">
+        <img class="navbarBG" src="./images/navbarBG-m2.webp" alt="navbar bottom background">
+        <nav>
+            <a class="logo" href="index.html"></a>
 
-            <div class="navbar-logo">
-                <a href="index.html"></a>
-            </div>
-
-            <ul class="navbar-menu">
+            <ul id="navbar-links" class="">
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="about"><a href="./about/about.html">About</a></li>
                 <li class="services"><a href="./services/services.html">Services</a></li>
                 <li class="blog"><a href="./blog/blog.html">Blog</a></li>
                 <li class="contact"><a href="./contact/contact.html">Contact</a></li>
             </ul>
-            
-            <button class="hamburger-menu" onclick="show()" aria-label="mobile menu toggle">
-                <span></span>
-            </button>
 
-            <div id="opacity-bg" class="hide" onclick="hide()"></div>
+            <div id="mobile-menu-button" onclick="show()" type="button" aria-label="open the menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
         </nav>
+
+
+        <div id="opacity-bg" class="" onclick="hide()"></div>
 
         <!-- -------------- -->
         <!--      Hero      -->
         <!-- -------------- -->
         <div id="hero">
             <h1> Affordable Websites for Small Business </h1>
-            <p>Professionally designed and developed websites. Priced at $150/month with full transparency and no hidden fees.</p>
+            <p>Professionally designed and developed websites. Priced at $150/month with full transparency and no hidden
+                fees.</p>
 
             <div class="buttons">
                 <a href="./contact/contact.html">Contact</a>
@@ -69,9 +76,8 @@
             </div>
 
         </div>
-        
-        <img id="laptop-guy" src="./images/laptop-guy-mobile.png" alt="guy with a laptop sitting at a desk">
 
+        <img class="laptop-guy" src="./images/laptop-guy-mobile.png" alt="guy with a laptop sitting at a desk">
 
     </header>
 

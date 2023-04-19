@@ -1,12 +1,4 @@
 @media screen and (max-width: 768px) {
-  header {
-    background-image: url("./images/navbarBG-m2.png");
-    background-size: 100% 125px;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
   .navbar-container {
     margin: 0 auto;
     height: 200px;

@@ -1,8 +1,40 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") forma("woff2"), url("../fonts/poppins-v20-latin-regular.woff") format("woff");
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") forma("woff2"), url("../fonts/poppins-v20-latin-500.woff") format("woff");
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), url("../fonts/poppins-v20-latin-700.woff") format("woff");
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2"), url("../fonts/poppins-v20-latin-900.woff") format("woff");
+}
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
 :root {
-  --background: #3F3B51;
+  --background: #353148;
   --btn-yellow: #ffcc00;
   --blue: #38C6E5;
   --green: #7FD378;
@@ -21,10 +53,9 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 400;
   overflow-x: hidden;
+  list-style: none;
+  font-family: "Poppins", Arial, Helvetica, Verdana;
 }
 
 h1, h2, h3, h4, h5, h6 {
