@@ -29,7 +29,7 @@
             top: 0;
             width: 0; //250px on open
             height: 100vh;
-            background-color: #38C6E5;
+            background-color: #353148;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -67,7 +67,7 @@
             }
         }
 
-        .mobile-menu-close {
+        #mobile-menu-close {
             height: 35px;
             width: 35px;
             position: absolute;
