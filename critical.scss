@@ -4,10 +4,10 @@
 
 $box-shadow-color: rgba(63, 59, 81, 0.25);
 
-$box-shadow: 1px 1px 3px $box-shadow-color,
-    1px -1px 3px $box-shadow-color,
-    -1px 1px 3px $box-shadow-color,
-    -1px -1px 3px $box-shadow-color;
+$box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25),
+    1px -1px 3px rgba(63, 59, 81, 0.25),
+    -1px 1px 3px rgba(63, 59, 81, 0.25),
+    -1px -1px 3px rgba(63, 59, 81, 0.25);
 
 $box-shadow-color-hover: rgba(63, 59, 81, 0.5);
 
