@@ -10,13 +10,10 @@ Affordable Websites For Small Business
 
 # Colors 
 Blue - #38C6E5
-       #3BD3F4
 
 Green - #7FD378
-        #74DD6B
 
 Purple - #804DD4
-         #B591F0
          
 Orange - #E38025
 

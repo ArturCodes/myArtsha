@@ -3,7 +3,7 @@
 @media only screen and (min-width: 0em) {
     .navbarBG {
         width: 100vw;
-        height: calc(80px + 1vw);
+        height: 110px;
         margin-bottom: 50px;
     }
 
@@ -13,12 +13,12 @@
 
         .logo {
             position: absolute;
-            background-image: url('./images/logo-w-index.webp');
+            background-image: url('./images/logo-index-white.png');
             background-repeat: no-repeat;
-            top: 10px;
-            left: 10px;
-            background-size: 240px 70px;
-            height: 70px;
+            top: 4px;
+            left: 4px;
+            background-size: 250px 77px;
+            height: 100px;
             width: 100vw;
         }
 
@@ -53,13 +53,13 @@
 
         #mobile-menu-open {
             position: absolute;
-            right: 15px;
-            top: 15px;
+            right: 25px;
+            top: 17px;
             z-index: 1;
 
             div {
-                width: 30px;
-                height: 4px;
+                width: 25px;
+                height: 3px;
                 background-color: #ffffff;
                 margin: 6px 0;
                 transition: 0.4s;
@@ -68,15 +68,15 @@
         }
 
         #mobile-menu-close {
-            height: 35px;
-            width: 35px;
+            height: 30px;
+            width: 30px;
             position: absolute;
-            top: 16px;
-            right: 25px;
+            top: 19px;
+            right: 34px;
 
             div {
                 width: 30px;
-                height: 4px;
+                height: 3px;
                 background-color: #ffffff;
                 margin: 6px 0;
                 transition: 0.4s;
@@ -86,15 +86,15 @@
             div:nth-child(1) {
                 transform: rotate(45deg);
                 position: relative;
-                top: 9px;
-                right: -5px;
+                top: 7px;
+                right: 0px;
             }
 
             div:nth-child(2) {
                 transform: rotate(-45deg);
                 position: relative;
-                left: 5px;
-                top: -1px;
+                left: 0px;
+                top: -2px;
             }
 
         }
@@ -118,13 +118,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 25px;
+        margin: 25px;
 
         h1 {
             font-size: clamp(2.5em, 10vw, 4em);
             width: auto;
             text-align: center;
             font-weight: 700;
+            margin: 25px 0;
+        }
+
+        p {
+            text-align: center;
+            max-width: 600px;
         }
     }
 
@@ -132,13 +138,38 @@
         width: 100%;
         margin-top: 50px;
     }
-
-
 }
 
+// 768px - Tablet
 @media only screen and (min-width: 48em) {
-    // 768px - Tablets
+
+    header {
+        background-image: url('./images/indexFull.webp');
+        background-size: 100vw;
+        background-repeat: no-repeat;
+    }
+
+    .navbarBG {
+        display: none;
+    }
+
+    nav {
+        .logo {
+            position: absolute;
+            background-image: url('./images/logo-index.png');
+            background-repeat: no-repeat;
+            top: 10px;
+            left: 10px;
+            background-size: 240px 70px;
+            height: 70px;
+            width: 100vw;
+        }
+    }
+
 }
+
+
+
 
 @media only screen and (min-width: 64em) {
     // 1024px - Desktops
