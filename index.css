@@ -9,15 +9,14 @@
     align-items: center;
   }
   #what-we-do-section .header {
-    margin-bottom: 50px;
     width: 92vw;
   }
   #what-we-do-section .header h1 {
-    font-size: clamp(2.5em, 10vw, 4em);
+    font-size: clamp(2.75em, 10vw, 4em);
     width: auto;
     text-align: center;
     font-weight: 700;
-    margin: 53px 0 15px;
+    margin: 50px 0 15px;
     color: white;
   }
   #what-we-do-section .header h1 span {
@@ -41,17 +40,22 @@
     justify-content: center;
   }
   #what-we-do-section .what-we-do-items .item img {
-    margin: 0 auto 15px;
-    width: calc(100px + 5vw);
+    margin: 35px auto 15px;
+    width: 150px;
   }
   #what-we-do-section .what-we-do-items .item h2 {
     color: white;
-    line-height: 1.5;
+    line-height: 1.25;
     text-align: center;
+    margin-bottom: 15px;
+    max-width: 275px;
+    margin: 0 auto 25px;
   }
   #what-we-do-section .what-we-do-items .item p {
     text-align: center;
     color: white;
     max-width: 450px;
+    margin: 0 auto;
+    line-height: 1.75;
   }
 }/*# sourceMappingURL=index.css.map */
