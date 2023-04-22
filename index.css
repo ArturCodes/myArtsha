@@ -1,26 +1,7 @@
-@media screen and (min-width: 0px) and (max-width: 48em) {
+@media screen and (min-width: 0px) {
   #what-we-do-section {
-    color: white;
     background-color: #3F3B51;
-    top: -15px;
-  }
-  #what-we-do-section .header {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #what-we-do-section .header h1 {
-    font-size: 40px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-  }
-  #what-we-do-section .header h1 span {
-    color: #3BD3F4;
-  }
-  #what-we-do-section .header p {
-    width: min(85%, 500px);
-    margin: 0 auto;
-    text-align: center;
+    position: absolute;
+    margin-top: -5px;
   }
 }/*# sourceMappingURL=index.css.map */

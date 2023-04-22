@@ -1,37 +1,18 @@
+@media screen and (min-width: 0px) {
 
-
-@media screen and (min-width: 0px) and (max-width: 48em) {
     #what-we-do-section {
-        color: white;
         background-color: #3F3B51;
-        top: -15px;
-
-        .header {
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            h1 {
-                font-size: 40px;
-                margin-top: 25px;
-                margin-bottom: 15px;
-                span {
-                    color: #3BD3F4;
-                }
-            }
-            p {
-                width: min(85%, 500px);
-                margin: 0 auto;
-                text-align: center;
-            }
-        }
+        position: absolute;
+        margin-top: -5px;
     }
 
-    .what-we-do {}
 }
-
+ 
 
 @media only screen and (min-width: 0em) {}
+
 @media only screen and (min-width: 48em) {}
+
 @media only screen and (min-width: 64em) {}
+
 @media only screen and (min-width: 1300px) {}
