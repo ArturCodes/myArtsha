@@ -10,21 +10,57 @@
         align-items: center;
 
         .header {
+            margin-bottom: 50px;
+            width: 92vw;
+
             h1 {
-                font-size: clamp(2.25em, 10vw, 3em);
+                font-size: clamp(2.5em, 10vw, 4em);
                 width: auto;
                 text-align: center;
                 font-weight: 700;
                 margin: 53px 0 15px;
                 color: white;
+
                 span {
                     color: #38C6E5;
                 }
             }
+
             p {
                 text-align: center;
                 color: white;
                 margin: 0 auto;
+                max-width: 500px;
+            }
+        }
+
+        .what-we-do-items {
+            width: 86%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                img {
+                    margin: 0 auto 15px;
+                    width: calc(100px + 5vw);
+                }
+
+                h2 {
+                    color: white;
+                    line-height: 1.5;
+                    text-align: center;
+                }
+                
+                p {
+                    text-align: center;
+                    color: white;
+                    max-width: 450px;
+                }
             }
         }
     }
