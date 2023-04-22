@@ -4,10 +4,33 @@
         background-color: #3F3B51;
         position: absolute;
         margin-top: -5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            h1 {
+                font-size: clamp(2.25em, 10vw, 3em);
+                width: auto;
+                text-align: center;
+                font-weight: 700;
+                margin: 53px 0 15px;
+                color: white;
+                span {
+                    color: #38C6E5;
+                }
+            }
+            p {
+                text-align: center;
+                color: white;
+                margin: 0 auto;
+            }
+        }
     }
 
 }
- 
+
 
 @media only screen and (min-width: 0em) {}
 

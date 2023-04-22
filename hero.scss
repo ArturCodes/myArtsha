@@ -1,6 +1,7 @@
 @import url('./core.css');
 
-$box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25),
+$box-shadow: 
+    1px 1px 3px rgba(63, 59, 81, 0.25),
     1px -1px 3px rgba(63, 59, 81, 0.25),
     -1px 1px 3px rgba(63, 59, 81, 0.25),
     -1px -1px 3px rgba(63, 59, 81, 0.25);
@@ -10,6 +11,7 @@ $box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25),
         width: 100vw;
         height: 110px;
         margin-bottom: 10px;
+        background-color: #3F3B51;
     }
 
     nav {
@@ -170,7 +172,6 @@ $box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25),
     }
 }
 
-// 768px - Tablet
 @media only screen and (min-width: 48em) {
 
     header {
@@ -198,11 +199,6 @@ $box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25),
 
 }
 
-
-
-
-@media only screen and (min-width: 64em) {
-    // 1024px - Desktops
-}
+@media only screen and (min-width: 64em) {}
 
 @media only screen and (min-width: 1300px) {}
