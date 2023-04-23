@@ -88,8 +88,9 @@
         blockquote {
             max-width: 700px;
             margin: 0 auto;
-            font-size: 2em;
+            font-size: clamp(1.75em, 5vw, 2.5em);
             line-height: 1.5;
+            font-weight: bold;
         }
     }
 
