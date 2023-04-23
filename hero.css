@@ -131,8 +131,12 @@
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.25), 1px -1px 3px rgba(63, 59, 81, 0.25), -1px 1px 3px rgba(63, 59, 81, 0.25), -1px -1px 3px rgba(63, 59, 81, 0.25);
     border-radius: 7.5px;
     margin: 0 10px;
+    min-width: 100px;
+    text-align: center;
   }
   #hero div .btn:nth-child(2) {
+    text-align: center;
+    min-width: 100px;
     padding: 5px 15px;
     border-radius: 7.5px;
     margin: 0 10px;

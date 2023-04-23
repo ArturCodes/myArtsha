@@ -1,8 +1,10 @@
 @media screen and (min-width: 0px) {
-  #what-we-do-section {
-    background-color: #3F3B51;
+  main {
     position: absolute;
     margin-top: -5px;
+  }
+  #what-we-do-section {
+    background-color: #3f3b51;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,9 +12,10 @@
   }
   #what-we-do-section .header {
     width: 92vw;
+    margin-bottom: 25px;
   }
   #what-we-do-section .header h1 {
-    font-size: clamp(2.75em, 10vw, 4em);
+    font-size: clamp(3em, 15vw, 4em);
     width: auto;
     text-align: center;
     font-weight: 700;
@@ -33,6 +36,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   }
   #what-we-do-section .what-we-do-items .item {
     display: flex;
@@ -54,8 +58,14 @@
   #what-we-do-section .what-we-do-items .item p {
     text-align: center;
     color: white;
-    max-width: 450px;
+    max-width: 425px;
     margin: 0 auto;
     line-height: 1.75;
+  }
+  .what-we-do-blob {
+    width: 100vw;
+    border: none;
+    box-shadow: none;
+    margin-top: -40px;
   }
 }/*# sourceMappingURL=index.css.map */
