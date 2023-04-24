@@ -71,7 +71,7 @@
   #quote-1 {
     width: 90%;
     text-align: center;
-    margin: 75px auto;
+    margin: 75px auto -15px;
   }
   #quote-1 blockquote {
     max-width: 700px;
@@ -79,5 +79,11 @@
     font-size: clamp(1.75em, 5vw, 2.5em);
     line-height: 1.5;
     font-weight: bold;
+  }
+  .cat {
+    width: 100vw;
+  }
+  #cost {
+    background-color: #3f3b51;
   }
 }/*# sourceMappingURL=index.css.map */
