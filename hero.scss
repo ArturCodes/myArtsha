@@ -1,8 +1,7 @@
-$box-shadow: 
-    1px 1px 3px rgba(63, 59, 81, 0.25),
-    1px -1px 3px rgba(63, 59, 81, 0.25),
-    -1px 1px 3px rgba(63, 59, 81, 0.25),
-    -1px -1px 3px rgba(63, 59, 81, 0.25);
+$box-shadow: 1px 1px 3px #3f3b5140,
+    1px -1px 3px #3f3b5140,
+    -1px 1px 3px #3f3b5140,
+    -1px -1px 3px #3f3b5140;
 
 @media only screen and (min-width: 0em) {
     .navbarBG {
@@ -31,7 +30,7 @@ $box-shadow:
             z-index: 999;
             right: 0;
             top: 0;
-            width: 0; //200px on open in JS
+            width: 0; //225px on open in JS
             height: 100vh;
             background-color: #353148;
             display: flex;
@@ -47,11 +46,14 @@ $box-shadow:
                 justify-content: center;
 
                 a {
+                    width: 150px;
+                    text-align: center;
                     margin: 10px 0;
                     padding: 10px;
                     color: white;
                     font-weight: 700;
                 }
+
             }
         }
 
@@ -138,7 +140,7 @@ $box-shadow:
             max-width: 450px;
             margin-bottom: 25px;
         }
-        
+
         // Buttons
         div {
             display: flex;
@@ -155,7 +157,7 @@ $box-shadow:
                 min-width: 100px;
                 text-align: center;
             }
-            
+
             .btn:nth-child(2) {
                 text-align: center;
                 min-width: 100px;
@@ -197,6 +199,10 @@ $box-shadow:
             height: 70px;
             width: 100vw;
         }
+    }
+
+    .index-guy {
+        display: none;
     }
 
 }
