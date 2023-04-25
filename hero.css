@@ -150,7 +150,7 @@
 }
 @media only screen and (min-width: 48em) {
   .navbarBG {
-    width: 60vw;
+    width: 65vw;
     float: right;
     height: auto;
   }
@@ -158,8 +158,8 @@
     position: absolute;
     background-image: url("./images/logo-index.png");
     background-repeat: no-repeat;
-    top: 30px;
-    left: 5vw;
+    top: 15px;
+    left: 15px;
     background-size: 325px 95px;
     height: 140px;
     width: 302px;
@@ -175,7 +175,7 @@
     height: 3px;
     background-color: #ffffff;
     margin: 6px 0;
-    transition: 0.4s;
+    transition: 0.3s;
     border-radius: 25px;
   }
   nav #mobile-menu-close {

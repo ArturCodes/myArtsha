@@ -179,8 +179,9 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
 // min width of 768px 
 @media only screen and (min-width: 48em) {
+
     .navbarBG {
-        width: calc(50vw + 10vw);
+        width: calc(55vw + 10vw);
         float: right;
         height: auto;
     }
@@ -190,8 +191,8 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             position: absolute;
             background-image: url('./images/logo-index.png');
             background-repeat: no-repeat;
-            top: 30px;
-            left: 5vw;
+            top: 15px;
+            left: 15px;
             background-size: 325px 95px;
             height: 140px;
             width: 302px;
@@ -208,7 +209,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                 height: 3px;
                 background-color: #ffffff;
                 margin: 6px 0;
-                transition: 0.4s;
+                transition: 0.3s;
                 border-radius: 25px;
             }
         }
