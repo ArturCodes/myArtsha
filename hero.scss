@@ -176,9 +176,11 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     }
 }
 
+
+// min width of 768px 
 @media only screen and (min-width: 48em) {
     .navbarBG {
-        width: clamp(200px, 65vw, calc(1300px + 25vw));
+        width: calc(50vw + 10vw);
         float: right;
         height: auto;
     }
@@ -190,12 +192,60 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             background-repeat: no-repeat;
             top: 30px;
             left: 5vw;
-            background-size: 350px 102px;
+            background-size: 325px 95px;
             height: 140px;
-            width: 200px;
+            width: 302px;
         }
-    }
 
+        #mobile-menu-open {
+            position: absolute;
+            right: 35px;
+            top: 31px;
+            z-index: 1;
+
+            div {
+                width: 25px;
+                height: 3px;
+                background-color: #ffffff;
+                margin: 6px 0;
+                transition: 0.4s;
+                border-radius: 25px;
+            }
+        }
+
+        #mobile-menu-close {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 33px;
+            right: 33px;
+
+            div {
+                width: 30px;
+                height: 3px;
+                background-color: #ffffff;
+                margin: 6px 0;
+                transition: 0.4s;
+                border-radius: 25px;
+            }
+
+            div:nth-child(1) {
+                transform: rotate(45deg);
+                position: relative;
+                top: 7px;
+                right: 0px;
+            }
+
+            div:nth-child(2) {
+                transform: rotate(-45deg);
+                position: relative;
+                left: 0px;
+                top: -2px;
+            }
+
+        }
+
+    }
 
     #hero {
         width: 100vw;
@@ -207,10 +257,60 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
 }
 
+// min width of 1024px 
 @media only screen and (min-width: 64em) {
-    #mobile-menu-open {
+
+    nav {
+        .logo {
+            position: absolute;
+            background-image: url('./images/logo-index.png');
+            background-repeat: no-repeat;
+            top: 30px;
+            left: 5vw;
+            background-size: 350px 102px;
+            height: 140px;
+            width: 302px;
+        }
+
+        #navbar-links {
+            position: absolute;
+            z-index: 999;
+            right: 0;
+            top: 40px;
+            background-color: #35314800;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            transition: 0.25s;
+            width: 600px;
+            height: auto;
+
+            li {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    width: 150px;
+                    text-align: center;
+                    margin: 10px 0;
+                    padding: 10px;
+                    color: white;
+                    font-weight: 700;
+                }
+
+            }
+        }
+
+    }
+
+    #mobile-menu-open,
+    #mobile-menu-close {
         display: none;
     }
+
 }
 
 @media only screen and (min-width: 1300px) {}
