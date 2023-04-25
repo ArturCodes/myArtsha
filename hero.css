@@ -37,6 +37,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 15px 0;
   }
   nav #navbar-links li a {
     width: 150px;
