@@ -5,7 +5,7 @@
   }
   #what-we-do-section {
     background-color: #3f3b51;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,6 +84,32 @@
     width: 100vw;
   }
   #cost {
+    padding-top: 50px;
+    margin-top: -25px;
     background-color: #3f3b51;
+    text-align: center;
+  }
+  #cost h2 {
+    color: white;
+    font-size: clamp(1.5em, 7vw, 3em);
+  }
+  #cost h2 span {
+    color: #38C6E5;
+  }
+  #cost p {
+    color: white;
+    margin: 25px auto;
+    max-width: 600px;
+    padding: 0 35px;
+  }
+  #cost p span {
+    font-weight: 700;
+    color: #38C6E5;
+  }
+  .bank-girl {
+    position: absolute;
+    margin-top: -15px;
+    background-color: #3f3b51;
+    width: 100vw;
   }
 }/*# sourceMappingURL=index.css.map */

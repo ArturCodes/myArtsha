@@ -20,8 +20,6 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 //      HOME - PAGE       //
 ////////////////////////////
 @media screen and (max-width: 768px) {
-  
-
     .navbar-container {
         margin: 0 auto;
         height: 200px;
@@ -32,8 +30,6 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
                 background-size: 300px 100px;
                 background-repeat: no-repeat;
                 position: absolute;
-                top: max(25px, 2vw);
-                left: 5px;
                 width: 300px;
                 height: 100px;
                 margin-top: -22px;
@@ -127,6 +123,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
 
             li {
                 margin: 25px auto;
+
                 a {
                     padding: 15px;
                     font-weight: 700;
@@ -164,7 +161,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             width: 100%;
             line-height: 1.25;
             font-size: clamp(35px, 8vw, 60px);
-            margin-bottom:  25px;
+            margin-bottom: 25px;
         }
 
         p {
@@ -187,6 +184,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             justify-content: center;
             align-items: center;
             margin-bottom: 50px;
+
             a:first-child {
                 padding: 1.5vw 2.5vw;
                 background-color: #ffcc00;
@@ -381,7 +379,7 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
             font-size: clamp(32px, 5em, 5vw);
             width: 100%;
         }
-        
+
         p {
             margin: 2vw 0 calc(3vw + 15px);
             font-size: clamp(16px, 1vw, 16px);
@@ -428,4 +426,3 @@ $box-shadow-hover: 1px 1px 3px $box-shadow-color-hover,
     }
 
 }
-

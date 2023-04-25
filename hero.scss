@@ -18,10 +18,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             position: absolute;
             background-image: url('./images/logo-index-white.png');
             background-repeat: no-repeat;
-            top: 4px;
-            left: 4px;
+            top: 8px;
+            left: 5px;
             background-size: 250px 77px;
-            height: 80px;
+            height: 85px;
             min-width: 205px;
         }
 
@@ -60,7 +60,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         #mobile-menu-open {
             position: absolute;
             right: 25px;
-            top: 17px;
+            top: 21px;
             z-index: 1;
 
             div {
@@ -77,7 +77,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             height: 30px;
             width: 30px;
             position: absolute;
-            top: 19px;
+            top: 23px;
             right: 23px;
 
             div {
@@ -177,15 +177,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 }
 
 @media only screen and (min-width: 48em) {
-
-    header {
-        background-image: url('./images/indexFull.webp');
-        background-size: 100vw;
-        background-repeat: no-repeat;
-    }
-
     .navbarBG {
-        display: none;
+        width: clamp(200px, 65vw, calc(1300px + 25vw));
+        float: right;
+        height: auto;
     }
 
     nav {
@@ -193,12 +188,17 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             position: absolute;
             background-image: url('./images/logo-index.png');
             background-repeat: no-repeat;
-            top: 10px;
-            left: 10px;
-            background-size: 240px 70px;
-            height: 70px;
-            width: 100vw;
+            top: 30px;
+            left: 5vw;
+            background-size: 350px 102px;
+            height: 140px;
+            width: 200px;
         }
+    }
+
+
+    #hero {
+        width: 100vw;
     }
 
     .index-guy {
@@ -207,6 +207,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
 }
 
-@media only screen and (min-width: 64em) {}
+@media only screen and (min-width: 64em) {
+    #mobile-menu-open {
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 1300px) {}

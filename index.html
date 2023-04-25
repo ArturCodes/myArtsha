@@ -50,19 +50,16 @@
 </head>
 
 <body>
-    <!-- ============================ -->
-    <!--         NAVIGATION           -->
-    <!-- ============================ -->
+    <!-- ========================= -->
+    <!--        NAVIGATION         -->
+    <!-- ========================= -->
     <header>
-        <!-- -------------- -->
-        <!--     Navbar     -->
-        <!-- -------------- -->
 
         <picture>
-            <source media="(max-width: 768px)" srcset="/images/mobile-index-nav.png">
-            <source media="(min-width: 769px)" srcset="/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" class="navbarBG" src="./images/mobile-index-nav.png"
-                alt="Navbar Background">
+            <source media="(max-width: 768px)" srcset="/images/navbar-mobile.png">
+            <source media="(min-width: 769px)" srcset="/images/navbar-desktop.png">
+            <img class="navbarBG" src="./images/mobile-desktop.png" alt="Navbar Background" aria-hidden="true"
+                decoding="async">
         </picture>
 
         <nav>
@@ -92,9 +89,6 @@
 
         </nav>
 
-        <!-- -------------- -->
-        <!--      Hero      -->
-        <!-- -------------- -->
         <div id="hero">
             <h1> Affordable <br> Websites for <br>Small Business </h1>
             <p>Professionally designed and developed websites. Priced at $150/month with full transparency and no
@@ -105,22 +99,26 @@
             </div>
         </div>
 
-        <!-- -------------- -->
-        <!--    Hero IMG    -->
-        <!-- -------------- -->
         <picture>
             <source media="(max-width: 768px)" srcset="/images/index-guy.png">
-            <source media="(min-width: 769px)" srcset="/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" class="index-guy" src="./images/index-guy.png"
+            <source media="(min-width: 769px)" srcset="./images/index-guy-desktop.png">
+            <img aria-hidden="true" decoding="async" class="index-guy" src="./images/index-guy-desktop.png"
                 alt="guy with a laptop sitting at a desk" aria-hidden="true">
         </picture>
 
     </header>
+    <!-- -------------------------- -->
+    <!-- Header CSS in critical.css -->
+    <!-- -------------------------- -->
 
+    <!-- -------------------------- -->
+    <!--     Main CSS index.css     -->
+    <!-- -------------------------- -->
     <main>
         <!-- ========================= -->
         <!--     What We Do For You    -->
         <!-- ========================= -->
+
         <section id="what-we-do-section">
             <div class="header">
                 <h1>What We <span>Do</span></h1>
@@ -136,8 +134,7 @@
                 <div class="item">
                     <img src="./images/responsive.png" loading="lazy" decoding="async" alt="responsive web design" />
                     <h2>Custom Responsive Web Design</h2>
-                    <p>
-                        With more than 60% of web traffic originating from mobile devices,
+                    <p>With more than 60% of web traffic originating from mobile devices,
                         we ensure that your website is works perfectly across all browsers and all devices, including
                         smartphones, tablets, and desktops.
                     </p>
@@ -182,9 +179,9 @@
             </blockquote>
         </section>
 
-        <!-- ==================== -->
-        <!--         Cost         -->
-        <!-- ==================== -->
+        <!-- ========================= -->
+        <!--            Cost           -->
+        <!-- ========================= -->
 
         <picture>
             <source media="(max-width: 768px)" srcset="/images/cat.png">
@@ -202,12 +199,19 @@
                 Will get you a customized 5 page website for your business. If more
                 pages are needed, we have custom pricing based on scope of the work.
             </p>
-            <p><span>No cancellation fees or hidden fees of any kind.</span></p>
+            <p><span>No cancellation fees</span> or <span>hidden fees </span>of any kind.</p>
         </section>
 
-        <!-- ==================== -->
-        <!--    What's Included   -->
-        <!-- ==================== -->
+        <picture>
+            <source media="(max-width: 768px)" srcset="/images/bank-girl.webp">
+            <source media="(min-width: 769px)" srcset="/images/landing.jpg">
+            <img aria-hidden="true" decoding="async" class="bank-girl" src="./images/bank-girl.webp"
+                alt="girl with a piggy bank">
+        </picture>
+
+        <!-- ========================= -->
+        <!--      What's Included      -->
+        <!-- ========================= -->
         <section id="whats-included">
             <h2>What's <span>Included</span></h2>
             <div class="items-container">
@@ -272,6 +276,7 @@
                 <a href="./services/services.html">Our Services</a>
             </div>
         </section>
+
     </main>
 
     <footer>
