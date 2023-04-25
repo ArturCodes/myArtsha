@@ -6,17 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.artshawebdesign.com">
+
+    <!--Social Media Display-->
     <meta property="og:title" content="ARTSHA Web Design | Affordable Websites For Small Businesses" />
     <meta property="og:description"
         content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.artsha-web-design.com/" />
+    <meta property="og:url" content="https://www.artshawebdesign.com/" />
+    <meta property="og:image" content="/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/images/social.jpg" />
+
     <meta property="description"
         content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
 
-    <title>ARTSHA Web Design</title>
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- Preload Fonts -->
+    <!-- Preload images & fonts-->
+    <link rel="preload" as="image" href="/images/logo-index-white.png">
+    <link rel="preload" as="image" href="/images/mobile-index-nav.png">
+    <link rel="preload" as="image" href="/images/index-guy.png">
     <link rel="preload" as="font" type="font/woff2" src="./fonts/roboto-regular.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" src="./fonts/Roboto-bold.woff2" crossorigin />
 
@@ -28,6 +45,7 @@
     <link rel="stylesheet" href="hero.css"> <!-- Above the fold css -->
     <link rel="stylesheet" href="index.css">
 
+    <title>ARTSHA Web Design</title>
 
 </head>
 
@@ -39,7 +57,14 @@
         <!-- -------------- -->
         <!--     Navbar     -->
         <!-- -------------- -->
-        <img class="navbarBG" src="./images/mobile-index-nav.png" alt="navbar background" aria-hidden="true">
+
+        <picture>
+            <source media="(max-width: 768px)" srcset="/images/mobile-index-nav.png">
+            <source media="(min-width: 769px)" srcset="/images/landing.jpg">
+            <img aria-hidden="true" decoding="async" class="navbarBG" src="./images/mobile-index-nav.png"
+                alt="Navbar Background">
+        </picture>
+
         <nav>
             <a class="logo" aria-label="click to go to home page" href="index.html"></a>
 
@@ -83,9 +108,12 @@
         <!-- -------------- -->
         <!--    Hero IMG    -->
         <!-- -------------- -->
-
-        <img class="index-guy" src="./images/index-guy.png" alt="guy with a laptop sitting at a desk"
-            aria-hidden="true">
+        <picture>
+            <source media="(max-width: 768px)" srcset="/images/index-guy.png">
+            <source media="(min-width: 769px)" srcset="/images/landing.jpg">
+            <img aria-hidden="true" decoding="async" class="index-guy" src="./images/index-guy.png"
+                alt="guy with a laptop sitting at a desk" aria-hidden="true">
+        </picture>
 
     </header>
 
@@ -106,37 +134,45 @@
             <div class="what-we-do-items">
 
                 <div class="item">
-                    <img src="./images/responsive.png" alt="responsive web design" />
+                    <img src="./images/responsive.png" loading="lazy" decoding="async" alt="responsive web design" />
                     <h2>Custom Responsive Web Design</h2>
                     <p>
                         With more than 60% of web traffic originating from mobile devices,
-                        we ensure that your website is works perfectly across all browsers and all devices, including smartphones,
+                        we ensure that your website is works perfectly across all browsers and all devices, including
+                        smartphones,
                         tablets, and desktops.
                     </p>
                 </div>
 
                 <div class="item">
-                    <img src="./images/optimized.png" alt="optimized for performance" />
+                    <img src="./images/optimized.png" loading="lazy" decoding="async" alt="optimized for performance" />
                     <h2>Optimized for Performance</h2>
                     <p>
                         We optimize your website for optimal performance by focusing on quick loading speed and
-                        lightweight design. We attend to every aspect of its development, from every line of code to every image compression.
+                        lightweight design. We attend to every aspect of its development, from every line of code to
+                        every image compression.
                     </p>
                 </div>
 
                 <div class="item">
-                    <img src="./images/rank.png" alt="improve google rank" />
+                    <img src="./images/rank.png" loading="lazy" decoding="async" alt="improve google rank" />
                     <h2>Improved Google Search Ranking</h2>
                     <p>
-                        Google uses a series of tests to rank websites, and we ensure that your website excels in these tests, scoring in the 95-100 percentile, resulting in improved website ranking, online presence, and organic growth.
+                        Google uses a series of tests to rank websites, and we ensure that your website excels in these
+                        tests, scoring in the 95-100 percentile, resulting in improved website ranking, online presence,
+                        and organic growth.
                     </p>
                 </div>
 
             </div>
         </section>
 
-        <img class="what-we-do-blob" src="./images/what-we-do-bottom-bg.png" alt="section bottom blob"
-            aria-hidden="true">
+        <picture>
+            <source media="(max-width: 768px)" srcset="/images/what-we-do-bottom-bg.png">
+            <source media="(min-width: 769px)" srcset="/images/landing.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async" class="what-we-do-blob"
+                src="./images/what-we-do-bottom-bg.png" alt="section bottom blob">
+        </picture>
 
         <!----------------->
         <!--   Quote 1   -->
@@ -151,7 +187,12 @@
         <!--         Cost         -->
         <!-- ==================== -->
 
-        <img class="cat" src="./images/cat.png" alt="cat sleeping" aria-hidden="true">
+        <picture>
+            <source media="(max-width: 768px)" srcset="/images/cat.png">
+            <source media="(min-width: 769px)" srcset="/images/landing.jpg">
+            <img aria-hidden="true" decoding="async" class="cat" src="./images/cat.png" alt="cat sleeping">
+        </picture>
+
 
         <section id="cost">
             <h2>
