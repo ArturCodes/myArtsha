@@ -218,7 +218,7 @@
     position: absolute;
     background-image: url("./images/logo-index.png");
     background-repeat: no-repeat;
-    top: 30px;
+    top: 50px;
     left: 5vw;
     background-size: 350px 102px;
     height: 140px;
@@ -238,25 +238,70 @@
     transition: 0.25s;
     width: 600px;
     height: auto;
+    margin-right: 5vw;
+    text-align: center;
   }
   nav #navbar-links li {
-    width: 100%;
     display: flex;
     justify-content: center;
   }
-  nav #navbar-links li:last-child {
-    margin-right: 5vw;
-  }
   nav #navbar-links li a {
-    width: 150px;
+    width: auto;
     text-align: center;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 10px;
+    padding: 10px 25px;
     color: white;
     font-weight: 700;
   }
   #mobile-menu-open,
   #mobile-menu-close {
     display: none;
+  }
+  .home {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #38c6e5;
+    text-decoration-thickness: 0.2vw;
+  }
+  .home a {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #38c6e5;
+    text-decoration-thickness: 0.2vw;
+  }
+  .about:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #7fd378;
+    text-decoration-thickness: 0.2vw;
+  }
+  .services:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #804dd4;
+    text-decoration-thickness: 0.2vw;
+  }
+  .blog:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #e38025;
+    text-decoration-thickness: 0.2vw;
+  }
+  .contact {
+    position: relative;
+  }
+  .contact a {
+    position: relative;
+    color: #000000;
+    background-color: #ffcc00;
+    border-radius: 7.5px;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
+    text-shadow: none;
+  }
+  .contact a:hover {
+    color: white;
+    text-decoration: none;
+    box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
+    text-shadow: 1px 1px 5px #3f3b51;
   }
 }/*# sourceMappingURL=hero.css.map */
