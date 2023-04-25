@@ -293,6 +293,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                 display: flex;
                 justify-content: center;
 
+                &:last-child {
+                    margin-right: 5vw;
+                }
+
                 a {
                     width: 150px;
                     text-align: center;

@@ -243,6 +243,9 @@
     display: flex;
     justify-content: center;
   }
+  nav #navbar-links li:last-child {
+    margin-right: 5vw;
+  }
   nav #navbar-links li a {
     width: 150px;
     text-align: center;
