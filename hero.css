@@ -206,9 +206,6 @@
   #hero {
     width: 100vw;
   }
-  .index-guy {
-    display: none;
-  }
 }
 @media only screen and (min-width: 64em) {
   nav .logo {
