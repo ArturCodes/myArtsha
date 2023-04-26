@@ -38,7 +38,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             justify-content: center;
             align-items: center;
             color: white;
-            transition: 0.25s;
+            transition: width 0.3s;
 
             li {
                 width: 100%;
@@ -69,7 +69,6 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                 height: 3px;
                 background-color: #ffffff;
                 margin: 6px 0;
-                transition: 0.4s;
                 border-radius: 25px;
             }
         }
@@ -86,7 +85,6 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                 height: 3px;
                 background-color: #ffffff;
                 margin: 6px 0;
-                transition: 0.4s;
                 border-radius: 25px;
             }
 
@@ -111,12 +109,12 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             z-index: 888;
             height: 100vh;
             width: 100vw;
-            background-color: #35314871;
+            background-color: #3531482b;
             backdrop-filter: blur(5px);
             top: 0;
             left: 0;
             display: none;
-            transition: 0.3s;
+            // transition: 0.3s;
         }
     }
 
@@ -194,7 +192,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             background-repeat: no-repeat;
             top: 15px;
             left: 15px;
-            background-size: 325px 95px;
+            background-size: 300px 88px;
             height: 140px;
             width: 302px;
         }
@@ -280,13 +278,13 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             right: 0;
             top: 40px;
             background-color: #35314800;
+
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             color: white;
-            transition: 0.25s;
-            width: 600px;
+            width: 55vw;
             height: auto;
             margin-right: 5vw;
             text-align: center;
@@ -294,6 +292,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             li {
                 display: flex;
                 justify-content: center;
+                // font-size: calc(1em + 0.5vw);
 
                 a {
                     width: auto;
