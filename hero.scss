@@ -250,6 +250,8 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     #hero {
         width: 100vw;
     }
+
+    .index-guy
 }
 
 // min width of 1024px 
@@ -306,68 +308,67 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         display: none;
     }
 
-    #navbar-links {
-        .home {
+    .home {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: #38c6e5;
+        text-decoration-thickness: 0.2vw;
+
+        a {
             text-decoration: underline;
             text-underline-position: under;
             text-decoration-color: #38c6e5;
             text-decoration-thickness: 0.2vw;
-
-            a {
-                text-decoration: underline;
-                text-underline-position: under;
-                text-decoration-color: #38c6e5;
-                text-decoration-thickness: 0.2vw;
-            }
         }
+    }
 
-        .about {
-            &:hover {
-                text-decoration: underline;
-                text-underline-position: under;
-                text-decoration-color: #7fd378;
-                text-decoration-thickness: 0.2vw;
-            }
+    .about {
+        &:hover {
+            text-decoration: underline;
+            text-underline-position: under;
+            text-decoration-color: #7fd378;
+            text-decoration-thickness: 0.2vw;
         }
+    }
 
-        .services {
-            &:hover {
-                text-decoration: underline;
-                text-underline-position: under;
-                text-decoration-color: #804dd4;
-                text-decoration-thickness: 0.2vw;
-            }
+    .services {
+        &:hover {
+            text-decoration: underline;
+            text-underline-position: under;
+            text-decoration-color: #804dd4;
+            text-decoration-thickness: 0.2vw;
         }
+    }
 
-        .blog {
-            &:hover {
-                text-decoration: underline;
-                text-underline-position: under;
-                text-decoration-color: #e38025;
-                text-decoration-thickness: 0.2vw;
-            }
+    .blog {
+        &:hover {
+            text-decoration: underline;
+            text-underline-position: under;
+            text-decoration-color: #e38025;
+            text-decoration-thickness: 0.2vw;
         }
+    }
 
-        .contact {
+    .contact {
+        position: relative;
+
+        a {
             position: relative;
+            color: #000000;
+            background-color: #ffcc00;
+            border-radius: 7.5px;
+            box-shadow: $box-shadow;
+            text-shadow: none;
 
-            a {
-                position: relative;
-                color: #000000;
-                background-color: #ffcc00;
-                border-radius: 7.5px;
-                box-shadow: $box-shadow;
-                text-shadow: none;
-
-                &:hover {
-                    color: white;
-                    text-decoration: none;
-                    box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
-                    text-shadow: 1px 1px 5px #3f3b51;
-                }
+            &:hover {
+                color: white;
+                text-decoration: none;
+                box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
+                text-shadow: 1px 1px 5px #3f3b51;
             }
         }
     }
+
 }
 
 @media only screen and (min-width: 1300px) {}
