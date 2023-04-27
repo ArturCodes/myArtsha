@@ -125,53 +125,65 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         align-items: center;
         margin: 0 auto;
 
-        h1 {
-            font-size: clamp(2.75em, 12vw, 4em);
-            width: auto;
-            text-align: center;
-            font-weight: 700;
-            margin: 25px 0;
-        }
+        .hero-header {
 
-        p {
-            padding: 0 5vw;
-            text-align: center;
-            max-width: 450px;
-            margin-bottom: 25px;
-        }
-
-        // Buttons
-        div {
-            display: flex;
-            flex-direction: row;
-            padding: 5px;
-
-            .btn:nth-child(1) {
-                padding: 5px 15px;
-                background-color: #ffcc00;
-                border-color: 1px solid lightgray;
-                box-shadow: $box-shadow;
-                border-radius: 7.5px;
-                margin: 0 10px;
-                min-width: 100px;
+            h1 {
+                font-size: clamp(2.75em, 12vw, 4em);
+                width: auto;
                 text-align: center;
+                font-weight: 700;
+                margin: 25px 0;
             }
 
-            .btn:nth-child(2) {
+            p {
+                padding: 0 5vw;
                 text-align: center;
-                min-width: 100px;
-                padding: 5px 15px;
-                border-radius: 7.5px;
-                margin: 0 10px;
-                box-shadow: $box-shadow;
+                max-width: 500px;
+                margin-bottom: 25px;
             }
 
+            // Buttons
+            div {
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                justify-content: center;
+
+                .btn:nth-child(1) {
+                    padding: 5px 15px;
+                    background-color: #ffcc00;
+                    border-color: 1px solid lightgray;
+                    box-shadow: $box-shadow;
+                    border-radius: 7.5px;
+                    margin: 0 10px;
+                    min-width: 100px;
+                    text-align: center;
+                }
+
+                .btn:nth-child(2) {
+                    text-align: center;
+                    min-width: 100px;
+                    padding: 5px 15px;
+                    border-radius: 7.5px;
+                    margin: 0 10px;
+                    box-shadow: $box-shadow;
+                }
+
+            }
+        }
+
+        .hero-img {
+            display: none;
         }
     }
 
     .index-guy {
         width: 100vw;
         padding-top: 25px;
+    }
+
+    .index-guy-desktop {
+        display: none;
     }
 }
 
@@ -190,11 +202,11 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             position: absolute;
             background-image: url('./images/logo-index.png');
             background-repeat: no-repeat;
-            top: 15px;
-            left: 15px;
+            top: 25px;
+            left: 3vw;
             background-size: 300px 88px;
-            height: 140px;
-            width: 302px;
+            height: 88px;
+            width: 300px;
         }
 
         #mobile-menu-open {
@@ -249,9 +261,44 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
     #hero {
         width: 100vw;
+        height: fit-content;
+        display: block;
+        position: relative;
+        left: 3vw;
+        top: 50px;
+        margin: 0;
+        overflow: visible;
+
+        .hero-header {
+
+            h1,
+            p {
+                position: relative;
+                text-align: left;
+                padding: 0;
+                z-index: 2;
+                width: 100vw;
+            }
+        }
+
+        .hero-img {
+            img {
+                position: relative;
+                top: -400px;
+                left: 400px;
+                z-index: 9999;
+                width: 450px;
+                height: 400px;
+                z-index: 1;
+            }
+        }
     }
 
-    .index-guy
+    .btn {
+        padding: 10px;
+        margin: 0 20px 0 0px !important;
+    }
+
 }
 
 // min width of 1024px 
@@ -265,8 +312,8 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             top: 50px;
             left: 5vw;
             background-size: 350px 102px;
-            height: 140px;
-            width: 302px;
+            height: 102px;
+            width: 300px;
         }
 
         #navbar-links {
@@ -281,7 +328,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             justify-content: center;
             align-items: center;
             color: white;
-            width: 55vw;
+            width: 50vw;
             height: auto;
             margin-right: 5vw;
             text-align: center;
@@ -289,7 +336,6 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             li {
                 display: flex;
                 justify-content: center;
-                // font-size: calc(1em + 0.5vw);
 
                 a {
                     width: auto;
@@ -301,6 +347,76 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                 }
             }
         }
+
+        // items
+        #navbar-links {
+
+            .home {
+                text-decoration: underline;
+                text-underline-position: under;
+                text-decoration-color: #38c6e5;
+                text-decoration-thickness: 0.2vw;
+
+                a {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-color: #38c6e5;
+                    text-decoration-thickness: 0.2vw;
+                }
+            }
+
+            .about {
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-color: #7fd378;
+                    text-decoration-thickness: 0.2vw;
+                }
+            }
+
+            .services {
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-color: #804dd4;
+                    text-decoration-thickness: 0.2vw;
+                }
+            }
+
+            .blog {
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-color: #e38025;
+                    text-decoration-thickness: 0.2vw;
+                }
+            }
+
+            .contact {
+                position: relative;
+
+                a {
+                    position: relative;
+                    color: #000000;
+                    background-color: #ffcc00;
+                    border-radius: 7.5px;
+                    box-shadow: $box-shadow;
+                    text-shadow: none;
+
+                    &:hover {
+                        color: white;
+                        text-decoration: none;
+                        box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
+                        text-shadow: 1px 1px 5px #3f3b51;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #hero {
+        left: 5vw;
     }
 
     #mobile-menu-open,
@@ -308,65 +424,8 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         display: none;
     }
 
-    .home {
-        text-decoration: underline;
-        text-underline-position: under;
-        text-decoration-color: #38c6e5;
-        text-decoration-thickness: 0.2vw;
-
-        a {
-            text-decoration: underline;
-            text-underline-position: under;
-            text-decoration-color: #38c6e5;
-            text-decoration-thickness: 0.2vw;
-        }
-    }
-
-    .about {
-        &:hover {
-            text-decoration: underline;
-            text-underline-position: under;
-            text-decoration-color: #7fd378;
-            text-decoration-thickness: 0.2vw;
-        }
-    }
-
-    .services {
-        &:hover {
-            text-decoration: underline;
-            text-underline-position: under;
-            text-decoration-color: #804dd4;
-            text-decoration-thickness: 0.2vw;
-        }
-    }
-
-    .blog {
-        &:hover {
-            text-decoration: underline;
-            text-underline-position: under;
-            text-decoration-color: #e38025;
-            text-decoration-thickness: 0.2vw;
-        }
-    }
-
-    .contact {
-        position: relative;
-
-        a {
-            position: relative;
-            color: #000000;
-            background-color: #ffcc00;
-            border-radius: 7.5px;
-            box-shadow: $box-shadow;
-            text-shadow: none;
-
-            &:hover {
-                color: white;
-                text-decoration: none;
-                box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
-                text-shadow: 1px 1px 5px #3f3b51;
-            }
-        }
+    .index-guy {
+        margin-top: -150px;
     }
 
 }
