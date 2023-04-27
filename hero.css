@@ -217,9 +217,14 @@
     display: block;
     position: relative;
     left: 3vw;
-    top: 50px;
+    top: 25px;
     margin: 0;
     overflow: visible;
+    display: flex;
+    flex-direction: column;
+  }
+  #hero .hero-header {
+    width: 100vw;
   }
   #hero .hero-header h1,
   #hero .hero-header p {
@@ -229,10 +234,18 @@
     z-index: 2;
     width: 100vw;
   }
+  #hero .hero-header h1 div,
+  #hero .hero-header p div {
+    justify-content: start;
+  }
+  #hero .hero-img {
+    display: block;
+  }
   #hero .hero-img img {
-    position: relative;
-    top: -400px;
-    left: 400px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 450px;
     z-index: 9999;
     width: 450px;
     height: 400px;

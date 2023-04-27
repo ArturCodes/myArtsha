@@ -265,11 +265,15 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         display: block;
         position: relative;
         left: 3vw;
-        top: 50px;
+        top: 25px;
         margin: 0;
         overflow: visible;
 
+        display: flex;
+        flex-direction: column;
+
         .hero-header {
+            width: 100vw;
 
             h1,
             p {
@@ -278,14 +282,21 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                 padding: 0;
                 z-index: 2;
                 width: 100vw;
+
+                div {
+                    justify-content: start;
+                }
             }
         }
 
         .hero-img {
+            display: block;
+
             img {
-                position: relative;
-                top: -400px;
-                left: 400px;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 450px;
                 z-index: 9999;
                 width: 450px;
                 height: 400px;
