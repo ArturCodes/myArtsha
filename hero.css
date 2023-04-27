@@ -250,40 +250,40 @@
   #mobile-menu-close {
     display: none;
   }
-  .home {
+  #navbar-links .home {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
     text-decoration-thickness: 0.2vw;
   }
-  .home a {
+  #navbar-links .home a {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
     text-decoration-thickness: 0.2vw;
   }
-  .about:hover {
+  #navbar-links .about:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #7fd378;
     text-decoration-thickness: 0.2vw;
   }
-  .services:hover {
+  #navbar-links .services:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #804dd4;
     text-decoration-thickness: 0.2vw;
   }
-  .blog:hover {
+  #navbar-links .blog:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #e38025;
     text-decoration-thickness: 0.2vw;
   }
-  .contact {
+  #navbar-links .contact {
     position: relative;
   }
-  .contact a {
+  #navbar-links .contact a {
     position: relative;
     color: #000000;
     background-color: #ffcc00;
@@ -291,7 +291,7 @@
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
     text-shadow: none;
   }
-  .contact a:hover {
+  #navbar-links .contact a:hover {
     color: white;
     text-decoration: none;
     box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
