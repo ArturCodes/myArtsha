@@ -55,18 +55,12 @@
     <!-- ██████████████████████████ -->
     <header>
 
-        <div class="navbar-container">
-            <picture>
-                <source media="(max-width: 767px)" srcset="/images/navbar-mobile.png">
-                <source media="(min-width: 768px)" srcset="/images/navbar-desktop.png">
-                <img class="navbarBG" src="./images/mobile-desktop.png" alt="Navbar Background" aria-hidden="true"
-                    decoding="async">
-            </picture>
-            <div class="hero-img">
-
-                <img class="index-guy-desktop" src="./images/index-guy-desktop.png" alt="image of a guy with a laptop">
-            </div>
-        </div>
+        <picture>
+            <source media="(max-width: 767px)" srcset="/images/navbar-mobile.png">
+            <source media="(min-width: 768px)" srcset="/images/navbar-desktop.png">
+            <img class="navbarBG" src="./images/navbar-desktop.png" alt="Navbar Background" aria-hidden="true"
+                decoding="async">
+        </picture>
 
         <!-- ========================= -->
         <!--        NAVIGATION         -->
@@ -110,8 +104,9 @@
 
         <picture>
             <source media="(max-width: 767px)" srcset="/images/index-guy.png">
-            <source media="(min-width: 768px)" srcset="./images/what-we-do-blob-desktop.png">
-            <img aria-hidden="true" decoding="async" class="index-guy" src="./images/index-guy.png"
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./images/what-we-do-bottom-bg-m.png">
+            <source media="(min-width: 1024px)" srcset="/images/what-we-do-blob-desktop.png">
+            <img aria-hidden="true" decoding="async" class="index-guy" src="./images/what-we-do-blob-desktop.png"
                 alt="guy with a laptop sitting at a desk" aria-hidden="true">
         </picture>
 

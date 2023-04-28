@@ -191,6 +191,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 // min width of 768px 
 @media only screen and (min-width: 48em) {
 
+
     .navbarBG {
         width: calc(55vw + 10vw);
         float: right;
@@ -261,14 +262,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
     #hero {
         width: 100vw;
-        height: fit-content;
         display: block;
         position: relative;
         left: 3vw;
-        top: 25px;
-        margin: 0;
-        overflow: visible;
-
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
 
@@ -278,14 +275,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             h1,
             p {
                 position: relative;
-                text-align: left;
                 padding: 0;
                 z-index: 2;
                 width: 100vw;
-
-                div {
-                    justify-content: start;
-                }
+                margin: 25px auto;
             }
         }
 
