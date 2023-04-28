@@ -219,9 +219,6 @@
     display: flex;
     flex-direction: column;
   }
-  #hero .hero-header {
-    width: 100vw;
-  }
   #hero .hero-header h1,
   #hero .hero-header p {
     position: relative;
