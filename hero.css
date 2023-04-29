@@ -224,7 +224,7 @@
     position: relative;
     padding: 0;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
     margin: 25px auto;
   }
   #hero .hero-img {
@@ -332,13 +332,15 @@
     text-shadow: 1px 1px 5px #3f3b51;
   }
   #hero {
-    left: 5vw;
+    width: 100%;
   }
   #mobile-menu-open,
   #mobile-menu-close {
     display: none;
   }
-  .index-guy {
-    margin-top: -150px;
+  .index-guy-desktop {
+    position: relative;
+    top: -250px;
+    margin-top: 650px;
   }
 }/*# sourceMappingURL=hero.css.map */

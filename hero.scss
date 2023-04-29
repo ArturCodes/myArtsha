@@ -276,7 +276,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                 position: relative;
                 padding: 0;
                 z-index: 2;
-                width: 100vw;
+                width: 100%;
                 margin: 25px auto;
             }
         }
@@ -419,16 +419,21 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     }
 
     #hero {
-        left: 5vw;
+        // left: 5vw;
+        width: 100%;
     }
+
+
 
     #mobile-menu-open,
     #mobile-menu-close {
         display: none;
     }
 
-    .index-guy {
-        margin-top: -150px;
+    .index-guy-desktop {
+        position: relative;
+        top: -250px;
+        margin-top: 650px;
     }
 
 }
