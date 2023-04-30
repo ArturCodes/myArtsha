@@ -2,7 +2,7 @@
   .navbarBG {
     width: 100vw;
     height: 115px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   nav {
     background-color: #353148;
@@ -334,17 +334,19 @@
     text-shadow: 1px 1px 5px #3f3b51;
   }
   #hero {
-    position: absolute;
-    margin: 0 auto;
+    width: 100vw;
     left: 0;
-    width: 500px;
+    display: flex;
+    flex-direction: column;
   }
   #hero .hero-header h1,
   #hero p {
     text-align: left !important;
   }
-  .index-guy {
-    margin-top: 300px;
+  #hero .index-guy-desktop {
+    position: absolute;
+    display: block;
+    width: 200px;
   }
   #mobile-menu-open,
   #mobile-menu-close {
