@@ -123,6 +123,7 @@
     flex-direction: row;
     padding: 5px;
     justify-content: center;
+    z-index: 5;
   }
   #hero .hero-header div .btn:nth-child(1) {
     padding: 5px 15px;
@@ -130,7 +131,7 @@
     border-color: 1px solid lightgray;
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
     border-radius: 7.5px;
-    margin: 0 10px;
+    margin: 0 10px 0 10px;
     min-width: 100px;
     text-align: center;
   }
@@ -139,8 +140,9 @@
     min-width: 100px;
     padding: 5px 15px;
     border-radius: 7.5px;
-    margin: 0 10px;
+    margin: 0 10px 0 10px;
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
+    background-color: white;
   }
   #hero .hero-img {
     display: none;
@@ -332,16 +334,20 @@
     text-shadow: 1px 1px 5px #3f3b51;
   }
   #hero {
-    width: 100%;
-    text-align: left;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    width: 500px;
+  }
+  #hero .hero-header h1,
+  #hero p {
+    text-align: left !important;
+  }
+  .index-guy {
+    margin-top: 300px;
   }
   #mobile-menu-open,
   #mobile-menu-close {
     display: none;
-  }
-  .index-guy-desktop {
-    position: relative;
-    top: -250px;
-    margin-top: 650px;
   }
 }/*# sourceMappingURL=hero.css.map */
