@@ -333,6 +333,7 @@
   }
   #hero {
     width: 100%;
+    text-align: left;
   }
   #mobile-menu-open,
   #mobile-menu-close {

@@ -306,7 +306,6 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
 // min width of 1024px 
 @media only screen and (min-width: 64em) {
-
     nav {
         .logo {
             position: absolute;
@@ -418,9 +417,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         }
     }
 
+
     #hero {
-        // left: 5vw;
         width: 100%;
+        text-align: left;
     }
 
 
