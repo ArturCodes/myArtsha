@@ -1,7 +1,7 @@
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
   .navbarBG {
     width: 100vw;
-    height: 115px;
+    height: 120px;
     margin-bottom: 15px;
   }
   nav {
@@ -105,27 +105,27 @@
     align-items: center;
     margin: 0 auto;
   }
-  #hero .hero-header h1 {
+  #hero h1 {
     font-size: clamp(2.75em, 12vw, 4em);
     width: auto;
     text-align: center;
     font-weight: 700;
     margin: 25px 0;
   }
-  #hero .hero-header p {
+  #hero p {
     padding: 0 5vw;
     text-align: center;
     max-width: 500px;
     margin-bottom: 25px;
   }
-  #hero .hero-header div {
+  #hero div {
     display: flex;
     flex-direction: row;
     padding: 5px;
     justify-content: center;
     z-index: 5;
   }
-  #hero .hero-header div .btn:nth-child(1) {
+  #hero div .btn:nth-child(1) {
     padding: 5px 15px;
     background-color: #ffcc00;
     border-color: 1px solid lightgray;
@@ -135,7 +135,7 @@
     min-width: 100px;
     text-align: center;
   }
-  #hero .hero-header div .btn:nth-child(2) {
+  #hero div .btn:nth-child(2) {
     text-align: center;
     min-width: 100px;
     padding: 5px 15px;
@@ -144,10 +144,7 @@
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
     background-color: white;
   }
-  #hero .hero-img {
-    display: none;
-  }
-  .index-guy {
+  .hero-bottom-blob {
     width: 100vw;
     padding-top: 25px;
   }
@@ -155,7 +152,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbarBG {
     width: 65vw;
     float: right;
@@ -221,42 +218,36 @@
     display: flex;
     flex-direction: column;
   }
-  #hero .hero-header h1,
-  #hero .hero-header p {
+  #hero h1,
+  #hero p {
     position: relative;
     padding: 0;
     z-index: 2;
     width: 100%;
-    margin: 25px auto;
   }
-  #hero .hero-img {
-    display: block;
-  }
-  #hero .hero-img img {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 450px;
-    z-index: 9999;
-    width: 450px;
-    height: 400px;
-    z-index: 1;
+  #hero .index-guy-desktop {
+    display: none;
   }
   .btn {
     padding: 10px;
     margin: 0 20px 0 0px !important;
   }
 }
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
+  .navbarBG {
+    width: 65vw;
+    float: right;
+    height: auto;
+  }
   nav .logo {
     position: absolute;
     background-image: url("./images/logo-index.png");
     background-repeat: no-repeat;
     top: 50px;
     left: 5vw;
-    background-size: 350px 102px;
-    height: 102px;
-    width: 300px;
+    background-size: calc(350px + 1vw) calc(102px + 1vw);
+    height: calc(102px + 1vw);
+    width: calc(350px + 1vw);
   }
   nav #navbar-links {
     position: absolute;
@@ -333,20 +324,31 @@
     box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
     text-shadow: 1px 1px 5px #3f3b51;
   }
+  #hero,
+  .index-guy-desktop {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: static;
+  }
   #hero {
-    width: 100vw;
-    left: 0;
     display: flex;
-    flex-direction: column;
+    height: 500px;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
   }
   #hero .hero-header h1,
-  #hero p {
-    text-align: left !important;
+  #hero .hero-header P {
+    text-align: left;
+    width: auto;
   }
   #hero .index-guy-desktop {
+    position: relative;
+  }
+  #hero .index-guy-desktop img {
     position: absolute;
-    display: block;
-    width: 200px;
+    width: 50vw;
   }
   #mobile-menu-open,
   #mobile-menu-close {

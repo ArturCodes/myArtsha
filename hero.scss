@@ -3,10 +3,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     -1px 1px 3px #3f3b5140,
     -1px -1px 3px #3f3b5140;
 
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0px) {
     .navbarBG {
         width: 100vw;
-        height: 115px;
+        height: 120px;
         margin-bottom: 15px;
     }
 
@@ -125,61 +125,56 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         align-items: center;
         margin: 0 auto;
 
-        .hero-header {
 
-            h1 {
-                font-size: clamp(2.75em, 12vw, 4em);
-                width: auto;
-                text-align: center;
-                font-weight: 700;
-                margin: 25px 0;
-            }
-
-            p {
-                padding: 0 5vw;
-                text-align: center;
-                max-width: 500px;
-                margin-bottom: 25px;
-            }
-
-            // Buttons
-            div {
-                display: flex;
-                flex-direction: row;
-                padding: 5px;
-                justify-content: center;
-                z-index: 5;
-
-                .btn:nth-child(1) {
-                    padding: 5px 15px;
-                    background-color: #ffcc00;
-                    border-color: 1px solid lightgray;
-                    box-shadow: $box-shadow;
-                    border-radius: 7.5px;
-                    margin: 0 10px 0 10px;
-                    min-width: 100px;
-                    text-align: center;
-                }
-
-                .btn:nth-child(2) {
-                    text-align: center;
-                    min-width: 100px;
-                    padding: 5px 15px;
-                    border-radius: 7.5px;
-                    margin: 0 10px 0 10px;
-                    box-shadow: $box-shadow;
-                    background-color: white;
-                }
-
-            }
+        h1 {
+            font-size: clamp(2.75em, 12vw, 4em);
+            width: auto;
+            text-align: center;
+            font-weight: 700;
+            margin: 25px 0;
         }
 
-        .hero-img {
-            display: none;
+        p {
+            padding: 0 5vw;
+            text-align: center;
+            max-width: 500px;
+            margin-bottom: 25px;
         }
+
+        // Buttons
+        div {
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            justify-content: center;
+            z-index: 5;
+
+            .btn:nth-child(1) {
+                padding: 5px 15px;
+                background-color: #ffcc00;
+                border-color: 1px solid lightgray;
+                box-shadow: $box-shadow;
+                border-radius: 7.5px;
+                margin: 0 10px 0 10px;
+                min-width: 100px;
+                text-align: center;
+            }
+
+            .btn:nth-child(2) {
+                text-align: center;
+                min-width: 100px;
+                padding: 5px 15px;
+                border-radius: 7.5px;
+                margin: 0 10px 0 10px;
+                box-shadow: $box-shadow;
+                background-color: white;
+            }
+
+        }
+
     }
 
-    .index-guy {
+    .hero-bottom-blob {
         width: 100vw;
         padding-top: 25px;
     }
@@ -189,10 +184,8 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     }
 }
 
-
 // min width of 768px 
-@media only screen and (min-width: 48em) {
-
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
     .navbarBG {
         width: calc(55vw + 10vw);
@@ -271,31 +264,18 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         display: flex;
         flex-direction: column;
 
-        .hero-header {
 
-            h1,
-            p {
-                position: relative;
-                padding: 0;
-                z-index: 2;
-                width: 100%;
-                margin: 25px auto;
-            }
+        h1,
+        p {
+            position: relative;
+            padding: 0;
+            z-index: 2;
+            width: 100%;
         }
 
-        .hero-img {
-            display: block;
 
-            img {
-                position: absolute;
-                display: block;
-                top: 0;
-                left: 450px;
-                z-index: 9999;
-                width: 450px;
-                height: 400px;
-                z-index: 1;
-            }
+        .index-guy-desktop {
+            display: none;
         }
     }
 
@@ -307,7 +287,13 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 }
 
 // min width of 1024px 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1024px) {
+    .navbarBG {
+        width: 65vw;
+        float: right;
+        height: auto;
+    }
+
     nav {
         .logo {
             position: absolute;
@@ -315,9 +301,9 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             background-repeat: no-repeat;
             top: 50px;
             left: 5vw;
-            background-size: 350px 102px;
-            height: 102px;
-            width: 300px;
+            background-size: calc(350px + 1vw) calc(102px + 1vw);
+            height: calc(102px + 1vw);
+            width: calc(350px + 1vw);
         }
 
         #navbar-links {
@@ -419,24 +405,40 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         }
     }
 
+    // resets due to css problem overlapping 
+    #hero,
+    .index-guy-desktop {
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: static;
+    }
 
     #hero {
-
-        width: 100vw;
-        left: 0;
         display: flex;
-        flex-direction: column;
+        height: 500px;
+
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
 
 
-        .hero-header h1,
-        p {
-            text-align: left !important;
+        .hero-header {
+
+            h1,
+            P {
+                text-align: left;
+                width: auto;
+            }
         }
 
         .index-guy-desktop {
-            position: absolute;
-            display: block;
-            width: 200px;
+            position: relative;
+
+            img {
+                position: absolute;
+                width: 50vw;
+            }
         }
     }
 
@@ -447,5 +449,3 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
 
 }
-
-@media only screen and (min-width: 1300px) {}
