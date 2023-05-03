@@ -10,13 +10,13 @@
   }
   nav .logo {
     position: absolute;
-    background-image: url("./images/logo-index-white.png");
+    background-image: url("./images/Logo-white.png");
     background-repeat: no-repeat;
-    top: 8px;
-    left: 5px;
-    background-size: 250px 77px;
-    height: 85px;
-    min-width: 205px;
+    top: 11px;
+    left: 9px;
+    background-size: 225px 75px;
+    min-width: 225px;
+    height: 75px;
   }
   nav #navbar-links {
     position: fixed;
@@ -155,7 +155,7 @@
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbarBG {
-    width: 65vw;
+    width: 55vw;
     float: right;
     height: auto;
   }
@@ -165,9 +165,9 @@
     background-repeat: no-repeat;
     top: 25px;
     left: 3vw;
-    background-size: 300px 88px;
-    height: 88px;
-    width: 300px;
+    background-size: 250px 83px;
+    height: 83px;
+    width: 250px;
   }
   nav #mobile-menu-open {
     position: absolute;
@@ -232,45 +232,46 @@
 }
 @media only screen and (min-width: 1024px) {
   .navbarBG {
-    width: 60vw;
-    float: right;
+    position: absolute;
+    right: 0;
+    width: 55vw;
     height: auto;
   }
+  nav {
+    position: static;
+    height: 175px;
+    background-color: transparent;
+  }
   nav .logo {
-    position: absolute;
     background-image: url("./images/logo-index.png");
     background-repeat: no-repeat;
-    top: 50px;
-    left: 5%;
-    background-size: 350px 117px;
-    width: 350px;
-    height: 117px;
+    top: calc(50px + 2vw);
+    left: 7.5vw;
+    background-size: 325px 108px;
+    width: 325px;
+    height: 108px;
   }
   nav #navbar-links {
     position: absolute;
     z-index: 999;
-    right: 0;
-    top: 40px;
+    right: 5vw;
+    top: calc(40px + 2vw);
     background-color: rgba(53, 49, 72, 0);
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     color: white;
-    width: 50vw;
+    width: auto;
     height: auto;
-    margin-right: 5vw;
-    text-align: center;
   }
   nav #navbar-links li {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+    padding: 10px clamp(0px, 2vw, 25px + 2vw);
   }
   nav #navbar-links li a {
+    font-size: 18px;
     width: auto;
-    text-align: center;
     margin: 10px;
-    padding: 10px 25px;
     color: white;
     font-weight: 700;
   }
@@ -278,42 +279,37 @@
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
-    text-decoration-thickness: 0.2vw;
+    text-decoration-thickness: 0.2em;
   }
   nav #navbar-links .home a {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
-    text-decoration-thickness: 0.2vw;
+    text-decoration-thickness: 0.2em;
   }
   nav #navbar-links .about:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #7fd378;
-    text-decoration-thickness: 0.2vw;
+    text-decoration-thickness: 0.25em;
   }
   nav #navbar-links .services:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #804dd4;
-    text-decoration-thickness: 0.2vw;
+    text-decoration-thickness: 0.25em;
   }
   nav #navbar-links .blog:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #e38025;
-    text-decoration-thickness: 0.2vw;
-  }
-  nav #navbar-links .contact {
-    position: relative;
+    text-decoration-thickness: 0.25em;
   }
   nav #navbar-links .contact a {
-    position: relative;
     color: #000000;
     background-color: #ffcc00;
     border-radius: 7.5px;
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
-    text-shadow: none;
   }
   nav #navbar-links .contact a:hover {
     color: white;
@@ -322,15 +318,16 @@
     text-shadow: 1px 1px 5px #3f3b51;
   }
   #hero {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0;
+    position: absolute;
+    width: 85%;
+    left: 7.5vw;
     display: block;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: start;
-    position: relative;
+    height: 100%;
+    z-index: 5;
+    padding-top: 100px;
   }
   #hero h1 {
     font-size: clamp(2.75em, 12vw, 5em);
@@ -345,7 +342,15 @@
   }
   #hero div {
     position: relative;
-    margin-left: -5px;
+    margin-left: -13px;
+  }
+  #hero img {
+    display: block;
+    position: absolute;
+    width: 800px;
+    z-index: -1;
+    right: 150px;
+    top: 50px;
   }
   #mobile-menu-open,
   #mobile-menu-close {

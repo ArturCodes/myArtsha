@@ -33,27 +33,14 @@
 /*-- -------------------------- -->
 <---        Core Styles         -->
 <--- -------------------------- -*/
-:root {
-  --background: #353148;
-  --btn-yellow: #ffcc00;
-  --blue: #38C6E5;
-  --green: #7FD378;
-  --purple: #804DD4;
-  --orange: #E38025;
-  --section-Padding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
-  --button-Padding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
-  --headerHeader: clamp(1.9375rem, 4.5vw, 3.0625rem);
-  --headerP: clamp(1.9375rem, 4.5vw, 3.0625rem);
-  --sectionHeader: clamp(1.9375rem, 4.5vw, 3.0625rem);
-  --sectionP: clamp(1.9375rem, 4.5vw, 3.0625rem);
-}
-
 *,
 *:before,
 *:after {
+  text-underline-position: under;
+  box-sizing: border-box;
+  text-decoration: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
   overflow-x: hidden;
   list-style: none;
@@ -82,8 +69,4 @@ a {
 button:hover,
 a:hover {
   cursor: pointer;
-}
-
-.container {
-  margin: 0 auto;
 }/*# sourceMappingURL=core.css.map */

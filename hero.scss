@@ -16,13 +16,13 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
         .logo {
             position: absolute;
-            background-image: url('./images/logo-index-white.png');
+            background-image: url('./images/Logo-white.png');
             background-repeat: no-repeat;
-            top: 8px;
-            left: 5px;
-            background-size: 250px 77px;
-            height: 85px;
-            min-width: 205px;
+            top: 11px;
+            left: 9px;
+            background-size: 225px 75px;
+            min-width: 225px;
+            height: 75px;
         }
 
         #navbar-links {
@@ -190,7 +190,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
     .navbarBG {
-        width: calc(55vw + 10vw);
+        width: 55vw;
         float: right;
         height: auto;
     }
@@ -202,9 +202,9 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             background-repeat: no-repeat;
             top: 25px;
             left: 3vw;
-            background-size: 300px 88px;
-            height: 88px;
-            width: 300px;
+            background-size: 250px 83px;
+            height: 83px;
+            width: 250px;
         }
 
         #mobile-menu-open {
@@ -284,49 +284,48 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 // min width of 1024px 
 @media only screen and (min-width: 1024px) {
     .navbarBG {
-        width: 60vw;
-        float: right;
+        position: absolute;
+        right: 0;
+        width: 55vw;
         height: auto;
     }
 
     nav {
+        position: static;
+        height: 175px;
+        background-color: transparent;
+
         .logo {
-            position: absolute;
             background-image: url('./images/logo-index.png');
             background-repeat: no-repeat;
-            top: 50px;
-            left: 5%;
-            background-size: 350px 117px;
-            width: 350px;
-            height: 117px;
+            top: calc(50px + 2vw);
+            left: 7.5vw;
+            background-size: 325px 108px;
+            width: 325px;
+            height: 108px;
         }
 
         #navbar-links {
             position: absolute;
             z-index: 999;
-            right: 0;
-            top: 40px;
+            right: 5vw;
+            top: calc(40px + 2vw);
             background-color: #35314800;
-
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
             color: white;
-            width: 50vw;
+            width: auto;
             height: auto;
-            margin-right: 5vw;
-            text-align: center;
 
             li {
-                display: flex;
-                justify-content: center;
+                margin: 0 auto;
+                width: auto;
+                padding: 10px clamp(0px, 2vw, calc(25px + 2vw));
 
                 a {
+                    font-size: 18px;
                     width: auto;
-                    text-align: center;
                     margin: 10px;
-                    padding: 10px 25px;
                     color: white;
                     font-weight: 700;
                 }
@@ -340,13 +339,13 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                 text-decoration: underline;
                 text-underline-position: under;
                 text-decoration-color: #38c6e5;
-                text-decoration-thickness: 0.2vw;
+                text-decoration-thickness: 0.2em;
 
                 a {
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #38c6e5;
-                    text-decoration-thickness: 0.2vw;
+                    text-decoration-thickness: 0.2em;
                 }
             }
 
@@ -355,7 +354,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #7fd378;
-                    text-decoration-thickness: 0.2vw;
+                    text-decoration-thickness: 0.25em;
                 }
             }
 
@@ -364,7 +363,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #804dd4;
-                    text-decoration-thickness: 0.2vw;
+                    text-decoration-thickness: 0.25em;
                 }
             }
 
@@ -373,20 +372,16 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #e38025;
-                    text-decoration-thickness: 0.2vw;
+                    text-decoration-thickness: 0.25em;
                 }
             }
 
             .contact {
-                position: relative;
-
                 a {
-                    position: relative;
                     color: #000000;
                     background-color: #ffcc00;
                     border-radius: 7.5px;
                     box-shadow: $box-shadow;
-                    text-shadow: none;
 
                     &:hover {
                         color: white;
@@ -401,16 +396,18 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     }
 
     #hero {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0;
-        display: block;
-        position: relative;
+        position: absolute;
+        width: 85%;
+        left: 7.5vw;
 
+        display: block;
         display: flex;
         flex-direction: column;
         align-items: start;
-        position: relative;
+        height: 100%;
+        z-index: 5;
+
+        padding-top: 100px;
 
         h1 {
             font-size: clamp(2.75em, 12vw, 5em);
@@ -427,9 +424,18 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
         div {
             position: relative;
-            margin-left: -5px;
+            margin-left: -13px;
         }
 
+        img {
+            display: block;
+            position: absolute;
+            width: 800px;
+            z-index: -1;
+            right: 150px;
+            top: 50px;
+
+        }
 
     }
 
