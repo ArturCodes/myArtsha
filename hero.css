@@ -237,6 +237,17 @@
     width: 55vw;
     height: auto;
   }
+  .navbarBG::after {
+    content: "";
+    background-image: url(./images/hero-guy.png);
+    background-size: 300px 100px;
+    width: 300px;
+    height: 100px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+  }
   nav {
     position: static;
     height: 175px;
@@ -318,15 +329,12 @@
     text-shadow: 1px 1px 5px #3f3b51;
   }
   #hero {
-    position: absolute;
     width: 85%;
     left: 7.5vw;
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: start;
     height: 100%;
-    z-index: 5;
     padding-top: 100px;
   }
   #hero h1 {
@@ -334,23 +342,32 @@
     padding: 0;
     text-align: left;
     width: auto;
+    z-index: 5;
   }
   #hero P {
     padding: 0;
     text-align: left;
     width: auto;
+    z-index: 5;
   }
   #hero div {
     position: relative;
     margin-left: -13px;
+    z-index: 5;
   }
   #hero img {
     display: block;
     position: absolute;
     width: 800px;
-    z-index: -1;
-    right: 150px;
-    top: 50px;
+    z-index: 2;
+    left: 45vw;
+    top: 200px;
+  }
+  .hero-blob {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 550px;
   }
   #mobile-menu-open,
   #mobile-menu-close {
