@@ -1,8 +1,8 @@
 @media only screen and (min-width: 0px) {
   .navbarBG {
-    width: 100vw;
+    width: 100%;
     height: 120px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   nav {
     background-color: #353148;
@@ -18,7 +18,7 @@
     height: 85px;
     min-width: 205px;
   }
-  nav .navbar-links {
+  nav #navbar-links {
     position: fixed;
     z-index: 999;
     right: 0;
@@ -33,13 +33,13 @@
     color: white;
     transition: width 0.3s;
   }
-  nav .navbar-links li {
+  nav #navbar-links li {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 15px 0;
   }
-  nav .navbar-links li a {
+  nav #navbar-links li a {
     width: 150px;
     text-align: center;
     margin: 10px 0;
@@ -51,7 +51,8 @@
     position: absolute;
     right: 25px;
     top: 21px;
-    z-index: 1;
+    z-index: 5;
+    cursor: pointer;
   }
   nav #mobile-menu-open div {
     width: 25px;
@@ -144,6 +145,9 @@
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
     background-color: white;
   }
+  #hero img {
+    display: none;
+  }
   .hero-blob {
     width: 100%;
     padding-top: 25px;
@@ -207,10 +211,9 @@
     top: -2px;
   }
   #hero {
-    width: 100vw;
+    width: 100%;
     display: block;
     position: relative;
-    left: 3vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -224,7 +227,7 @@
   }
   .btn {
     padding: 10px;
-    margin: 0 20px 0 0px !important;
+    margin: 0 20px 0 0px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -243,7 +246,7 @@
     height: calc(102px + 1vw);
     width: calc(350px + 1vw);
   }
-  nav .navbar-links {
+  nav #navbar-links {
     position: absolute;
     z-index: 999;
     right: 0;
@@ -259,11 +262,11 @@
     margin-right: 5vw;
     text-align: center;
   }
-  nav .navbar-links li {
+  nav #navbar-links li {
     display: flex;
     justify-content: center;
   }
-  nav .navbar-links li a {
+  nav #navbar-links li a {
     width: auto;
     text-align: center;
     margin: 10px;
@@ -271,40 +274,40 @@
     color: white;
     font-weight: 700;
   }
-  nav .navbar-links .home {
+  nav #navbar-links .home {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
     text-decoration-thickness: 0.2vw;
   }
-  nav .navbar-links .home a {
+  nav #navbar-links .home a {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
     text-decoration-thickness: 0.2vw;
   }
-  nav .navbar-links .about:hover {
+  nav #navbar-links .about:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #7fd378;
     text-decoration-thickness: 0.2vw;
   }
-  nav .navbar-links .services:hover {
+  nav #navbar-links .services:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #804dd4;
     text-decoration-thickness: 0.2vw;
   }
-  nav .navbar-links .blog:hover {
+  nav #navbar-links .blog:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #e38025;
     text-decoration-thickness: 0.2vw;
   }
-  nav .navbar-links .contact {
+  nav #navbar-links .contact {
     position: relative;
   }
-  nav .navbar-links .contact a {
+  nav #navbar-links .contact a {
     position: relative;
     color: #000000;
     background-color: #ffcc00;
@@ -312,29 +315,32 @@
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
     text-shadow: none;
   }
-  nav .navbar-links .contact a:hover {
+  nav #navbar-links .contact a:hover {
     color: white;
     text-decoration: none;
     box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
     text-shadow: 1px 1px 5px #3f3b51;
   }
   #hero {
-    margin: 0;
+    width: 80%;
+    margin: 0 auto;
     padding: 0;
     display: block;
-    position: static;
-  }
-  #hero {
+    position: relative;
     display: flex;
-    height: 500px;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
     position: relative;
   }
-  #hero .hero-header h1,
-  #hero .hero-header P {
+  #hero h1,
+  #hero P {
+    padding: 0;
     text-align: left;
     width: auto;
+  }
+  #hero div {
+    position: relative;
+    margin-left: -5px;
   }
   #mobile-menu-open,
   #mobile-menu-close {
