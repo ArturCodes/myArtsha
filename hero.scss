@@ -284,7 +284,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 // min width of 1024px 
 @media only screen and (min-width: 1024px) {
     .navbarBG {
-        width: 65vw;
+        width: 60vw;
         float: right;
         height: auto;
     }
@@ -295,10 +295,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             background-image: url('./images/logo-index.png');
             background-repeat: no-repeat;
             top: 50px;
-            left: 5vw;
-            background-size: calc(350px + 1vw) calc(102px + 1vw);
-            height: calc(102px + 1vw);
-            width: calc(350px + 1vw);
+            left: 5%;
+            background-size: 350px 117px;
+            width: 350px;
+            height: 117px;
         }
 
         #navbar-links {
@@ -401,7 +401,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     }
 
     #hero {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         padding: 0;
         display: block;
@@ -412,7 +412,13 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         align-items: start;
         position: relative;
 
-        h1,
+        h1 {
+            font-size: clamp(2.75em, 12vw, 5em);
+            padding: 0;
+            text-align: left;
+            width: auto;
+        }
+
         P {
             padding: 0;
             text-align: left;
