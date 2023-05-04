@@ -283,23 +283,34 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
 // min width of 1024px 
 @media only screen and (min-width: 1024px) {
-    .navbarBG {
-        position: absolute;
-        right: 0;
-        width: 55vw;
-        height: auto;
 
-        &::after {
-            content: '';
-            background-image: url(./images/hero-guy.png);
-            background-size: 300px 100px;
-            width: 300px;
-            height: 100px;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            z-index: 999;
-        }
+    header {
+        width: 100%;
+        position: relative;
+        background-image: url('./images/hero-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .navbarBG {
+        display: none;
+        // position: absolute;
+        // right: 0;
+        // width: 55vw;
+        // height: auto;
+
+        // &::after {
+        //     content: '';
+        //     background-image: url(./images/hero-guy.png);
+        //     background-size: 300px 100px;
+        //     width: 300px;
+        //     height: 100px;
+        //     background-repeat: no-repeat;
+        //     position: absolute;
+        //     top: 0;
+        //     z-index: 999;
+        // }
     }
 
     nav {
@@ -310,8 +321,8 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         .logo {
             background-image: url('./images/logo-index.png');
             background-repeat: no-repeat;
-            top: calc(50px + 2vw);
-            left: 7.5vw;
+            top: calc(40px + 2vw);
+            left: 5vw;
             background-size: 325px 108px;
             width: 325px;
             height: 108px;
@@ -408,18 +419,18 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     }
 
     #hero {
+        // position: absolute;
+        top: 35%;
         width: 85%;
-        left: 7.5vw;
+        left: 5vw;
 
         display: flex;
         flex-direction: column;
         align-items: start;
-        height: 100%;
 
-        padding-top: 100px;
 
         h1 {
-            font-size: clamp(2.75em, 12vw, 5em);
+            font-size: clamp(1.75em, 5vw, 5em);
             padding: 0;
             text-align: left;
             width: auto;
@@ -439,21 +450,22 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             z-index: 5;
         }
 
-        img {
-            display: block;
-            position: absolute;
-            width: 800px;
-            z-index: 2;
-            left: 45vw;
-            top: 200px;
-        }
+        // img {
+        //     display: block;
+        //     position: absolute;
+        //     width: 800px;
+        //     z-index: 2;
+        //     left: 45vw;
+        //     top: 200px;
+        // }
     }
 
     .hero-blob {
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-        top: 550px;
+        // position: absolute;
+        // width: 100%;
+        // z-index: 1;
+        // top: 550px;
+        display: none;
     }
 
     #mobile-menu-open,
