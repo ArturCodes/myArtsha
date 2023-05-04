@@ -57,7 +57,8 @@
 
         <picture>
             <source media="(max-width: 767px)" srcset="/images/navbar-mobile.png">
-            <source media="(min-width: 768px)" srcset="/images/navbar-desktop.png">
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="/images/navbar-tablet.png">
+            <source media="(min-width: 1024px)" srcset="/images/navbar-desktop.png">
             <img class="navbarBG" src="./images/navbar-desktop.png" alt="Navbar Background" aria-hidden="true"
                 decoding="async">
         </picture>
@@ -104,6 +105,7 @@
         <picture>
             <source media="(max-width: 767px)" srcset="/images/hero-blob-mobile.png">
             <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./images/hero-blob-tablet.png">
+            <source media="(min-width: 1024px)" srcset="/images/hero-blob-desktop.png">
             <img class="hero-blob" aria-hidden="true" decoding="async" src="./images/hero-blob-desktop.png"
                 alt="A guy with a laptop sitting at a desk">
         </picture>

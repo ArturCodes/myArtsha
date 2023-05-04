@@ -231,35 +231,32 @@
   }
 }
 @media only screen and (min-width: 1024px) {
-  header {
-    width: 100%;
-    position: relative;
-    background-image: url("./images/hero-desktop.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-  }
   .navbarBG {
-    display: none;
+    position: static;
+    float: right;
+    width: 65vw;
+    height: auto;
+    z-index: 2;
   }
   nav {
-    position: static;
     height: 175px;
     background-color: transparent;
+    z-index: 1;
+    position: static;
   }
   nav .logo {
     background-image: url("./images/logo-index.png");
     background-repeat: no-repeat;
-    top: calc(40px + 2vw);
-    left: 5vw;
+    top: calc(27px + 2vw);
+    left: 4vw;
     background-size: 325px 108px;
     width: 325px;
     height: 108px;
+    z-index: 25;
   }
   nav #navbar-links {
     position: absolute;
-    z-index: 999;
-    right: 5vw;
+    z-index: 5;
     top: calc(40px + 2vw);
     background-color: rgba(53, 49, 72, 0);
     display: flex;
@@ -267,16 +264,15 @@
     color: white;
     width: auto;
     height: auto;
+    right: 4vw;
   }
   nav #navbar-links li {
-    margin: 0 auto;
+    margin: 0 clamp(10px, 1.5vw, 75px);
     width: auto;
-    padding: 10px clamp(0px, 2vw, 25px + 2vw);
   }
   nav #navbar-links li a {
-    font-size: 18px;
     width: auto;
-    margin: 10px;
+    margin: 0 10px;
     color: white;
     font-weight: 700;
   }
@@ -284,46 +280,45 @@
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
-    text-decoration-thickness: 0.2em;
+    text-decoration-thickness: 4px;
   }
   nav #navbar-links .home a {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
-    text-decoration-thickness: 0.2em;
+    text-decoration-thickness: 4px;
   }
   nav #navbar-links .about:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #7fd378;
-    text-decoration-thickness: 0.25em;
+    text-decoration-thickness: 4px;
   }
   nav #navbar-links .services:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #804dd4;
-    text-decoration-thickness: 0.25em;
+    text-decoration-thickness: 4px;
   }
   nav #navbar-links .blog:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #e38025;
-    text-decoration-thickness: 0.25em;
+    text-decoration-thickness: 4px;
   }
   nav #navbar-links .contact a {
     color: #000000;
     background-color: #ffcc00;
-    border-radius: 7.5px;
-    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
+    border-radius: 12.5px;
+    padding: 10px 20px;
   }
   nav #navbar-links .contact a:hover {
     color: white;
     text-decoration: none;
-    box-shadow: 1px 1px 25px rgba(135, 195, 223, 0.25);
-    text-shadow: 1px 1px 5px #3f3b51;
   }
   #hero {
-    top: 35%;
+    position: absolute;
+    top: clamp(200px, 20vw, 40vw);
     width: 85%;
     left: 5vw;
     display: flex;
@@ -348,8 +343,18 @@
     margin-left: -13px;
     z-index: 5;
   }
+  #hero img {
+    display: block;
+    position: absolute;
+    width: 800px;
+    z-index: 2;
+    left: 45vw;
+    top: 200px;
+  }
   .hero-blob {
-    display: none;
+    width: 100%;
+    z-index: 1;
+    top: 500px;
   }
   #mobile-menu-open,
   #mobile-menu-close {
