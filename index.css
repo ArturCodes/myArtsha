@@ -1,15 +1,13 @@
 @media screen and (min-width: 0px) {
-  main {
-    position: relative;
-    margin-top: -5px;
-  }
   #what-we-do-section {
+    position: absolute;
     background-color: #3f3b51;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15vw;
+    z-index: 2;
+    margin-top: -5px;
   }
   #what-we-do-section .header {
     width: 92vw;
