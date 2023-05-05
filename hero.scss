@@ -119,15 +119,17 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     }
 
     #hero {
-        width: 98%;
+        position: static;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
+        height: 100%;
 
 
         h1 {
-            font-size: clamp(2.75em, 12vw, 4em);
+            font-size: clamp(2.5em, 12vw, 4em);
             width: auto;
             text-align: center;
             font-weight: 700;
@@ -139,6 +141,18 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             text-align: center;
             max-width: 500px;
             margin-bottom: 25px;
+        }
+
+        &::after {
+            content: '';
+            background-image: url('./images/hero-blob-mobile.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            position: static;
+            width: 100vw;
+            bottom: -25px;
+            margin: 0 auto;
+            z-index: 1;
         }
 
         // Buttons
@@ -272,6 +286,19 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             z-index: 2;
             width: 100%;
         }
+
+        &::after {
+            content: '';
+            background-image: url('./images/hero-blob-tablet.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            position: relative;
+            width: 100%;
+            height: 200vh;
+            bottom: 150px;
+            z-index: -1;
+        }
+
     }
 
     .btn {
@@ -399,49 +426,53 @@ $box-shadow: 1px 1px 3px #3f3b5140,
     #hero {
         position: absolute;
         top: clamp(200px, 20vw, 40vw);
-        width: 85%;
-        left: 5vw;
+        width: 100%;
 
         display: flex;
         flex-direction: column;
         align-items: start;
 
-
         h1 {
+            position: relative;
             font-size: clamp(1.75em, 5vw, 5em);
             padding: 0;
             text-align: left;
             width: auto;
             z-index: 5;
+            left: 5vw;
         }
 
         P {
+            position: relative;
             padding: 0;
             text-align: left;
             width: auto;
             z-index: 5;
+            left: 5vw;
         }
 
         div {
             position: relative;
             margin-left: -13px;
             z-index: 5;
+            left: 5vw;
         }
 
-        img {
-            display: block;
-            position: absolute;
-            width: 800px;
-            z-index: 2;
-            left: 45vw;
-            top: 200px;
+        &::after {
+            content: '';
+            background-image: url('./images/hero-blob-desktop.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            position: relative;
+            width: 100%;
+            height: 200vh;
+            bottom: 150px;
+            z-index: -1;
         }
     }
 
     .hero-blob {
-        width: 100%;
-        z-index: 1;
-        top: 500px;
+        display: none;
     }
 
     #mobile-menu-open,
