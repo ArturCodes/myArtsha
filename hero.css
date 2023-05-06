@@ -228,20 +228,13 @@
     padding: 10px;
     margin: 0 20px 0 0px;
   }
-  .hero-blob {
-    width: 100% !important;
-  }
 }
 @media only screen and (min-width: 1300px) {
   .navbarBG {
     float: right;
     width: 65vw;
     height: auto;
-    z-index: 2;
-  }
-  .navbarBG::after {
-    content: "";
-    background-image: url("./images/hero-guy.png");
+    z-index: 1;
   }
   nav {
     height: 175px;
@@ -249,11 +242,25 @@
     z-index: 1;
     position: static;
   }
+  nav::before {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    right: calc(0px + 0.5vw);
+    top: calc(25px + 10vw);
+    background-image: url("./images/hero-guy.png");
+    background-size: calc(700px + 5vw) calc(600px + 5vw);
+    background-repeat: no-repeat;
+    height: calc(700px + 5vw);
+    width: calc(800px + 5vw);
+    display: block;
+    overflow-x: hidden;
+  }
   nav .logo {
     background-image: url("./images/logo-index.png");
     background-repeat: no-repeat;
     top: calc(27px + 2vw);
-    left: 4vw;
+    left: 5vw;
     background-size: 325px 108px;
     width: 325px;
     height: 108px;
@@ -263,7 +270,6 @@
     position: absolute;
     z-index: 5;
     top: calc(40px + 2vw);
-    background-color: rgba(53, 49, 72, 0);
     display: flex;
     flex-direction: row;
     color: white;
@@ -283,8 +289,7 @@
     font-weight: 700;
   }
   nav #navbar-links {
-    background-color: #3F3B51;
-    background-color: #38C6E5;
+    background-color: transparent;
   }
   nav #navbar-links .home {
     text-decoration: underline;
@@ -326,12 +331,30 @@
     color: white;
     text-decoration: none;
   }
+  .hero-blob {
+    display: none;
+  }
   #hero {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: calc(1px + 10vw);
+    margin-top: calc(1px + 8vw);
+    z-index: 5;
+    height: 800px;
+  }
+  #hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("./images/hero-blob-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 500px;
+    display: block;
+    overflow-x: hidden;
   }
   #hero h1 {
     position: relative;
@@ -355,9 +378,6 @@
     margin-left: -13px;
     z-index: 5;
     left: 5vw;
-  }
-  .hero-blob {
-    display: none;
   }
   #mobile-menu-open,
   #mobile-menu-close {

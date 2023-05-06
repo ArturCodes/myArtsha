@@ -275,26 +275,15 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         margin: 0 20px 0 0px;
     }
 
-    .hero-blob {
-        width: 100% !important;
-    }
-
 }
 
 // min width of 1024px 
 @media only screen and (min-width: 1300px) {
-
-
     .navbarBG {
         float: right;
         width: 65vw;
         height: auto;
-        z-index: 2;
-
-        &::after {
-            content: '';
-            background-image: url('./images/hero-guy.png');
-        }
+        z-index: 1;
     }
 
     nav {
@@ -303,11 +292,27 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         z-index: 1;
         position: static;
 
+        // Hero Guy
+        &::before {
+            position: absolute;
+            content: "";
+            z-index: 5;
+            right: calc(0px + 0.5vw);
+            top: calc(25px + 10vw);
+            background-image: url('./images/hero-guy.png');
+            background-size: calc(700px + 5vw) calc(600px + 5vw);
+            background-repeat: no-repeat;
+            height: calc(700px + 5vw);
+            width: calc(800px + 5vw);
+            display: block;
+            overflow-x: hidden;
+        }
+
         .logo {
             background-image: url('./images/logo-index.png');
             background-repeat: no-repeat;
             top: calc(27px + 2vw);
-            left: 4vw;
+            left: 5vw;
             background-size: 325px 108px;
             width: 325px;
             height: 108px;
@@ -318,7 +323,6 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             position: absolute;
             z-index: 5;
             top: calc(40px + 2vw);
-            background-color: #35314800;
             display: flex;
             flex-direction: row;
             color: white;
@@ -342,8 +346,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
 
         // items
         #navbar-links {
-            background-color: #3F3B51;
-            background-color: #38C6E5;
+            background-color: transparent;
 
             .home {
                 text-decoration: underline;
@@ -357,6 +360,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                     text-decoration-color: #38c6e5;
                     text-decoration-thickness: 4px;
                 }
+
             }
 
             .about {
@@ -397,10 +401,15 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                         color: white;
                         text-decoration: none;
                     }
+
                 }
             }
 
         }
+    }
+
+    .hero-blob {
+        display: none;
     }
 
     #hero {
@@ -408,7 +417,23 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-top: calc(1px + 10vw);
+        margin-top: calc(1px + 8vw);
+        z-index: 5;
+        height: 800px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            background-image: url('./images/hero-blob-desktop.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 500px;
+            display: block;
+            overflow-x: hidden;
+        }
 
         h1 {
             position: relative;
@@ -435,10 +460,6 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             z-index: 5;
             left: 5vw;
         }
-    }
-
-    .hero-blob {
-        display: none;
     }
 
     #mobile-menu-open,
