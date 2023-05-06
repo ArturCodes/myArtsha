@@ -133,7 +133,7 @@
     padding: 5px 15px;
     background-color: #ffcc00;
     border-color: 1px solid lightgray;
-    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(83, 73, 124, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
     border-radius: 7.5px;
     margin: 0 10px 0 10px;
     min-width: 100px;
@@ -145,16 +145,16 @@
     padding: 5px 15px;
     border-radius: 7.5px;
     margin: 0 10px 0 10px;
-    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.2509803922), 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(83, 73, 124, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
     background-color: white;
   }
   #hero .hero-blob {
     width: 100%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1299px) {
   .navbarBG {
-    width: 55vw;
+    width: 65vw;
     float: right;
     height: auto;
   }
@@ -229,16 +229,19 @@
     margin: 0 20px 0 0px;
   }
   .hero-blob {
-    width: 100%;
+    width: 100% !important;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   .navbarBG {
-    position: static;
     float: right;
     width: 65vw;
     height: auto;
     z-index: 2;
+  }
+  .navbarBG::after {
+    content: "";
+    background-image: url("./images/hero-guy.png");
   }
   nav {
     height: 175px;
@@ -271,12 +274,17 @@
   nav #navbar-links li {
     margin: 0 clamp(10px, 1.5vw, 75px);
     width: auto;
+    padding: 0 10px;
   }
   nav #navbar-links li a {
     width: auto;
     margin: 0 10px;
     color: white;
     font-weight: 700;
+  }
+  nav #navbar-links {
+    background-color: #3F3B51;
+    background-color: #38C6E5;
   }
   nav #navbar-links .home {
     text-decoration: underline;
@@ -323,6 +331,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin-top: calc(1px + 10vw);
   }
   #hero h1 {
     position: relative;
@@ -346,17 +355,6 @@
     margin-left: -13px;
     z-index: 5;
     left: 5vw;
-  }
-  #hero::after {
-    content: "";
-    background-image: url("./images/hero-blob-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    position: relative;
-    width: 100%;
-    height: 200vh;
-    bottom: 200px;
-    z-index: -1;
   }
   .hero-blob {
     display: none;
