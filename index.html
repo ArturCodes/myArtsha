@@ -23,17 +23,17 @@
         content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
 
     <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png?v1">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" src="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" src="./icon/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" src="./icon/favicon-16x16.png">
     <link rel="manifest" href="./icon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Preload images & fonts-->
-    <link rel="preload" as="image" href="/images/logo-index-white.png">
-    <link rel="preload" as="image" href="/images/mobile-index-nav.png">
-    <link rel="preload" as="image" href="/images/index-guy.png">
+    <link rel="preload" as="image" src="/images/logo-index-white.png">
+    <link rel="preload" as="image" src="/images/mobile-index-nav.png">
+    <link rel="preload" as="image" src="/images/index-guy.png">
     <link rel="preload" as="font" type="font/woff2" src="./fonts/roboto-regular.woff2" crossorigin />
     <link rel="preload" as="font" type="font/woff2" src="./fonts/Roboto-bold.woff2" crossorigin />
 
@@ -159,14 +159,14 @@
                 </div>
 
             </div>
+            <picture>
+                <source media="(max-width: 767px)" srcset="/images/what-we-do-bottom-bg.png">
+                <source media="(min-width: 768px)" srcset="/images/what-we-do-bottom-bg.png">
+                <img aria-hidden="true" loading="lazy" decoding="async" class="what-we-do-blob"
+                    src="./images/what-we-do-bottom-bg.png" alt="section bottom blob">
+            </picture>
         </section>
 
-        <picture>
-            <source media="(max-width: 767px)" srcset="/images/what-we-do-bottom-bg.png">
-            <source media="(min-width: 768px)" srcset="/images/landing.jpg">
-            <img aria-hidden="true" loading="lazy" decoding="async" class="what-we-do-blob"
-                src="./images/what-we-do-bottom-bg.png" alt="section bottom blob">
-        </picture>
 
         <!----------------->
         <!--   Quote 1   -->

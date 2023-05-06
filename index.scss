@@ -8,13 +8,16 @@
         align-items: center;
         z-index: 2;
 
+        position: absolute;
+        margin-top: -5px;
+
+
         .header {
             width: 92vw;
             margin-bottom: 25px;
 
-
             h1 {
-                font-size: clamp(3em, 15vw, 4em);
+                font-size: clamp(3em, 15vw, 5em);
                 width: auto;
                 text-align: center;
                 font-weight: 700;
@@ -69,13 +72,14 @@
                 }
             }
         }
-    }
 
-    .what-we-do-blob {
-        width: 100vw;
-        border: none;
-        box-shadow: none;
-        margin-top: -40px;
+        .what-we-do-blob {
+            position: relative;
+            width: 100%;
+            z-index: 1;
+            top: 0;
+            background-color: white;
+        }
     }
 
     #quote-1 {
@@ -131,4 +135,18 @@
         width: 100vw;
     }
 
+}
+
+@media only screen and (min-width: 768px) {
+    #what-we-do-section {
+        .header {
+            h1 {}
+        }
+
+        .what-we-do-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 }

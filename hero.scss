@@ -297,13 +297,13 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             position: absolute;
             content: "";
             z-index: 5;
-            right: calc(0px + 0.5vw);
+            right: 5vw;
             top: calc(25px + 10vw);
             background-image: url('./images/hero-guy.png');
-            background-size: calc(700px + 5vw) calc(600px + 5vw);
+            background-size: calc(600px + 10vw) calc(532px + 10vw);
             background-repeat: no-repeat;
-            height: calc(700px + 5vw);
-            width: calc(800px + 5vw);
+            height: calc(532px + 10vw);
+            width: calc(600px + 10vw);
             display: block;
             overflow-x: hidden;
         }
@@ -312,7 +312,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             background-image: url('./images/logo-index.png');
             background-repeat: no-repeat;
             top: calc(27px + 2vw);
-            left: 5vw;
+            left: 8vw;
             background-size: 325px 108px;
             width: 325px;
             height: 108px;
@@ -328,10 +328,10 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             color: white;
             width: auto;
             height: auto;
-            right: 4vw;
+            right: 8vw;
 
             li {
-                margin: 0 clamp(10px, 1.5vw, 75px);
+                margin: 0 clamp(5px, 1.25vw, 75px);
                 width: auto;
                 padding: 0 10px;
 
@@ -340,6 +340,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
                     margin: 0 10px;
                     color: white;
                     font-weight: 700;
+                    font-size: clamp(1em, .9vw, 3em);
                 }
             }
         }
@@ -419,7 +420,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
         align-items: start;
         margin-top: calc(1px + 8vw);
         z-index: 5;
-        height: 800px;
+        height: 850px;
 
         &::after {
             content: "";
@@ -430,7 +431,7 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             background-size: cover;
             background-repeat: no-repeat;
             width: 100vw;
-            height: 500px;
+            height: 520px;
             display: block;
             overflow-x: hidden;
         }
@@ -442,7 +443,8 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             text-align: left;
             width: auto;
             z-index: 5;
-            left: 5vw;
+            left: 8vw;
+
         }
 
         P {
@@ -451,14 +453,14 @@ $box-shadow: 1px 1px 3px #3f3b5140,
             text-align: left;
             width: auto;
             z-index: 5;
-            left: 5vw;
+            left: 8vw;
         }
 
         div {
             position: relative;
             margin-left: -13px;
             z-index: 5;
-            left: 5vw;
+            left: 8vw;
         }
     }
 
