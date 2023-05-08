@@ -157,7 +157,6 @@ main {
   .hero-blob {
     width: 100%;
     height: auto;
-    overflow-y: hidden;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -264,16 +263,16 @@ main {
     width: 325px;
     height: 108px;
     margin: 0 auto;
-    top: 80px;
-    left: 100px;
+    top: 50px;
+    left: 70px;
     z-index: 25;
     transition: 0.3s;
   }
   nav #navbar-links {
     position: absolute;
     z-index: 5;
-    top: 80px;
-    right: 100px;
+    top: 50px;
+    right: clamp(5px, 1vw, 100px);
     display: flex;
     flex-direction: row;
     color: white;
@@ -339,7 +338,7 @@ main {
     z-index: 5;
     margin: 0 auto;
     margin-top: 50px;
-    left: 100px;
+    left: 70px;
   }
   #hero h1 {
     position: relative;
@@ -362,7 +361,8 @@ main {
     z-index: 5;
   }
   .hero-blob {
-    height: 500px;
+    position: relative;
+    height: auto;
   }
   #mobile-menu-open,
   #mobile-menu-close {
