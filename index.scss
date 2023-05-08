@@ -72,6 +72,7 @@
             }
         }
 
+
         .what-we-do-blob {
             position: relative;
             width: 100%;
@@ -140,9 +141,6 @@
 
 @media only screen and (min-width: 768px) {
     #what-we-do-section {
-        .header {
-            h1 {}
-        }
 
         .what-we-do-items {
             display: flex;
@@ -150,4 +148,9 @@
             justify-content: space-around;
         }
     }
+
+    .what-we-do-blob {
+        display: none;
+    }
+
 }

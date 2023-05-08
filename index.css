@@ -119,4 +119,7 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  .what-we-do-blob {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
