@@ -156,7 +156,15 @@ main {
   }
   .hero-blob {
     width: 100%;
-    height: auto;
+    background-image: url("/images/hero-blob-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 65vw;
+    position: relative;
+    display: block;
+    bottom: 0;
+    margin-bottom: -5px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -169,7 +177,6 @@ main {
   }
   nav {
     height: 250px;
-    transition: 0.3s;
   }
   nav .logo {
     background-image: url("./images/logo-index.png");
@@ -253,7 +260,6 @@ main {
     position: static;
     width: 100%;
     height: 0;
-    transition: 0.3s;
   }
   nav .logo {
     display: block;
