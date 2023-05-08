@@ -110,7 +110,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 50px 0 75px 0;
     height: 100%;
   }
   #hero h1 {
@@ -130,7 +130,6 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-bottom: 25px;
     padding: 5px;
     z-index: 5;
   }
@@ -159,11 +158,14 @@ main {
 }
 @media only screen and (min-width: 768px) {
   .navbarBG {
-    position: absolute;
-    right: -150px;
-    width: 75vw;
+    position: relative;
+    float: right;
+    width: 55vw;
     max-width: 1248px;
     height: auto;
+  }
+  nav {
+    height: 300px;
   }
   nav .logo {
     background-image: url("./images/logo-index.png");
@@ -222,6 +224,8 @@ main {
   }
   #hero {
     width: auto;
+    display: block;
+    left: 35px;
   }
   #hero h1,
   #hero p {
@@ -243,7 +247,6 @@ main {
   nav {
     background-color: transparent;
     position: static;
-    height: 300px;
     width: 100%;
   }
   nav .logo {
