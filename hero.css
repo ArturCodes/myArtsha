@@ -111,7 +111,7 @@ main {
     flex-direction: column;
     align-items: center;
     height: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   #hero h1 {
     font-size: clamp(2.5em, 12vw, 4em);
@@ -155,8 +155,8 @@ main {
     display: none;
   }
   .hero-blob {
-    width: 100%;
     background-image: url("/images/hero-blob-mobile.png");
+    width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -164,7 +164,6 @@ main {
     position: relative;
     display: block;
     bottom: 0;
-    margin-bottom: -5px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -237,6 +236,7 @@ main {
     width: auto;
     display: block;
     left: 35px;
+    transition: 0.3s;
   }
   #hero h1,
   #hero p {
@@ -246,6 +246,10 @@ main {
   #hero .btn {
     padding: 10px;
     margin: 0 20px 0 0px;
+  }
+  .hero-blob {
+    background-image: url("/images/hero-blob-tablet.png");
+    height: 40vw;
   }
 }
 @media only screen and (min-width: 1300px) {
@@ -345,6 +349,7 @@ main {
     margin: 0 auto;
     margin-top: 50px;
     left: 70px;
+    transition: 0.3s;
   }
   #hero h1 {
     position: relative;
