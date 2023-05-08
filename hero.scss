@@ -187,8 +187,8 @@ main {
 
     .hero-blob {
         width: 100%;
-        margin-bottom: -5px;
         height: auto;
+        overflow-y: hidden;
     }
 
 }
