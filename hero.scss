@@ -17,7 +17,7 @@ main {
 
     .navbarBG {
         width: 100%;
-        height: 125px;
+        height: 150px;
     }
 
     nav {
@@ -27,8 +27,8 @@ main {
             background-repeat: no-repeat;
             background-size: 225px 75px;
             min-width: 225px;
-            top: 11px;
-            left: 9px;
+            top: 17px;
+            left: 17px;
             height: 75px;
             transition: 0.5s;
         }
@@ -69,7 +69,7 @@ main {
         #mobile-menu-open {
             position: absolute;
             right: 25px;
-            top: 21px;
+            top: 26px;
             z-index: 5;
             cursor: pointer;
 
@@ -86,7 +86,7 @@ main {
             height: 30px;
             width: 30px;
             position: absolute;
-            top: 23px;
+            top: 28px;
             right: 23px;
 
             div {
@@ -182,9 +182,8 @@ main {
 
         }
 
-        .hero-blob {
-            width: 100%;
-            margin-bottom: -6px;
+        .hero-guy {
+            display: none;
         }
     }
 
@@ -195,25 +194,26 @@ main {
 
     .navbarBG {
         position: absolute;
-        right: 0;
-        width: 65vw;
+        right: -150px;
+        width: 75vw;
         max-width: 1248px;
         height: auto;
     }
 
     nav {
         .logo {
-            position: absolute;
-            background-image: url('./images/logo-index.png');
+            background-image:
+                url('./images/logo-index.png');
             background-repeat: no-repeat;
-            top: 25px;
-            background-size: 250px 83px;
-            height: 83px;
-            width: 250px;
+            background-size: 300px 100px;
+            width: 300px;
+            height: 100px;
 
+            position: absolute;
+            top: 25px;
             margin: 0 auto;
-            top: 40px;
-            left: 40px;
+            top: 30px;
+            left: 35px;
             z-index: 25;
 
             transition: 0.5s;
@@ -222,7 +222,7 @@ main {
         #mobile-menu-open {
             position: absolute;
             right: 35px;
-            top: 31px;
+            top: 44px;
             z-index: 1;
 
             div {
@@ -239,7 +239,7 @@ main {
             height: 30px;
             width: 30px;
             position: absolute;
-            top: 33px;
+            top: 45px;
             right: 33px;
 
             div {
@@ -270,6 +270,14 @@ main {
     }
 
     #hero {
+        width: auto;
+
+        h1,
+        p {
+            text-align: left;
+            padding: 0;
+        }
+
         .btn {
             padding: 10px;
             margin: 0 20px 0 0px;
@@ -282,15 +290,16 @@ main {
 // min width of 1024px 
 @media only screen and (min-width: 1300px) {
     .navbarBG {
-
         height: auto;
+        right: 0;
         z-index: 1;
+        width: 65vw;
     }
 
     nav {
         background-color: transparent;
         position: static;
-        height: 250px;
+        height: 300px;
         width: 100%;
 
         .logo {
