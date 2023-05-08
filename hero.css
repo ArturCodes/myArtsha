@@ -175,7 +175,7 @@ main {
     height: auto;
   }
   nav {
-    height: 250px;
+    height: 225px;
   }
   nav .logo {
     background-image: url("./images/logo-index.png");
@@ -233,6 +233,7 @@ main {
     top: -2px;
   }
   #hero {
+    position: relative;
     width: auto;
     display: block;
     left: 35px;
@@ -247,9 +248,16 @@ main {
     padding: 10px;
     margin: 0 20px 0 0px;
   }
+  #hero .hero-guy {
+    position: absolute;
+    background-image: url("./images/hero-guy.png");
+    background-size: 20vw 20vw;
+    width: 20vw;
+    height: 20vw;
+  }
   .hero-blob {
-    background-image: url("/images/hero-blob-tablet.png");
-    height: 40vw;
+    background-image: url("/images/hero-blob.png");
+    height: 27vw;
   }
 }
 @media only screen and (min-width: 1300px) {
@@ -371,9 +379,16 @@ main {
     margin-left: -13px;
     z-index: 5;
   }
+  #hero .hero-guy {
+    background-image: url("./images/hero-guy.png");
+    background-size: 20vw 20vw;
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+  }
   .hero-blob {
-    position: relative;
-    height: auto;
+    background-image: url("/images/hero-blob.png");
   }
   #mobile-menu-open,
   #mobile-menu-close {

@@ -195,7 +195,6 @@ main {
         position: relative;
         display: block;
         bottom: 0;
-        // margin-bottom: -5px;
     }
 
 }
@@ -212,7 +211,7 @@ main {
     }
 
     nav {
-        height: 250px;
+        height: 225px;
 
         .logo {
             background-image:
@@ -284,6 +283,7 @@ main {
     }
 
     #hero {
+        position: relative;
         width: auto;
         display: block;
         left: 35px;
@@ -300,11 +300,20 @@ main {
             padding: 10px;
             margin: 0 20px 0 0px;
         }
+
+        .hero-guy {
+            position: absolute;
+            background-image: url('./images/hero-guy.png');
+            background-size: 20vw 20vw;
+            width: 20vw;
+            height: 20vw;
+        }
     }
 
+
     .hero-blob {
-        background-image: url("/images/hero-blob-tablet.png");
-        height: 40vw;
+        background-image: url("/images/hero-blob.png");
+        height: 27vw;
     }
 
 }
@@ -463,11 +472,19 @@ main {
             z-index: 5;
         }
 
+        .hero-guy {
+            background-image: url('./images/hero-guy.png');
+            background-size: 20vw 20vw;
+            display: block;
+            width: 20vw;
+            height: 20vw;
+            position: absolute;
+        }
+
     }
 
     .hero-blob {
-        position: relative;
-        height: auto;
+        background-image: url("/images/hero-blob.png");
 
     }
 
