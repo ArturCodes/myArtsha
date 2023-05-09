@@ -162,33 +162,36 @@
             }
         }
 
-
         .items-container {
             width: 96%;
-        }
 
+            .item {
+                padding-left: 15px;
+                text-align: left;
 
-        .item {
-            width: 80vw;
+                h3 {
+                    color: white;
+                }
+            }
 
-            h3 {
+            p {
                 color: white;
+                max-width: 600px;
+
+                span {
+                    font-weight: 700;
+                    color: #38C6E5;
+                }
             }
         }
 
-        p {
-            color: white;
-            margin: 25px auto;
-            max-width: 600px;
-            padding: 0 35px;
 
-            span {
-                font-weight: 700;
-                color: #38C6E5;
-            }
-        }
     }
 }
+
+
+
+
 
 
 @media only screen and (min-width: 768px) {

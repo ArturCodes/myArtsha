@@ -144,19 +144,18 @@
   #whats-included .items-container {
     width: 96%;
   }
-  #whats-included .item {
-    width: 80vw;
+  #whats-included .items-container .item {
+    padding-left: 15px;
+    text-align: left;
   }
-  #whats-included .item h3 {
+  #whats-included .items-container .item h3 {
     color: white;
   }
-  #whats-included p {
+  #whats-included .items-container p {
     color: white;
-    margin: 25px auto;
     max-width: 600px;
-    padding: 0 35px;
   }
-  #whats-included p span {
+  #whats-included .items-container p span {
     font-weight: 700;
     color: #38C6E5;
   }
