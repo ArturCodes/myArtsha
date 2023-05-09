@@ -125,16 +125,17 @@ main {
     padding: 0 5vw;
     text-align: center;
     max-width: 500px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
   #hero div {
     display: flex;
     flex-direction: row;
     padding: 5px;
     z-index: 5;
+    color: #1f1f1f;
   }
   #hero div .btn:nth-child(1) {
-    padding: 6px 15px;
+    padding: 7.5px 15px;
     background-color: #ffcc00;
     border-color: 1px solid lightgray;
     box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
@@ -142,9 +143,14 @@ main {
     margin: 0 10px 0 10px;
     min-width: 100px;
     text-align: center;
+    transition: 0.3s;
+  }
+  #hero div .btn:nth-child(1):hover {
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px rgba(63, 59, 81, 0.6352941176), 1px -1px 5px rgba(63, 59, 81, 0.6352941176), -1px 1px 5px rgba(63, 59, 81, 0.6352941176), -1px -1px 5px rgba(63, 59, 81, 0.6352941176);
   }
   #hero div .btn:nth-child(2) {
-    padding: 5px 15px;
+    padding: 7.5px 15px;
     background-color: white;
     border-radius: 7.5px;
     box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.2509803922), -1px 1px 3px rgba(63, 59, 81, 0.2509803922), -1px -1px 3px rgba(63, 59, 81, 0.2509803922);
@@ -153,7 +159,7 @@ main {
     text-align: center;
   }
   #hero div .btn:hover {
-    box-shadow: 1px 1px 2px #3f3b51, 1px -1px 2px rgba(63, 59, 81, 0.2509803922), -1px 1px 2px rgba(63, 59, 81, 0.2509803922), -1px -1px 2px rgba(63, 59, 81, 0.2509803922);
+    box-shadow: 1px 1px 5px rgba(63, 59, 81, 0.6352941176), 1px -1px 5px rgba(63, 59, 81, 0.6352941176), -1px 1px 5px rgba(63, 59, 81, 0.6352941176), -1px -1px 5px rgba(63, 59, 81, 0.6352941176);
   }
   #hero .hero-guy {
     display: none;
@@ -353,7 +359,7 @@ main {
     text-decoration-thickness: 2px;
   }
   nav #navbar-links .contact a {
-    color: #000000;
+    color: #1f1f1f;
     background-color: #ffcc00;
     border-radius: 12.5px;
     padding: 10px 20px;

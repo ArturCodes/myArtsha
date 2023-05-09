@@ -3,10 +3,10 @@ $box-shadow: 1px 1px 3px #3f3b51,
     -1px 1px 3px #3f3b5140,
     -1px -1px 3px #3f3b5140;
 
-$box-shadow-hover: 1px 1px 2px #3f3b51,
-    1px -1px 2px #3f3b5140,
-    -1px 1px 2px #3f3b5140,
-    -1px -1px 2px #3f3b5140;
+$box-shadow-hover: 1px 1px 5px #3f3b51a2,
+    1px -1px 5px #3f3b51a2,
+    -1px 1px 5px #3f3b51a2,
+    -1px -1px 5px #3f3b51a2;
 
 
 header,
@@ -154,7 +154,7 @@ main {
             padding: 0 5vw;
             text-align: center;
             max-width: 500px;
-            margin-bottom: 25px;
+            margin-bottom: 35px;
         }
 
         // Buttons
@@ -163,9 +163,10 @@ main {
             flex-direction: row;
             padding: 5px;
             z-index: 5;
+            color: #1f1f1f;
 
             .btn:nth-child(1) {
-                padding: 6px 15px;
+                padding: 7.5px 15px;
                 background-color: #ffcc00;
                 border-color: 1px solid lightgray;
                 box-shadow: $box-shadow;
@@ -174,10 +175,17 @@ main {
                 margin: 0 10px 0 10px;
                 min-width: 100px;
                 text-align: center;
+
+                transition: 0.3s;
+
+                &:hover {
+                    transition: 0.3s;
+                    box-shadow: $box-shadow-hover;
+                }
             }
 
             .btn:nth-child(2) {
-                padding: 5px 15px;
+                padding: 7.5px 15px;
                 background-color: white;
                 border-radius: 7.5px;
                 box-shadow: $box-shadow;
@@ -441,7 +449,7 @@ main {
 
             .contact {
                 a {
-                    color: #000000;
+                    color: #1f1f1f;
                     background-color: #ffcc00;
                     border-radius: 12.5px;
                     padding: 10px 20px;
