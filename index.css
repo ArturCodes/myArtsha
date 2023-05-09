@@ -169,11 +169,10 @@
     text-align: left;
     line-height: 1.75;
     display: block;
+    text-decoration: solid underline white 1px;
     -webkit-text-decoration: solid underline white 1px;
-            text-decoration: solid underline white 1px;
     text-underline-offset: 1px;
-    height: -moz-fit-content;
-    height: fit-content;
+    -webkit-text-underline-offset: 1px;
   }
   #whats-included .items-container p {
     color: white;
