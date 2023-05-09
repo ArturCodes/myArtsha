@@ -41,8 +41,11 @@
     align-items: flex-start;
   }
   #what-we-do-section .what-we-do-items .item img {
-    margin: 35px auto 15px;
+    margin: 35px auto 20px;
     width: 125px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
   #what-we-do-section .what-we-do-items .item h2 {
     color: white;
@@ -50,7 +53,7 @@
     text-align: center;
     margin-bottom: 15px;
     max-width: 275px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
   }
   #what-we-do-section .what-we-do-items .item p {
     text-align: center;
@@ -92,6 +95,7 @@
   #cost h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3em);
+    line-height: 1.5;
   }
   #cost h2 span {
     color: #38C6E5;
@@ -115,6 +119,9 @@
     background-position: center;
     display: block;
     height: 75vw;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
   #whats-included {
     background-color: #3f3b51;
@@ -127,15 +134,21 @@
   #whats-included h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
-    margin: 25px 0;
+    width: 100vw;
+    margin: 25px auto;
+    text-align: center;
   }
   #whats-included h2 span {
     color: #38C6E5;
   }
+  #whats-included .items-container {
+    width: 96%;
+  }
+  #whats-included .item {
+    width: 80vw;
+  }
   #whats-included .item h3 {
     color: white;
-    -webkit-text-decoration: underline solid 1px;
-            text-decoration: underline solid 1px;
   }
   #whats-included p {
     color: white;
