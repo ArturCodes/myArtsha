@@ -112,8 +112,9 @@
     background-image: url("./images/bank-girl.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     display: block;
-    height: 100vw;
+    height: 75vw;
   }
   #whats-included {
     background-color: #3f3b51;
@@ -122,6 +123,23 @@
     align-items: center;
     z-index: 1;
     height: 100%;
+  }
+  #whats-included h2 {
+    color: white;
+    font-size: clamp(1.5em, 10vw, 3em);
+  }
+  #whats-included h2 span {
+    color: #38C6E5;
+  }
+  #whats-included p {
+    color: white;
+    margin: 25px auto;
+    max-width: 600px;
+    padding: 0 35px;
+  }
+  #whats-included p span {
+    font-weight: 700;
+    color: #38C6E5;
   }
 }
 @media only screen and (min-width: 768px) {

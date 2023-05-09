@@ -258,7 +258,7 @@ main {
     height: 40vw;
     position: absolute;
     overflow: hidden;
-    right: -300px;
+    right: -275px;
     bottom: 300px;
     z-index: 2;
   }
@@ -379,6 +379,7 @@ main {
     text-align: left;
     width: auto;
     z-index: 5;
+    font-size: 1.125em;
   }
   #hero div {
     position: relative;
@@ -387,6 +388,7 @@ main {
   }
   .hero-guy {
     bottom: 325px;
+    right: -350px;
   }
   #mobile-menu-open,
   #mobile-menu-close {
