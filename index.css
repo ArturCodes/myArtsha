@@ -127,9 +127,15 @@
   #whats-included h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
+    margin: 25px 0;
   }
   #whats-included h2 span {
     color: #38C6E5;
+  }
+  #whats-included .item h3 {
+    color: white;
+    -webkit-text-decoration: underline solid 1px;
+            text-decoration: underline solid 1px;
   }
   #whats-included p {
     color: white;

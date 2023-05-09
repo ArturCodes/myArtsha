@@ -150,9 +150,17 @@
         h2 {
             color: white;
             font-size: clamp(1.5em, 10vw, 3em);
+            margin: 25px 0;
 
             span {
                 color: #38C6E5;
+            }
+        }
+
+        .item {
+            h3 {
+                color: white;
+                text-decoration: underline solid 1px;
             }
         }
 
