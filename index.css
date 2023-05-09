@@ -5,14 +5,14 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    height: auto;
+    height: 100%;
   }
   #what-we-do-section .header {
     width: 92vw;
     margin-bottom: 25px;
   }
   #what-we-do-section .header h1 {
-    font-size: clamp(3em, 15vw, 6em);
+    font-size: clamp(3em, 15vw, 4em);
     width: auto;
     text-align: center;
     font-weight: 700;
@@ -27,6 +27,7 @@
     color: white;
     margin: 0 auto;
     max-width: 500px;
+    font-size: 1.125em;
   }
   #what-we-do-section .what-we-do-items {
     width: 86%;
@@ -36,12 +37,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 25px;
+    padding: 15px;
     align-items: flex-start;
   }
   #what-we-do-section .what-we-do-items .item img {
     margin: 35px auto 15px;
-    width: 150px;
+    width: 125px;
   }
   #what-we-do-section .what-we-do-items .item h2 {
     color: white;
@@ -100,6 +101,7 @@
     margin: 25px auto;
     max-width: 600px;
     padding: 0 35px;
+    font-size: 1.125em;
   }
   #cost p span {
     font-weight: 700;
