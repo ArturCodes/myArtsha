@@ -127,37 +127,57 @@
     background-color: #3f3b51;
     display: flex;
     flex-direction: column;
-    align-items: center;
     z-index: 1;
-    height: 100%;
+    height: auto;
   }
   #whats-included h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
     width: 100vw;
-    margin: 25px auto;
+    margin: 50px 0 25px 0;
     text-align: center;
   }
   #whats-included h2 span {
     color: #38C6E5;
   }
   #whats-included .items-container {
-    width: 96%;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
   }
-  #whats-included .items-container .item {
-    padding-left: 15px;
+  #whats-included .items-container .item-column .item {
+    padding: 0 12.5vw;
     text-align: left;
+    margin-bottom: 25px;
   }
-  #whats-included .items-container .item h3 {
+  #whats-included .items-container .item-column .item::before {
+    content: "";
+    background-image: url("./images/check.png");
+    display: block;
+    position: relative;
+    top: 23px;
+    left: -30px;
+    background-size: contain;
+    width: 20px;
+    height: 15px;
+  }
+  #whats-included .items-container .item-column .item h3 {
+    width: auto;
     color: white;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: left;
+    line-height: 1.75;
+    display: block;
+    -webkit-text-decoration: solid underline white 1px;
+            text-decoration: solid underline white 1px;
+    text-underline-offset: 1px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #whats-included .items-container p {
     color: white;
-    max-width: 600px;
-  }
-  #whats-included .items-container p span {
-    font-weight: 700;
-    color: #38C6E5;
+    max-width: 300px;
   }
 }
 @media only screen and (min-width: 768px) {
