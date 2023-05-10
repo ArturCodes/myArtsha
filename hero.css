@@ -250,7 +250,10 @@ main {
     z-index: 5;
     margin-bottom: -100px;
   }
-  #hero h1,
+  #hero h1 {
+    text-align: left;
+    padding: 0;
+  }
   #hero p {
     text-align: left;
     padding: 0;

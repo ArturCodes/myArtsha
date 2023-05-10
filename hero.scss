@@ -309,11 +309,15 @@ main {
         z-index: 5;
         margin-bottom: -100px;
 
+        h1 {
+            text-align: left;
+            padding: 0;
+        }
 
-        h1,
         p {
             text-align: left;
             padding: 0;
+
         }
 
         .btn {
