@@ -105,16 +105,28 @@
             font-size: clamp(1.75em, 5vw, 2.5em);
             line-height: 1.5;
             font-weight: bold;
+
+            &::after {
+                content: '';
+                display: block;
+                background-image: url('./images/cat2.png');
+                background-repeat: no-repeat;
+            }
         }
     }
 
-    .cat {
+    .cost-top-blob {
+        position: relative;
+        display: block;
+        height: auto;
         width: 100vw;
+        z-index: 1;
+        bottom: 0;
+        margin-top: 100px;
     }
 
     #cost {
         padding-top: 50px;
-        margin-top: -25px;
         background-color: #3f3b51;
         text-align: center;
 
