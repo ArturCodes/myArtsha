@@ -1,5 +1,5 @@
 function show() {
-    document.getElementById('navbar-links').style.width = "225px"
+    document.getElementById('navbar-links').style.width = "240px"
     document.getElementById('opacity-bg').style.display = "block"
 }
 

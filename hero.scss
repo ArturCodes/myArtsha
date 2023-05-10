@@ -1,7 +1,7 @@
 $box-shadow: 1px 1px 3px #3f3b51,
-    1px -1px 3px #3f3b5120,
-    -1px 1px 3px #3f3b5120,
-    -1px -1px 3px #3f3b5120;
+    1px -1px 3px #3f3b510e,
+    -1px 1px 3px #3f3b510e,
+    -1px -1px 3px #3f3b510e;
 
 $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     1px -1px 3px #3f3b51a2,
@@ -44,7 +44,7 @@ main {
             z-index: 999;
             right: 0;
             top: 0;
-            width: 0; //225px on open in JS
+            width: 0; //240px on open in JS
             padding-bottom: 7.5vh;
             height: 100vh;
             background-color: #353148;
@@ -175,13 +175,8 @@ main {
                 margin: 0 10px 0 10px;
                 min-width: 100px;
                 text-align: center;
-
                 transition: 0.3s;
 
-                &:hover {
-                    transition: 0.3s;
-                    box-shadow: $box-shadow-hover;
-                }
             }
 
             .btn:nth-child(2) {
@@ -192,10 +187,12 @@ main {
                 margin: 0 10px 0 10px;
                 min-width: 100px;
                 text-align: center;
+                transition: 0.3s;
             }
 
             .btn:hover {
                 box-shadow: $box-shadow-hover;
+                transition: 0.3s;
             }
 
         }
@@ -309,7 +306,6 @@ main {
         z-index: 5;
         margin-bottom: -100px;
 
-        transition: 0.3s;
 
         h1,
         p {
@@ -355,6 +351,7 @@ main {
         right: 0;
         z-index: 1;
         width: 65vw;
+        margin-top: 0;
     }
 
     nav {
@@ -413,13 +410,13 @@ main {
                 text-decoration: underline;
                 text-underline-position: under;
                 text-decoration-color: #38c6e5;
-                text-decoration-thickness: 2px;
+                text-decoration-thickness: 3px;
 
                 a {
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #38c6e5;
-                    text-decoration-thickness: 2px;
+                    text-decoration-thickness: 3px;
                 }
 
             }
@@ -429,7 +426,7 @@ main {
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #7fd378;
-                    text-decoration-thickness: 2px;
+                    text-decoration-thickness: 3px;
                 }
             }
 
@@ -438,7 +435,7 @@ main {
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #804dd4;
-                    text-decoration-thickness: 2px;
+                    text-decoration-thickness: 3px;
                 }
             }
 
@@ -447,7 +444,7 @@ main {
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #e38025;
-                    text-decoration-thickness: 2px;
+                    text-decoration-thickness: 3px;
                 }
             }
 
@@ -476,7 +473,6 @@ main {
         left: 70px;
         margin-bottom: -100px;
 
-        transition: 0.3s;
 
         h1 {
             position: relative;

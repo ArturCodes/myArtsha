@@ -138,28 +138,26 @@ main {
     padding: 7.5px 15px;
     background-color: #ffcc00;
     border-color: 1px solid lightgray;
-    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.1254901961), -1px 1px 3px rgba(63, 59, 81, 0.1254901961), -1px -1px 3px rgba(63, 59, 81, 0.1254901961);
+    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
     border-radius: 7.5px;
     margin: 0 10px 0 10px;
     min-width: 100px;
     text-align: center;
     transition: 0.3s;
-  }
-  #hero div .btn:nth-child(1):hover {
-    transition: 0.3s;
-    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176), -1px -1px 3px rgba(63, 59, 81, 0.6352941176);
   }
   #hero div .btn:nth-child(2) {
     padding: 7.5px 15px;
     background-color: white;
     border-radius: 7.5px;
-    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.1254901961), -1px 1px 3px rgba(63, 59, 81, 0.1254901961), -1px -1px 3px rgba(63, 59, 81, 0.1254901961);
+    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
     margin: 0 10px 0 10px;
     min-width: 100px;
     text-align: center;
+    transition: 0.3s;
   }
   #hero div .btn:hover {
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176), -1px -1px 3px rgba(63, 59, 81, 0.6352941176);
+    transition: 0.3s;
   }
   #hero .hero-guy {
     display: none;
@@ -249,7 +247,6 @@ main {
     left: 35px;
     z-index: 5;
     margin-bottom: -100px;
-    transition: 0.3s;
   }
   #hero h1,
   #hero p {
@@ -287,6 +284,7 @@ main {
     right: 0;
     z-index: 1;
     width: 65vw;
+    margin-top: 0;
   }
   nav {
     background-color: transparent;
@@ -336,31 +334,31 @@ main {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
   }
   nav #navbar-links .home a {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
   }
   nav #navbar-links .about:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #7fd378;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
   }
   nav #navbar-links .services:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #804dd4;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
   }
   nav #navbar-links .blog:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #e38025;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 3px;
   }
   nav #navbar-links .contact a {
     color: #1f1f1f;
@@ -378,7 +376,6 @@ main {
     margin: 0 auto;
     left: 70px;
     margin-bottom: -100px;
-    transition: 0.3s;
   }
   #hero h1 {
     position: relative;
