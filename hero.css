@@ -135,22 +135,20 @@ main {
     color: #1f1f1f;
   }
   #hero div .btn:nth-child(1) {
-    padding: 7.5px 15px;
+    padding: 7.5px 35px;
     background-color: #ffcc00;
     border-color: 1px solid lightgray;
     box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
     border-radius: 7.5px;
-    margin: 0 10px 0 10px;
     min-width: 100px;
     text-align: center;
     transition: 0.3s;
   }
   #hero div .btn:nth-child(2) {
-    padding: 7.5px 15px;
+    padding: 7.5px 35px;
     background-color: white;
     border-radius: 7.5px;
     box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
-    margin: 0 10px 0 10px;
     min-width: 100px;
     text-align: center;
     transition: 0.3s;
@@ -254,8 +252,7 @@ main {
     padding: 0;
   }
   #hero .btn {
-    padding: 10px;
-    margin: 0 20px 0 0px;
+    margin: 0 25px 0 0px;
   }
   .hero-guy {
     background-image: url("./images/hero-guy.png");
@@ -395,7 +392,6 @@ main {
   }
   #hero div {
     position: relative;
-    margin-left: -13px;
     z-index: 5;
   }
   .hero-guy {

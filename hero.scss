@@ -166,13 +166,12 @@ main {
             color: #1f1f1f;
 
             .btn:nth-child(1) {
-                padding: 7.5px 15px;
+                padding: 7.5px 35px;
                 background-color: #ffcc00;
                 border-color: 1px solid lightgray;
                 box-shadow: $box-shadow;
 
                 border-radius: 7.5px;
-                margin: 0 10px 0 10px;
                 min-width: 100px;
                 text-align: center;
                 transition: 0.3s;
@@ -180,11 +179,10 @@ main {
             }
 
             .btn:nth-child(2) {
-                padding: 7.5px 15px;
+                padding: 7.5px 35px;
                 background-color: white;
                 border-radius: 7.5px;
                 box-shadow: $box-shadow;
-                margin: 0 10px 0 10px;
                 min-width: 100px;
                 text-align: center;
                 transition: 0.3s;
@@ -314,8 +312,7 @@ main {
         }
 
         .btn {
-            padding: 10px;
-            margin: 0 20px 0 0px;
+            margin: 0 25px 0 0px;
         }
 
     }
@@ -495,7 +492,6 @@ main {
 
         div {
             position: relative;
-            margin-left: -13px;
             z-index: 5;
         }
     }
