@@ -85,10 +85,10 @@
     position: relative;
     width: 90%;
     text-align: center;
-    margin: 75px auto -15px;
+    margin: 100px auto -25px;
   }
   #quote-1 blockquote {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     font-size: clamp(1.75em, 5vw, 2.5em);
     line-height: 1.5;
@@ -107,7 +107,6 @@
     width: 100vw;
     z-index: 1;
     bottom: 0;
-    margin-top: 25px;
   }
   #cost {
     padding-top: 50px;
@@ -117,7 +116,7 @@
   #cost h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3em);
-    line-height: 1.5;
+    line-height: 1.25;
   }
   #cost h2 span {
     color: #38C6E5;
@@ -241,7 +240,26 @@
   .what-we-do-blob {
     display: none;
   }
-  .cost-top-blob {
-    margin-top: 100px;
+  #quote-1 {
+    margin: 100px auto 50px;
+  }
+  .cost-top-blob::after {
+    position: absolute;
+    top: -200px;
+    right: 0;
+    content: "";
+    display: block;
+    width: 50vw;
+    background-image: url("./images/cat2.png");
+    background-size: cover;
+    height: 300px;
+    z-index: 999;
+  }
+  #cost {
+    display: flex;
+    flex-direction: column;
+  }
+  #cost h2 {
+    position: relative;
   }
 }/*# sourceMappingURL=index.css.map */
