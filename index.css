@@ -107,7 +107,7 @@
     width: 100vw;
     z-index: 1;
     bottom: 0;
-    margin-top: 100px;
+    margin-top: 25px;
   }
   #cost {
     padding-top: 50px;
@@ -240,5 +240,8 @@
   }
   .what-we-do-blob {
     display: none;
+  }
+  .cost-top-blob {
+    margin-top: 100px;
   }
 }/*# sourceMappingURL=index.css.map */
