@@ -313,17 +313,14 @@
         display: flex;
         flex-direction: row;
         align-content: flex-start;
-        // align-items: center;
         margin: 0 auto;
         position: relative;
         height: 900px;
 
         .cost-header {
             width: 75vw;
-
-            h2 {
-                font-weight: 900;
-            }
+            margin-top: 100px;
+            z-index: 5;
         }
 
         .bank-girl {

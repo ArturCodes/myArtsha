@@ -265,9 +265,8 @@
   }
   #cost .cost-header {
     width: 75vw;
-  }
-  #cost .cost-header h2 {
-    font-weight: 900;
+    margin-top: 100px;
+    z-index: 5;
   }
   #cost .bank-girl {
     position: absolute;
