@@ -257,9 +257,24 @@
   }
   #cost {
     display: flex;
-    flex-direction: column;
-  }
-  #cost h2 {
+    flex-direction: row;
+    align-content: flex-start;
+    margin: 0 auto;
     position: relative;
+    height: 900px;
+  }
+  #cost .cost-header {
+    width: 75vw;
+  }
+  #cost .cost-header h2 {
+    font-weight: 900;
+  }
+  #cost .bank-girl {
+    position: absolute;
+    height: 45vw;
+    right: 0;
+    top: 0;
+    max-width: 800px;
+    transform: 180deg;
   }
 }/*# sourceMappingURL=index.css.map */

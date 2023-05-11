@@ -311,11 +311,28 @@
 
     #cost {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-content: flex-start;
+        // align-items: center;
+        margin: 0 auto;
+        position: relative;
+        height: 900px;
 
-        h2 {
-            position: relative;
+        .cost-header {
+            width: 75vw;
 
+            h2 {
+                font-weight: 900;
+            }
+        }
+
+        .bank-girl {
+            position: absolute;
+            height: 45vw;
+            right: 0;
+            top: 0;
+            max-width: 800px;
+            transform: 180deg;
         }
     }
 
