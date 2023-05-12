@@ -31,7 +31,7 @@
   }
   #what-we-do-section .what-we-do-items {
     width: 86%;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
   #what-we-do-section .what-we-do-items .item {
     display: flex;
@@ -91,7 +91,7 @@
     max-width: 800px;
     margin: 0 auto;
     font-size: clamp(1.75em, 5vw, 2.5em);
-    line-height: 1.5;
+    line-height: 1.75;
     font-weight: bold;
   }
   #quote-1 blockquote::after {
@@ -231,7 +231,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
   }
   #what-we-do-section .what-we-do-items .item {
     margin: 0 15px;
