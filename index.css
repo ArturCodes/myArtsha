@@ -100,7 +100,7 @@
     background-image: url("./images/cat2.png");
     background-repeat: no-repeat;
   }
-  .cost-top-blob {
+  .contract-top-blob {
     position: relative;
     display: block;
     height: auto;
@@ -108,31 +108,37 @@
     z-index: 1;
     bottom: 0;
   }
-  #cost {
+  #contract-section {
     padding-top: 50px;
     background-color: #3f3b51;
     text-align: center;
   }
-  #cost h2 {
+  #contract-section .text-column {
+    width: 92vw;
+    margin: 0 auto;
+  }
+  #contract-section .girl-column {
+    display: none;
+  }
+  .contract-container h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3em);
     line-height: 1.75;
   }
-  #cost h2 span {
+  .contract-container h2 span {
     color: #38C6E5;
   }
-  #cost p {
+  .contract-container p {
     color: white;
-    margin: 10px auto;
+    margin: 25px auto;
     max-width: 600px;
   }
-  #cost p span {
+  .contract-container p span {
     font-weight: 700;
     color: #38C6E5;
   }
-  .bank-girl-mobile {
+  .bank-girl {
     background-color: #3f3b51;
-    width: 100vw;
     background-image: url("./images/bank-girl.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -142,35 +148,35 @@
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+    margin: 0 auto;
   }
-  .cost-items {
-    background-color: #3f3b51;
+  .included-container {
     display: flex;
     flex-direction: column;
     z-index: 1;
     height: auto;
   }
-  .cost-items h2 {
+  .included-container h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
     width: 100vw;
     margin: 50px 0 25px 0;
     text-align: center;
   }
-  .cost-items h2 span {
+  .included-container h2 span {
     color: #38C6E5;
   }
-  .cost-items .items-container {
+  .included-container .included-columns {
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
   }
-  .cost-items .items-container .item-column .item {
+  .included-container .included-columns .group.item {
     padding: 0 12.5vw;
     text-align: left;
     margin-bottom: 25px;
   }
-  .cost-items .items-container .item-column .item::before {
+  .included-container .included-columns .group.item::before {
     content: "";
     background-image: url("./images/check.png");
     display: block;
@@ -181,7 +187,7 @@
     width: 20px;
     height: 15px;
   }
-  .cost-items .items-container .item-column .item h3 {
+  .included-container .included-columns .group.item h3 {
     width: auto;
     color: white;
     padding-bottom: 5px;
@@ -194,11 +200,11 @@
     text-underline-offset: 1px;
     -webkit-text-underline-offset: 1px;
   }
-  .cost-items .items-container p {
+  .included-container .included-columns p {
     color: white;
     max-width: 300px;
   }
-  .cost-items a {
+  .included-container a {
     border-radius: 7.5px;
     border: 1px solid #38C6E5;
     color: #38C6E5;
@@ -212,7 +218,7 @@
     transition: 0.3s;
     box-shadow: 3px 3px 5px #1a1a1a;
   }
-  .cost-items a:hover {
+  .included-container a:hover {
     background-color: white;
     color: #1a1a1a;
     transition: 0.3s;
@@ -242,7 +248,7 @@
   #quote-1 {
     margin: 100px auto 50px;
   }
-  .cost-top-blob::after {
+  .contract-top-blob::after {
     position: absolute;
     top: -200px;
     right: 0;
@@ -254,7 +260,7 @@
     height: 300px;
     z-index: 999;
   }
-  #cost {
+  #contract-section {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -262,13 +268,16 @@
     position: relative;
     height: auto;
   }
-  #cost .cost-column .cost-header {
+  #contract-section .cost-column .cost-header {
     width: 75vw;
     margin: 0 auto;
     margin-top: 25px;
     z-index: 5;
   }
-  #cost .bank-girl {
+  #contract-section .cost-column .bank-girl-mobile {
+    display: none;
+  }
+  #contract-section .bank-girl {
     position: absolute;
     height: 45vw;
     right: 0;
