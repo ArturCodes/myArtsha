@@ -131,6 +131,10 @@
     font-weight: 700;
     color: #38C6E5;
   }
+  .bank-girl {
+    height: 45vw;
+    min-height: 350px;
+  }
   .included-container h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
@@ -235,29 +239,8 @@
     height: 300px;
     z-index: 999;
   }
-  #contract-section {
+  .included-columns {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    margin: 0 auto;
-    position: relative;
-    height: auto;
-  }
-  #contract-section .cost-column .cost-header {
-    width: 75vw;
-    margin: 0 auto;
-    margin-top: 25px;
-    z-index: 5;
-  }
-  #contract-section .cost-column .bank-girl-mobile {
-    display: none;
-  }
-  #contract-section .bank-girl {
-    position: absolute;
-    height: 45vw;
-    right: 0;
-    top: 0;
-    max-width: 800px;
-    transform: 180deg;
   }
 }/*# sourceMappingURL=index.css.map */

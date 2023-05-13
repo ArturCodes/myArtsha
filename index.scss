@@ -161,17 +161,11 @@
         }
     }
 
-    // .bank-girl {
-    //     background-color: #3f3b51;
-    //     background-image: url("./images/bank-girl.png");
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-position: center;
-    //     display: block;
-    //     height: 75vw;
-    //     user-select: none;
-    //     margin: 0 auto;
-    // }
+    .bank-girl {
+        // max-width: 400px;
+        height: 45vw;
+        min-height: 350px;
+    }
 
     .included-container {
         h2 {
@@ -228,9 +222,6 @@
 
         }
 
-        // +++++++++++++++++++++++++++++++++++++++
-        //            LEARN MORE BUTTON
-        // +++++++++++++++++++++++++++++++++++++++
         a {
             border-radius: 7.5px;
             border: 1px solid #38C6E5;
@@ -268,6 +259,10 @@
 
 
 @media only screen and (min-width: 768px) {
+
+    // +++++++++++++++++++++++++++++++++++++++
+    //         WHAT WE DO SECTION 
+    // +++++++++++++++++++++++++++++++++++++++
     #what-we-do-section {
         .header {
             p {
@@ -315,37 +310,14 @@
         }
     }
 
-    #contract-section {
+    // +++++++++++++++++++++++++++++++++++++++
+    //           CONTRACT SECTION
+    // +++++++++++++++++++++++++++++++++++++++
+
+    #contract-section {}
+
+    .included-columns {
         display: flex;
         flex-direction: column;
-        align-content: flex-start;
-        margin: 0 auto;
-        position: relative;
-        height: auto;
-
-        .cost-column {
-
-            .cost-header {
-                width: 75vw;
-                margin: 0 auto;
-                margin-top: 25px;
-                z-index: 5;
-            }
-
-            .bank-girl-mobile {
-                display: none;
-            }
-
-        }
-
-        .bank-girl {
-            position: absolute;
-            height: 45vw;
-            right: 0;
-            top: 0;
-            max-width: 800px;
-            transform: 180deg;
-        }
     }
-
 }
