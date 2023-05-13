@@ -113,17 +113,10 @@
     background-color: #3f3b51;
     text-align: center;
   }
-  #contract-section .text-column {
-    width: 92vw;
-    margin: 0 auto;
-  }
-  #contract-section .girl-column {
-    display: none;
-  }
   .contract-container h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3em);
-    line-height: 1.75;
+    line-height: 1.25;
   }
   .contract-container h2 span {
     color: #38C6E5;
@@ -131,6 +124,7 @@
   .contract-container p {
     color: white;
     margin: 25px auto;
+    width: 92vw;
     max-width: 600px;
   }
   .contract-container p span {
@@ -150,33 +144,30 @@
             user-select: none;
     margin: 0 auto;
   }
-  .included-container {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-    height: auto;
-  }
   .included-container h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
-    width: 100vw;
     margin: 50px 0 25px 0;
-    text-align: center;
   }
   .included-container h2 span {
     color: #38C6E5;
   }
-  .included-container .included-columns {
+  .included-columns {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    height: auto;
+    text-align: center;
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
   }
-  .included-container .included-columns .group.item {
+  .included-columns .group.item {
     padding: 0 12.5vw;
     text-align: left;
     margin-bottom: 25px;
   }
-  .included-container .included-columns .group.item::before {
+  .included-columns .group.item::before {
     content: "";
     background-image: url("./images/check.png");
     display: block;
@@ -187,9 +178,9 @@
     width: 20px;
     height: 15px;
   }
-  .included-container .included-columns .group.item h3 {
+  .included-columns .group.item h3 {
     width: auto;
-    color: white;
+    color: white !important;
     padding-bottom: 5px;
     position: relative;
     text-align: left;
@@ -200,11 +191,7 @@
     text-underline-offset: 1px;
     -webkit-text-underline-offset: 1px;
   }
-  .included-container .included-columns p {
-    color: white;
-    max-width: 300px;
-  }
-  .included-container a {
+  .included-columns a {
     border-radius: 7.5px;
     border: 1px solid #38C6E5;
     color: #38C6E5;
@@ -218,11 +205,15 @@
     transition: 0.3s;
     box-shadow: 3px 3px 5px #1a1a1a;
   }
-  .included-container a:hover {
+  .included-columns a:hover {
     background-color: white;
     color: #1a1a1a;
     transition: 0.3s;
     border: 1px solid #1a1a1a;
+  }
+  .included-columns p {
+    color: white;
+    max-width: 300px;
   }
 }
 @media only screen and (min-width: 768px) {
