@@ -248,7 +248,6 @@
   }
   .included-container {
     padding-left: 100px;
-    padding-top: 50px;
     position: relative;
     z-index: 5;
     height: 100%;
@@ -257,7 +256,7 @@
     text-align: left;
   }
   .included-container .included-columns {
-    max-width: 1000px;
+    max-width: none;
     display: flex;
     flex-direction: row;
   }
@@ -282,7 +281,7 @@
     display: none;
   }
   .desktop-bank-girl {
-    max-width: 550px;
+    max-width: 600px;
     height: auto;
   }
 }/*# sourceMappingURL=index.css.map */
