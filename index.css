@@ -133,7 +133,7 @@
   }
   .bank-girl {
     height: 45vw;
-    min-height: 350px;
+    min-height: 400px;
   }
   .included-container h2 {
     color: white;
@@ -239,14 +239,54 @@
     height: 300px;
     z-index: 999;
   }
-  .included-columns {
+  #contract-section {
+    padding-top: 0;
+  }
+  .included-container {
+    padding-left: 10vw;
+    padding-top: 50px;
+    position: relative;
+    z-index: 5;
+  }
+  .included-container::before {
+    content: "";
+    background-image: url("./images/bank-girl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    width: 500px;
+    display: block;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    z-index: -1;
+  }
+  .included-container h2 {
+    text-align: left;
+  }
+  .included-container .included-columns {
     max-width: 1000px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
   }
-  .included-columns .group .item {
-    padding: 0;
+  .included-container .included-columns .group {
+    margin: 0 50px 0 0;
+  }
+  .included-container .included-columns .group .item {
+    padding: 0 0 0 30px;
+  }
+  .included-container .included-columns .group .item::before {
+    content: "";
+    background-image: url("./images/check.png");
+    display: block;
+    position: relative;
+    top: 23px;
+    left: -30px;
+    background-size: contain;
+    width: 20px;
+    height: 15px;
+  }
+  .bank-girl {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

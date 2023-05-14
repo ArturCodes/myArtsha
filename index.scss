@@ -164,7 +164,7 @@
     .bank-girl {
         // max-width: 400px;
         height: 45vw;
-        min-height: 350px;
+        min-height: 400px;
     }
 
     .included-container {
@@ -260,6 +260,7 @@
 
 @media only screen and (min-width: 768px) {
 
+
     // +++++++++++++++++++++++++++++++++++++++
     //         WHAT WE DO SECTION 
     // +++++++++++++++++++++++++++++++++++++++
@@ -313,18 +314,64 @@
     // +++++++++++++++++++++++++++++++++++++++
     //           CONTRACT SECTION
     // +++++++++++++++++++++++++++++++++++++++
+    #contract-section {
+        padding-top: 0;
+    }
 
-    #contract-section {}
+    .included-container {
+        padding-left: 10vw;
+        padding-top: 50px;
+        position: relative;
+        z-index: 5;
 
-    .included-columns {
-        max-width: 1000px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-
-        .group .item {
-            padding: 0;
+        &::before {
+            content: '';
+            background-image: url('./images/bank-girl.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80%;
+            width: 500px;
+            display: block;
+            position: absolute;
+            top: 15%;
+            right: 0;
+            z-index: -1;
         }
+
+        h2 {
+            text-align: left;
+        }
+
+        .included-columns {
+            max-width: 1000px;
+            display: flex;
+            flex-direction: row;
+
+            .group {
+                margin: 0 50px 0 0;
+            }
+
+            .group .item {
+                padding: 0 0 0 30px;
+
+                &::before {
+                    content: '';
+                    background-image: url('./images/check.png');
+                    display: block;
+                    position: relative;
+                    top: 23px;
+                    left: -30px;
+                    background-size: contain;
+                    width: 20px;
+                    height: 15px;
+                }
+            }
+
+        }
+    }
+
+
+    .bank-girl {
+        display: none;
     }
 }
