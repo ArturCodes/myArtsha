@@ -317,7 +317,14 @@
     #contract-section {}
 
     .included-columns {
+        max-width: 1000px;
+        margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
+        flex-direction: row;
+
+        .group .item {
+            padding: 0;
+        }
     }
 }
