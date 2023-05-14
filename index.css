@@ -241,25 +241,27 @@
   }
   #contract-section {
     padding-top: 0;
+    z-index: -1;
+  }
+  .contract-container::before {
+    content: "";
+    background-image: url("./images/bank-girl.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30%;
+    width: 500px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1000px;
+    z-index: 0;
   }
   .included-container {
     padding-left: 10vw;
     padding-top: 50px;
     position: relative;
     z-index: 5;
-  }
-  .included-container::before {
-    content: "";
-    background-image: url("./images/bank-girl.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80%;
-    width: 500px;
-    display: block;
-    position: absolute;
-    top: 15%;
-    right: 0;
-    z-index: -1;
+    height: 100%;
   }
   .included-container h2 {
     text-align: left;
