@@ -51,7 +51,7 @@ main {
     margin: 10px 0;
     padding: 10px;
     color: white;
-    font-weight: 700;
+    font-weight: 500 !important;
   }
   nav #mobile-menu-open {
     position: absolute;

@@ -243,9 +243,6 @@
     padding-top: 0;
     z-index: 15;
   }
-  .contract-container {
-    height: auto;
-  }
   .included-container {
     padding-left: 100px;
     position: relative;
@@ -278,10 +275,15 @@
     height: 15px;
   }
   .bank-girl {
-    display: none;
-  }
-  .desktop-bank-girl {
-    max-width: 600px;
+    max-width: 400px;
     height: auto;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contract-container {
+    display: flex;
+    flex-direction: row;
+    width: 92vw;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=index.css.map */

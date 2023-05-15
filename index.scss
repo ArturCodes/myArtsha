@@ -321,21 +321,11 @@
     }
 
     .contract-container {
-        height: auto;
-
-        // &::after {
-        //     content: '';
-        //     background-image: url('./images/bank-girl.png');
-        //     background-repeat: no-repeat;
-        //     background-size: contain;
-        //     height: 800px;
-        //     width: 550px;
-        //     display: block;
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 1000px;
-        //     z-index: 0;
-        // }
+        // height: auto;
+        // display: flex;
+        // flex-direction: row;
+        // width: 100%;
+        // margin: 0 auto;
     }
 
     .included-container {
@@ -380,11 +370,18 @@
 
 
     .bank-girl {
-        display: none;
+        // display: none;
+        max-width: 400px;
+        height: auto;
     }
 
-    .desktop-bank-girl {
-        max-width: 600px;
-        height: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    .contract-container {
+        display: flex;
+        flex-direction: row;
+        width: 92vw;
+        margin: 0 auto;
     }
 }
