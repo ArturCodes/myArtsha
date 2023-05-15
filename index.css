@@ -278,12 +278,4 @@
     max-width: 400px;
     height: auto;
   }
-}
-@media only screen and (min-width: 1000px) {
-  .contract-container {
-    display: flex;
-    flex-direction: row;
-    width: 92vw;
-    margin: 0 auto;
-  }
 }/*# sourceMappingURL=index.css.map */
