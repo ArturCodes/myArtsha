@@ -321,11 +321,16 @@
     }
 
     .contract-container {
-        // height: auto;
-        // display: flex;
-        // flex-direction: row;
-        // width: 100%;
-        // margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin: 0 5vw;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 100%;
+        }
     }
 
     .included-container {
@@ -371,7 +376,8 @@
 
     .bank-girl {
         // display: none;
-        max-width: 400px;
+        margin-top: 50px;
+        max-width: 450px;
         height: auto;
     }
 
