@@ -113,6 +113,14 @@
     background-color: #3f3b51;
     text-align: center;
   }
+  .contract-container {
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .contract-container h2 {
     color: white;
     font-size: clamp(1.5em, 7vw, 3em);
@@ -126,14 +134,11 @@
     margin: 25px auto;
     width: 92vw;
     max-width: 600px;
+    height: auto;
   }
   .contract-container p span {
     font-weight: 700;
     color: #38C6E5;
-  }
-  .bank-girl {
-    height: 45vw;
-    min-height: 400px;
   }
   .included-container h2 {
     color: white;
@@ -150,12 +155,12 @@
     height: auto;
     max-width: 500px;
   }
-  .included-columns .group .item {
+  .included-columns .item {
     padding: 0 12.5vw;
     text-align: left;
     margin-bottom: 25px;
   }
-  .included-columns .group .item h3 {
+  .included-columns .item h3 {
     width: auto;
     color: white !important;
     padding-bottom: 5px;
@@ -168,7 +173,7 @@
     text-underline-offset: 1px;
     -webkit-text-underline-offset: 1px;
   }
-  .included-columns .group .item::before {
+  .included-columns .item::before {
     content: "";
     background-image: url("./images/check.png");
     display: block;
@@ -242,14 +247,29 @@
   #contract-section {
     padding-top: 0;
     z-index: 15;
+    height: auto;
   }
   .contract-container {
     height: auto;
     display: flex;
-    flex-direction: row;
-    margin: 0 5vw;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin: 0 10vw;
+    z-index: 1;
+    float: left;
+  }
+  .contract-container::after {
+    display: block;
+    content: "";
+    background-image: url("./images/bank-girl.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    max-height: 550px;
+    right: 0;
+    z-index: 9;
   }
   .contract-container p {
     width: 100%;
@@ -268,13 +288,10 @@
     display: flex;
     flex-direction: row;
   }
-  .included-container .included-columns .group {
-    margin: 0 50px 0 0;
-  }
-  .included-container .included-columns .group .item {
+  .included-container .included-columns .item {
     padding: 0 0 0 30px;
   }
-  .included-container .included-columns .group .item::before {
+  .included-container .included-columns .item::before {
     content: "";
     background-image: url("./images/check.png");
     display: block;
@@ -284,10 +301,5 @@
     background-size: contain;
     width: 20px;
     height: 15px;
-  }
-  .bank-girl {
-    margin-top: 50px;
-    max-width: 450px;
-    height: auto;
   }
 }/*# sourceMappingURL=index.css.map */
