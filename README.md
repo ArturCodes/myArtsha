@@ -34,3 +34,18 @@ Background - 3F3B51
         width: 400px;
         display: block;
     }
+
+// &::after {
+// display: block;
+// content: '';
+// background-image: url('./images/bank-girl.png');
+// background-repeat: no-repeat;
+// background-size: contain;
+// background-position: bottom;
+// bottom: 0;
+// width: 100%;
+// max-width: 500px;
+// max-height: 550px;
+// right: 0;
+// z-index: 9;
+// }

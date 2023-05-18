@@ -1,10 +1,7 @@
-// #####################################
-//            Min-Width: 0px
-// #####################################
 @media screen and (min-width: 0px) {
 
     // ------------------------------------
-    //         WHAT WE DO SECTION 
+    //        SM - WHAT WE DO SECTION 
     // ------------------------------------
     #what-we-do-section {
         background-color: #3f3b51;
@@ -131,7 +128,7 @@
     }
 
     // ------------------------------------
-    //           CONTRACT SECTION
+    //        SM - CONTRACT SECTION
     // ------------------------------------
 
     #contract-section {
@@ -172,6 +169,11 @@
         }
     }
 
+    .bank-girl {
+        height: 75vw;
+        max-height: 450px;
+    }
+
     .included-container {
         h2 {
             color: white;
@@ -184,7 +186,7 @@
         }
     }
 
-    .included-columns {
+    .included-items {
         display: flex;
         flex-direction: column;
         z-index: 1;
@@ -260,19 +262,17 @@
 
 }
 
-// #####################################
-//           Min-Width: 768px
-// #####################################
 @media only screen and (min-width: 768px) {
 
 
     // ------------------------------------
-    //         WHAT WE DO SECTION 
+    //       LG - WHAT WE DO SECTION 
     // ------------------------------------
     #what-we-do-section {
         .header {
             p {
                 max-width: 600px;
+                margin-bottom: 25px;
             }
         }
 
@@ -317,40 +317,41 @@
     }
 
     // ------------------------------------
-    //           CONTRACT SECTION
+    //        LG - CONTRACT SECTION
     // ------------------------------------
     #contract-section {
-        padding-top: 0;
-        z-index: 15;
+        padding: clamp(2vw, 6em, 5vw);
         height: auto;
+        display: grid;
+        gap: 5px;
+
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        ;
     }
 
     .contract-container {
         height: auto;
         display: flex;
         flex-direction: column;
-        margin: 0 10vw;
         z-index: 1;
         float: left;
-
-        &::after {
-            display: block;
-            content: '';
-            background-image: url('./images/bank-girl.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: bottom;
-            bottom: 0;
-            width: 100%;
-            max-width: 500px;
-            max-height: 550px;
-            right: 0;
-            z-index: 9;
-        }
+        margin-bottom: 75px;
+        align-self: center;
+        justify-self: center;
 
         p {
             width: 100%;
         }
+    }
+
+    .bank-girl {
+        grid-column: 3;
+        grid-row: 1 / span 3;
+
+
+        margin: 0 auto;
+        max-height: 400px;
     }
 
     .included-container {
@@ -359,16 +360,21 @@
         z-index: 5;
         height: 100%;
 
+        display: flex;
+        flex-direction: column;
+
 
         h2 {
             text-align: left;
 
         }
 
-        .included-columns {
+        .included-items {
             max-width: none;
-            display: flex;
+            display: grid;
             flex-direction: row;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, auto);
 
             .item {
                 padding: 0 0 0 30px;
@@ -390,53 +396,3 @@
     }
 
 }
-
-// // ------------------------
-// // Bank Girl Separate rules
-// // ------------------------
-// @media only screen and (min-width: 0px) and (max-width:1199px) {
-//     .contract-container {
-//         &::after {
-//             content: '';
-//             background-image: url('./images/bank-girl.png');
-//             background-repeat: no-repeat;
-//             background-size: contain;
-//             background-position: bottom;
-//             position: relative;
-//             bottom: 0;
-//             width: 100%;
-//             max-width: 500px;
-//             height: 400px;
-//         }
-//     }
-// }
-
-// @media screen and (min-width: 1200px) {
-
-//     #contract-section {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: flex-start;
-//         align-items: flex-start;
-//         min-width: 800px;
-
-//         &::after {
-//             content: '';
-//             background-image: url('./images/bank-girl.png');
-//             background-repeat: no-repeat;
-//             background-size: contain;
-//             background-position: bottom;
-//             position: relative;
-//             right: 0;
-//             width: 100%;
-//             max-width: 500px;
-//             height: 400px;
-//         }
-//     }
-
-//     .included-columns {
-//         display: flex;
-//         flex-direction: row !important;
-//     }
-
-// }
