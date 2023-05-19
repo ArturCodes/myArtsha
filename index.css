@@ -287,7 +287,7 @@
     display: flex;
     flex-direction: column;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 7;
   }
