@@ -144,6 +144,9 @@
     height: 75vw;
     max-height: 450px;
   }
+  .included-container {
+    padding-bottom: 50px;
+  }
   .included-container h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
@@ -152,19 +155,38 @@
   .included-container h2 span {
     color: #38C6E5;
   }
-  .included-items {
+  .included-container a {
+    border-radius: 7.5px;
+    border: 1px solid #38C6E5;
+    color: #38C6E5;
+    min-width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    align-self: center;
+    margin: 50px 0 50px 0;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px #1a1a1a;
+  }
+  .included-container a:hover {
+    background-color: white;
+    color: #1a1a1a;
+    transition: 0.3s;
+    border: 1px solid #1a1a1a;
+  }
+  .included-container .included-items {
     display: flex;
     flex-direction: column;
     z-index: 1;
     height: auto;
     max-width: 500px;
   }
-  .included-items .item {
+  .included-container .included-items .item {
     padding: 0 12.5vw;
     text-align: left;
     margin-bottom: 25px;
   }
-  .included-items .item h3 {
+  .included-container .included-items .item h3 {
     width: auto;
     color: white !important;
     padding-bottom: 5px;
@@ -177,7 +199,7 @@
     text-underline-offset: 1px;
     -webkit-text-underline-offset: 1px;
   }
-  .included-items .item::before {
+  .included-container .included-items .item::before {
     content: "";
     background-image: url("./images/check.png");
     display: block;
@@ -188,27 +210,7 @@
     width: 20px;
     height: 15px;
   }
-  .included-items a {
-    border-radius: 7.5px;
-    border: 1px solid #38C6E5;
-    color: #38C6E5;
-    min-width: 100px;
-    padding: 7.5px 15px;
-    text-align: center;
-    width: 0 auto;
-    align-self: center;
-    margin: 25px 0 50px 0;
-    font-weight: 700;
-    transition: 0.3s;
-    box-shadow: 3px 3px 5px #1a1a1a;
-  }
-  .included-items a:hover {
-    background-color: white;
-    color: #1a1a1a;
-    transition: 0.3s;
-    border: 1px solid #1a1a1a;
-  }
-  .included-items p {
+  .included-container p {
     color: white;
     max-width: 300px;
   }
@@ -250,59 +252,60 @@
     z-index: 999;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   #contract-section {
     padding: clamp(1em, 2vw, 5em);
     height: auto;
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: auto;
   }
   .contract-container {
-    height: auto;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 6;
     grid-row-start: 1;
-    grid-row-end: 3;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    grid-row-end: 2;
+  }
+  .contract-container h2 {
+    font-size: clamp(1.5em, 5vw, 2.25em);
   }
   .contract-container p {
     width: 100%;
+    max-width: 400px;
   }
   .bank-girl {
     margin: 0 auto;
-    max-height: 500px;
-    grid-column-start: 4;
-    grid-column-end: 5;
+    max-height: 400px;
+    grid-column-start: 6;
+    grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 2;
   }
   .included-container {
-    padding-left: 100px;
     position: relative;
     z-index: 5;
     height: 100%;
     display: flex;
     flex-direction: column;
     grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 14;
   }
   .included-container h2 {
     text-align: left;
+    padding-left: 100px;
   }
   .included-container .included-items {
+    padding-left: 100px;
     max-width: none;
     display: grid;
     flex-direction: row;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
   }
   .included-container .included-items .item {
-    padding: 0 0 0 30px;
+    padding-left: 30px;
   }
   .included-container .included-items .item::before {
     content: "";
@@ -314,5 +317,14 @@
     background-size: contain;
     width: 20px;
     height: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+  #contract-section {
+    padding: clamp(1em, 2vw, 5em);
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: auto;
   }
 }/*# sourceMappingURL=index.css.map */
