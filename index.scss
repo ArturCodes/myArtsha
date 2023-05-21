@@ -9,7 +9,6 @@
         flex-direction: column;
         align-items: center;
         z-index: 1;
-        height: auto;
 
         .header {
             width: 92vw;
@@ -118,6 +117,9 @@
         }
     }
 
+    // ------------------------------------
+    //        SM - CONTRACT SECTION
+    // ------------------------------------
     .contract-top-blob {
         position: relative;
         display: block;
@@ -127,17 +129,10 @@
         bottom: 0;
     }
 
-    // ------------------------------------
-    //        SM - CONTRACT SECTION
-    // ------------------------------------
-
     #contract-section {
         padding-top: 50px;
         background-color: #3f3b51;
         text-align: center;
-
-
-
     }
 
     .contract-container {
@@ -178,6 +173,8 @@
     }
 
     .included-container {
+        height: auto;
+        padding-bottom: 50px;
 
         h2 {
             color: white;
@@ -187,22 +184,6 @@
             span {
                 color: #38C6E5;
             }
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            background-image: url('./images/floor.png');
-            background-repeat: no-repeat;
-            background-position: left;
-            opacity: 0.15;
-            display: block;
-            position: relative;
-            background-size: contain;
-            width: 100%;
-            height: 150px;
-            margin-top: -40px;
-            user-select: none;
         }
 
         .included-items {
@@ -277,6 +258,39 @@
 
     }
 
+    .contract-bottom-blob {
+        position: relative;
+        display: block;
+        height: auto;
+        width: 100vw;
+        z-index: 1;
+        bottom: 0;
+    }
+
+    // ------------------------------------
+    //        SM - QUOTE & FOOTER
+    // ------------------------------------
+    #quote-2 {
+        position: relative;
+        width: 90%;
+        text-align: center;
+        margin: 100px auto -25px;
+
+        blockquote {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: clamp(1.75em, 5vw, 2.5em);
+            line-height: 1.75;
+            font-weight: bold;
+
+            &::after {
+                content: '';
+                display: block;
+                background-image: url('./images/cat2.png');
+                background-repeat: no-repeat;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -288,7 +302,7 @@
         .header {
             p {
                 max-width: 600px;
-                margin-bottom: 25px;
+                // margin-bottom: 25px;
             }
         }
 
