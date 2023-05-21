@@ -68,26 +68,28 @@ main {
     border-radius: 25px;
   }
   nav #mobile-menu-close {
+    display: none;
     height: 30px;
     width: 30px;
     position: absolute;
     top: 28px;
     right: 23px;
+    z-index: 999;
   }
-  nav #mobile-menu-close li {
-    width: 30px !important;
+  nav #mobile-menu-close div {
+    width: 30px;
     height: 3px;
     background-color: #ffffff;
     margin: 6px 0;
     border-radius: 25px;
   }
-  nav #mobile-menu-close li:nth-child(1) {
+  nav #mobile-menu-close div:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
     top: 7px;
     right: 0px;
   }
-  nav #mobile-menu-close li:nth-child(2) {
+  nav #mobile-menu-close div:nth-child(2) {
     transform: rotate(-45deg);
     position: relative;
     left: 0px;
@@ -216,13 +218,14 @@ main {
     border-radius: 25px;
   }
   nav #mobile-menu-close {
+    display: none;
     height: 30px;
     width: 30px;
     position: absolute;
     top: 45px;
     right: 33px;
   }
-  nav #mobile-menu-close li {
+  nav #mobile-menu-close div {
     width: 30px;
     height: 3px;
     background-color: #ffffff;
@@ -230,13 +233,13 @@ main {
     transition: 0.4s;
     border-radius: 25px;
   }
-  nav #mobile-menu-close li:nth-child(1) {
+  nav #mobile-menu-close div:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
     top: 7px;
     right: 0px;
   }
-  nav #mobile-menu-close li:nth-child(2) {
+  nav #mobile-menu-close div:nth-child(2) {
     transform: rotate(-45deg);
     position: relative;
     left: 0px;

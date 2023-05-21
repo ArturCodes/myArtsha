@@ -90,28 +90,30 @@ main {
         }
 
         #mobile-menu-close {
+            display: none; //changed in JS to block
             height: 30px;
             width: 30px;
             position: absolute;
             top: 28px;
             right: 23px;
+            z-index: 999;
 
-            li {
-                width: 30px !important;
+            div {
+                width: 30px;
                 height: 3px;
                 background-color: #ffffff;
                 margin: 6px 0;
                 border-radius: 25px;
             }
 
-            li:nth-child(1) {
+            div:nth-child(1) {
                 transform: rotate(45deg);
                 position: relative;
                 top: 7px;
                 right: 0px;
             }
 
-            li:nth-child(2) {
+            div:nth-child(2) {
                 transform: rotate(-45deg);
                 position: relative;
                 left: 0px;
@@ -268,13 +270,14 @@ main {
         }
 
         #mobile-menu-close {
+            display: none; //changed in JS to block
             height: 30px;
             width: 30px;
             position: absolute;
             top: 45px;
             right: 33px;
 
-            li {
+            div {
                 width: 30px;
                 height: 3px;
                 background-color: #ffffff;
@@ -283,14 +286,14 @@ main {
                 border-radius: 25px;
             }
 
-            li:nth-child(1) {
+            div:nth-child(1) {
                 transform: rotate(45deg);
                 position: relative;
                 top: 7px;
                 right: 0px;
             }
 
-            li:nth-child(2) {
+            div:nth-child(2) {
                 transform: rotate(-45deg);
                 position: relative;
                 left: 0px;
