@@ -162,7 +162,7 @@
     z-index: 1;
     height: auto;
     max-width: 500px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
   .included-container .included-items .item {
     padding: 0 12.5vw;
@@ -398,8 +398,5 @@
   }
   .included-container .included-items .item {
     padding: 0 35px;
-  }
-  .included-container a {
-    margin: 50px 0 0 0;
   }
 }/*# sourceMappingURL=index.css.map */
