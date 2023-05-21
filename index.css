@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    position: relative;
   }
   #what-we-do-section .header {
     width: 92vw;
