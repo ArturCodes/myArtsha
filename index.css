@@ -152,23 +152,6 @@
   .included-container h2 span {
     color: #38C6E5;
   }
-  .included-container h2::before {
-    content: "";
-    display: block;
-    background-image: url("./images/wall.png");
-    background-repeat: no-repeat;
-    background-position: left;
-    opacity: 0.15;
-    display: block;
-    position: relative;
-    background-size: contain;
-    width: 80%;
-    margin: 0 auto;
-    height: 100px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
-  }
   .included-container::after {
     content: "";
     display: block;

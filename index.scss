@@ -187,22 +187,6 @@
             span {
                 color: #38C6E5;
             }
-
-            &::before {
-                content: '';
-                display: block;
-                background-image: url('./images/wall.png');
-                background-repeat: no-repeat;
-                background-position: left;
-                opacity: 0.15;
-                display: block;
-                position: relative;
-                background-size: contain;
-                width: 80%;
-                margin: 0 auto;
-                height: 100px;
-                user-select: none;
-            }
         }
 
         &::after {
