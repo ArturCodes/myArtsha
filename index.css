@@ -144,9 +144,6 @@
     height: 75vw;
     max-height: 450px;
   }
-  .included-container {
-    padding-bottom: 50px;
-  }
   .included-container h2 {
     color: white;
     font-size: clamp(1.5em, 10vw, 3em);
@@ -155,24 +152,39 @@
   .included-container h2 span {
     color: #38C6E5;
   }
-  .included-container a {
-    border-radius: 7.5px;
-    border: 1px solid #38C6E5;
-    color: #38C6E5;
-    min-width: 100px;
-    padding: 10px 20px;
-    text-align: center;
-    align-self: center;
-    margin: 50px 0 50px 0;
-    font-weight: 700;
-    transition: 0.3s;
-    box-shadow: 1px 1px 5px #1a1a1a;
+  .included-container h2::before {
+    content: "";
+    display: block;
+    background-image: url("./images/wall.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: 0.15;
+    display: block;
+    position: relative;
+    background-size: contain;
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
-  .included-container a:hover {
-    background-color: white;
-    color: #1a1a1a;
-    transition: 0.3s;
-    border: 1px solid #1a1a1a;
+  .included-container::after {
+    content: "";
+    display: block;
+    background-image: url("./images/floor.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: 0.15;
+    display: block;
+    position: relative;
+    background-size: contain;
+    width: 100%;
+    height: 150px;
+    margin-top: -40px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
   .included-container .included-items {
     display: flex;
@@ -180,6 +192,7 @@
     z-index: 1;
     height: auto;
     max-width: 500px;
+    margin-bottom: 25px;
   }
   .included-container .included-items .item {
     padding: 0 12.5vw;
@@ -209,6 +222,24 @@
     background-size: contain;
     width: 20px;
     height: 15px;
+  }
+  .included-container a {
+    border-radius: 7.5px;
+    border: 1px solid #38C6E5;
+    color: #38C6E5;
+    min-width: 100px;
+    padding: 15px 20px;
+    text-align: center;
+    align-self: center;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 1px 1px 5px #1a1a1a;
+  }
+  .included-container a:hover {
+    background-color: white;
+    color: #1a1a1a;
+    transition: 0.3s;
+    border: 1px solid #1a1a1a;
   }
   .included-container p {
     color: white;
@@ -267,7 +298,7 @@
     grid-row-end: 2;
   }
   .contract-container h2 {
-    font-size: clamp(1.5em, 5vw, 2.25em);
+    font-size: 2.5em;
   }
   .contract-container p {
     width: 100%;
@@ -295,6 +326,7 @@
   .included-container h2 {
     text-align: left;
     padding-left: 100px;
+    font-size: clamp(1.5em, 5vw, 2.25em);
   }
   .included-container .included-items {
     padding-left: 100px;
@@ -325,6 +357,46 @@
     height: auto;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(10, 125px);
+  }
+  .contract-container {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    justify-items: start;
+    align-content: start;
+  }
+  .contract-container h2 {
+    font-size: clamp(1.5em, 10vw, 3.5em);
+  }
+  .bank-girl {
+    max-height: 600px;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+  .included-container {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 15;
+  }
+  .included-container h2 {
+    text-align: left;
+  }
+  .included-container .included-items {
+    display: grid;
+    max-width: none;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .included-container .included-items .item {
+    padding: 0 35px;
+  }
+  .included-container a {
+    margin: 50px 0 0 0;
   }
 }/*# sourceMappingURL=index.css.map */
