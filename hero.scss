@@ -96,22 +96,22 @@ main {
             top: 28px;
             right: 23px;
 
-            div {
-                width: 30px;
+            li {
+                width: 30px !important;
                 height: 3px;
                 background-color: #ffffff;
                 margin: 6px 0;
                 border-radius: 25px;
             }
 
-            div:nth-child(1) {
+            li:nth-child(1) {
                 transform: rotate(45deg);
                 position: relative;
                 top: 7px;
                 right: 0px;
             }
 
-            div:nth-child(2) {
+            li:nth-child(2) {
                 transform: rotate(-45deg);
                 position: relative;
                 left: 0px;
@@ -274,7 +274,7 @@ main {
             top: 45px;
             right: 33px;
 
-            div {
+            li {
                 width: 30px;
                 height: 3px;
                 background-color: #ffffff;
@@ -283,14 +283,14 @@ main {
                 border-radius: 25px;
             }
 
-            div:nth-child(1) {
+            li:nth-child(1) {
                 transform: rotate(45deg);
                 position: relative;
                 top: 7px;
                 right: 0px;
             }
 
-            div:nth-child(2) {
+            li:nth-child(2) {
                 transform: rotate(-45deg);
                 position: relative;
                 left: 0px;
