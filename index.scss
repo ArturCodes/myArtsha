@@ -275,7 +275,6 @@
         position: relative;
         width: 90%;
         text-align: center;
-        margin: 100px auto -25px;
 
         blockquote {
             max-width: 800px;
@@ -455,7 +454,15 @@
         align-content: start;
 
         h2 {
+            min-width: 700px;
+            position: relative;
             font-size: clamp(1.5em, 10vw, 3.5em);
+            z-index: 5;
+        }
+
+        p {
+            position: relative;
+            z-index: 5;
         }
     }
 

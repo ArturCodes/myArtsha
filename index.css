@@ -227,7 +227,6 @@
     position: relative;
     width: 90%;
     text-align: center;
-    margin: 100px auto -25px;
   }
   #quote-2 blockquote {
     max-width: 800px;
@@ -364,7 +363,14 @@
     align-content: start;
   }
   .contract-container h2 {
+    min-width: 700px;
+    position: relative;
     font-size: clamp(1.5em, 10vw, 3.5em);
+    z-index: 5;
+  }
+  .contract-container p {
+    position: relative;
+    z-index: 5;
   }
   .bank-girl {
     max-height: 600px;
