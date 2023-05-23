@@ -379,11 +379,16 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 // ##################################
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .contract-container {
+        margin-top: 50px;
+    }
+
     .bank-girl {
         margin: 25px 0 15px 0;
     }
 
     .included-container {
+        margin-top: 50px;
 
         h2 {
             overflow: visible;
@@ -403,6 +408,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 transform: scaleX(-1);
             }
         }
+
     }
 }
 
@@ -442,6 +448,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-column-end: 9;
         grid-row-start: 1;
         grid-row-end: 2;
+        margin-top: 75px;
     }
 
     .included-container {
@@ -515,8 +522,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         display: grid;
         grid-template-columns: repeat(8, 12.5%);
         grid-template-rows: repeat(10, 125px);
-
-
     }
 
     .contract-container {
@@ -524,9 +529,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 5;
-
-        justify-items: start;
-        align-content: start;
 
         h2 {
             min-width: 700px;
