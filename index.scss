@@ -111,11 +111,10 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         position: relative;
         width: 90%;
         text-align: center;
-        margin: 100px auto -25px;
+        margin: 75px auto 0px;
 
         h2 {
-            font-size: clamp(2em, 5vw, 3.5em);
-            max-width: 60vw;
+            font-size: clamp(1.5em, 5vw, 3em);
             margin: 0 auto;
             line-height: 1.5;
         }
