@@ -12,7 +12,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 @media screen and (min-width: 0px) {
 
     // ------------------------------------
-    //        SM - WHAT WE DO SECTION 
+    //      SM - WHAT WE DO SECTION 
     // ------------------------------------
     #what-we-do-section {
         background-color: #3f3b51;
@@ -109,34 +109,20 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
     #quote-1 {
         position: relative;
-        width: calc(90% - 10vw);
+        width: 90%;
+        max-width: 1200px;
         text-align: center;
         margin: 75px auto 0px;
 
         h2 {
-            font-size: clamp(1.5em, 5vw, 3.5em);
+            font-size: clamp(1.5em, 5vw, 3em);
             margin: 0 auto;
             line-height: 1.5;
-        }
-
-        blockquote {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: clamp(1.75em, 5vw, 2.5em);
-            line-height: 1.75;
-            font-weight: bold;
-
-            &::after {
-                content: '';
-                display: block;
-                background-image: url('./images/cat2.png');
-                background-repeat: no-repeat;
-            }
         }
     }
 
     // ------------------------------------
-    //        SM - CONTRACT SECTION
+    //      SM - CONTRACT SECTION
     // ------------------------------------
     .contract-top-blob {
         position: relative;
@@ -160,6 +146,8 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        overflow: visible;
 
         h2 {
             color: white;
@@ -177,12 +165,14 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             width: 92vw;
             max-width: 600px;
             height: auto;
+            font-size: 18px;
 
             span {
                 font-weight: 700;
                 color: #38C6E5;
             }
         }
+
     }
 
     .bank-girl {
@@ -213,8 +203,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             height: auto;
             max-width: 500px;
             margin-bottom: 50px;
-
-
 
             .item {
                 padding: 0 12.5vw;
@@ -267,7 +255,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 transition: 0.3s;
                 border: 1px solid #1a1a1a;
             }
-
         }
 
         // +++++++++++++++++++++++++++++++++++++++
@@ -289,81 +276,44 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     }
 
     // ------------------------------------
-    //        SM - QUOTE & FOOTER
+    //      SM - QUOTE & FOOTER
     // ------------------------------------
     #quote-2 {
         position: relative;
         width: 90%;
         text-align: center;
-        margin: 50px auto;
+        margin: 50px auto 150px auto;
 
         h2 {
             margin-top: clamp(50px, 10vw, 100px);
-            font-size: clamp(2em, 5vw, 3.75em);
-
+            font-size: clamp(1.5em, 5vw, 3em);
             line-height: 1.5;
         }
 
-
-        blockquote {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: clamp(1.75em, 5vw, 3.5em);
-            line-height: 1.75;
-            font-weight: bold;
-
-            &::after {
-                content: '';
-                display: block;
-                background-image: url('./images/cat2.png');
-                background-repeat: no-repeat;
-            }
-        }
-
         p {
+            font-size: clamp(1.25em, 5vw, 1.5em);
             margin: 10px 0 50px 0;
         }
 
         .button-container {
-            margin-top: 50px;
-            padding: 5px;
-            z-index: 5;
-            color: #1f1f1f;
-            margin: 0 auto;
-
-            a:nth-child(1) {
-                padding: 7.5px 15px;
-                background-color: #ffcc00;
-                border-color: 1px solid lightgray;
-                box-shadow: $box-shadow;
+            a {
                 border-radius: 7.5px;
-                min-width: 125px;
+                border: 1px solid #1a1a1a;
+                color: #38C6E5;
+                min-width: 100px;
+                padding: 15px 20px;
                 text-align: center;
+                align-self: center;
+                font-weight: 700;
                 transition: 0.3s;
-
-            }
-
-            a:nth-child(2) {
-                padding: 7.5px 15px;
-                background-color: white;
-                border-radius: 7.5px;
-                box-shadow: $box-shadow;
-                min-width: 125px;
-                text-align: center;
-                transition: 0.3s;
-            }
-
-            .btn {
-                margin: 0 12.5px;
+                box-shadow: 1px 1px 5px #1a1a1a;
 
                 &:hover {
-                    box-shadow: $box-shadow-hover;
+                    background-color: white;
+                    color: #1a1a1a;
                     transition: 0.3s;
+                    border: 1px solid #1a1a1a;
                 }
-            }
-
-            .button-container {
-                margin: 50px 0;
             }
         }
     }
@@ -581,7 +531,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         h2 {
             min-width: 700px;
             position: relative;
-            font-size: clamp(1.5em, 10vw, 3.5em);
             z-index: 5;
         }
 
@@ -597,6 +546,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-column-end: 9;
         grid-row-start: 1;
         grid-row-end: 7;
+        margin-top: 75px;
     }
 
     .included-container {
@@ -607,6 +557,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-row-start: 6;
         grid-row-end: 15;
         overflow: visible;
+        margin-top: 100px;
 
         h2 {
             text-align: left;
@@ -635,7 +586,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             grid-template-columns: repeat(4, 1fr);
 
             .item {
-                padding: 0 35px;
+                padding: 0 25px 0 35px;
             }
         }
 

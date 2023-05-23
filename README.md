@@ -23,29 +23,18 @@ Background - 3F3B51
 
 ### FONT SIZES
 
-        &::after {
-        position: absolute;
-        content: "";
-        left: 45vw;
-        background-image: url('./images/hero-guy.png');
-        background-size: 400px 400px;
-        background-position: center;
-        height: 400px;
-        width: 400px;
-        display: block;
-    }
+overflow: visible;
 
-// &::after {
-// display: block;
-// content: '';
-// background-image: url('./images/bank-girl.png');
-// background-repeat: no-repeat;
-// background-size: contain;
-// background-position: bottom;
-// bottom: 0;
-// width: 100%;
-// max-width: 500px;
-// max-height: 550px;
-// right: 0;
-// z-index: 9;
-// }
+&::after {
+display: block;
+content: '';
+position: absolute;
+background-image: url('./images/plant.png');
+background-size: contain;
+background-repeat: no-repeat;
+width: 60%;
+height: 60%;
+bottom: 25px;
+left: -75px;
+opacity: .5;
+}

@@ -83,27 +83,15 @@
   }
   #quote-1 {
     position: relative;
-    width: calc(90% - 10vw);
+    width: 90%;
+    max-width: 1200px;
     text-align: center;
     margin: 75px auto 0px;
   }
   #quote-1 h2 {
-    font-size: clamp(1.5em, 5vw, 3.5em);
+    font-size: clamp(1.5em, 5vw, 3em);
     margin: 0 auto;
     line-height: 1.5;
-  }
-  #quote-1 blockquote {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: clamp(1.75em, 5vw, 2.5em);
-    line-height: 1.75;
-    font-weight: bold;
-  }
-  #quote-1 blockquote::after {
-    content: "";
-    display: block;
-    background-image: url("./images/cat2.png");
-    background-repeat: no-repeat;
   }
   .contract-top-blob {
     position: relative;
@@ -125,6 +113,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: visible;
   }
   .contract-container h2 {
     color: white;
@@ -140,6 +130,7 @@
     width: 92vw;
     max-width: 600px;
     height: auto;
+    font-size: 18px;
   }
   .contract-container p span {
     font-weight: 700;
@@ -234,64 +225,34 @@
     position: relative;
     width: 90%;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px auto 150px auto;
   }
   #quote-2 h2 {
     margin-top: clamp(50px, 10vw, 100px);
-    font-size: clamp(2em, 5vw, 3.75em);
+    font-size: clamp(1.5em, 5vw, 3em);
     line-height: 1.5;
   }
-  #quote-2 blockquote {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: clamp(1.75em, 5vw, 3.5em);
-    line-height: 1.75;
-    font-weight: bold;
-  }
-  #quote-2 blockquote::after {
-    content: "";
-    display: block;
-    background-image: url("./images/cat2.png");
-    background-repeat: no-repeat;
-  }
   #quote-2 p {
+    font-size: clamp(1.25em, 5vw, 1.5em);
     margin: 10px 0 50px 0;
   }
-  #quote-2 .button-container {
-    margin-top: 50px;
-    padding: 5px;
-    z-index: 5;
-    color: #1f1f1f;
-    margin: 0 auto;
-  }
-  #quote-2 .button-container a:nth-child(1) {
-    padding: 7.5px 15px;
-    background-color: #ffcc00;
-    border-color: 1px solid lightgray;
-    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+  #quote-2 .button-container a {
     border-radius: 7.5px;
-    min-width: 125px;
+    border: 1px solid #1a1a1a;
+    color: #38C6E5;
+    min-width: 100px;
+    padding: 15px 20px;
     text-align: center;
+    align-self: center;
+    font-weight: 700;
     transition: 0.3s;
+    box-shadow: 1px 1px 5px #1a1a1a;
   }
-  #quote-2 .button-container a:nth-child(2) {
-    padding: 7.5px 15px;
+  #quote-2 .button-container a:hover {
     background-color: white;
-    border-radius: 7.5px;
-    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
-    min-width: 125px;
-    text-align: center;
+    color: #1a1a1a;
     transition: 0.3s;
-  }
-  #quote-2 .button-container .btn {
-    margin: 0 12.5px;
-  }
-  #quote-2 .button-container .btn:hover {
-    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176), -1px -1px 3px rgba(63, 59, 81, 0.6352941176);
-    transition: 0.3s;
-  }
-  #quote-2 .button-container .button-container {
-    margin: 50px 0;
+    border: 1px solid #1a1a1a;
   }
 }
 @media screen and (min-width: 768px) {
@@ -455,7 +416,6 @@
   .contract-container h2 {
     min-width: 700px;
     position: relative;
-    font-size: clamp(1.5em, 10vw, 3.5em);
     z-index: 5;
   }
   .contract-container p {
@@ -468,6 +428,7 @@
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 7;
+    margin-top: 75px;
   }
   .included-container {
     display: flex;
@@ -477,6 +438,7 @@
     grid-row-start: 6;
     grid-row-end: 15;
     overflow: visible;
+    margin-top: 100px;
   }
   .included-container h2 {
     text-align: left;
@@ -502,6 +464,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
   .included-container .included-items .item {
-    padding: 0 35px;
+    padding: 0 25px 0 35px;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -157,7 +157,7 @@ main {
     transition: 0.3s;
   }
   #hero div .btn {
-    margin: 0 12.5px;
+    margin: 0 7.5px;
   }
   #hero div .btn:hover {
     box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176), -1px -1px 3px rgba(63, 59, 81, 0.6352941176);
@@ -264,9 +264,7 @@ main {
   }
   #hero .btn {
     margin: 0 !important;
-  }
-  #hero .btn {
-    margin-right: 25px !important;
+    margin-right: 15px !important;
   }
   .hero-guy {
     background-image: url("./images/hero-guy.png");

@@ -16,7 +16,6 @@ main {
     margin: 0 auto;
     position: relative;
     background-color: white;
-
 }
 
 @media only screen and (min-width: 0px) {
@@ -192,7 +191,7 @@ main {
             }
 
             .btn {
-                margin: 0 12.5px;
+                margin: 0 7.5px;
 
                 &:hover {
                     box-shadow: $box-shadow-hover;
@@ -321,15 +320,11 @@ main {
         p {
             text-align: left;
             padding: 0;
-
         }
 
         .btn {
             margin: 0 !important;
-        }
-
-        .btn {
-            margin-right: 25px !important;
+            margin-right: 15px !important;
         }
 
     }
