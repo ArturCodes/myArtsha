@@ -146,7 +146,7 @@
   }
   .included-container {
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
   .included-container h2 {
     color: white;
@@ -171,7 +171,7 @@
   }
   .included-container .included-items .item h3 {
     width: auto;
-    color: white !important;
+    color: white;
     padding-bottom: 5px;
     position: relative;
     text-align: left;
@@ -229,10 +229,14 @@
     text-align: center;
     margin: 50px auto;
   }
+  #quote-2 h2 {
+    margin-top: clamp(50px, 10vw, 100px);
+    font-size: clamp(2em, 5vw, 3.75em);
+  }
   #quote-2 blockquote {
     max-width: 800px;
     margin: 0 auto;
-    font-size: clamp(1.75em, 5vw, 2.5em);
+    font-size: clamp(1.75em, 5vw, 3.5em);
     line-height: 1.75;
     font-weight: bold;
   }
@@ -241,6 +245,45 @@
     display: block;
     background-image: url("./images/cat2.png");
     background-repeat: no-repeat;
+  }
+  #quote-2 p {
+    margin: 10px 0 50px 0;
+  }
+  #quote-2 .button-container {
+    margin-top: 50px;
+    padding: 5px;
+    z-index: 5;
+    color: #1f1f1f;
+    margin: 0 auto;
+  }
+  #quote-2 .button-container a:nth-child(1) {
+    padding: 7.5px 15px;
+    background-color: #ffcc00;
+    border-color: 1px solid lightgray;
+    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+    border-radius: 7.5px;
+    min-width: 125px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  #quote-2 .button-container a:nth-child(2) {
+    padding: 7.5px 15px;
+    background-color: white;
+    border-radius: 7.5px;
+    box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
+    min-width: 125px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  #quote-2 .button-container .btn {
+    margin: 0 12.5px;
+  }
+  #quote-2 .button-container .btn:hover {
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176), -1px -1px 3px rgba(63, 59, 81, 0.6352941176);
+    transition: 0.3s;
+  }
+  #quote-2 .button-container .button-container {
+    margin: 50px 0;
   }
 }
 @media screen and (min-width: 768px) {

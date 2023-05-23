@@ -143,7 +143,7 @@ main {
     border-color: 1px solid lightgray;
     box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
     border-radius: 7.5px;
-    min-width: 100px;
+    min-width: 125px;
     text-align: center;
     transition: 0.3s;
   }
@@ -152,7 +152,7 @@ main {
     background-color: white;
     border-radius: 7.5px;
     box-shadow: 1px 1px 3px #3f3b51, 1px -1px 3px rgba(63, 59, 81, 0.0549019608), -1px 1px 3px rgba(63, 59, 81, 0.0549019608), -1px -1px 3px rgba(63, 59, 81, 0.0549019608);
-    min-width: 100px;
+    min-width: 125px;
     text-align: center;
     transition: 0.3s;
   }

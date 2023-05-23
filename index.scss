@@ -1,3 +1,14 @@
+$box-shadow: 1px 1px 3px #3f3b51,
+    1px -1px 3px #3f3b510e,
+    -1px 1px 3px #3f3b510e,
+    -1px -1px 3px #3f3b510e;
+
+$box-shadow-hover: 1px 1px 3px #3f3b51a2,
+    1px -1px 3px #3f3b51a2,
+    -1px 1px 3px #3f3b51a2,
+    -1px -1px 3px #3f3b51a2;
+
+
 @media screen and (min-width: 0px) {
 
     // ------------------------------------
@@ -175,7 +186,7 @@
 
     .included-container {
         height: auto;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
 
         h2 {
             color: white;
@@ -202,7 +213,7 @@
 
                 h3 {
                     width: auto;
-                    color: white !important;
+                    color: white;
                     padding-bottom: 5px;
                     position: relative;
                     text-align: left;
@@ -276,10 +287,16 @@
         text-align: center;
         margin: 50px auto;
 
+        h2 {
+            margin-top: clamp(50px, 10vw, 100px);
+            font-size: clamp(2em, 5vw, 3.75em);
+        }
+
+
         blockquote {
             max-width: 800px;
             margin: 0 auto;
-            font-size: clamp(1.75em, 5vw, 2.5em);
+            font-size: clamp(1.75em, 5vw, 3.5em);
             line-height: 1.75;
             font-weight: bold;
 
@@ -288,6 +305,53 @@
                 display: block;
                 background-image: url('./images/cat2.png');
                 background-repeat: no-repeat;
+            }
+        }
+
+        p {
+            margin: 10px 0 50px 0;
+        }
+
+        .button-container {
+            margin-top: 50px;
+            padding: 5px;
+            z-index: 5;
+            color: #1f1f1f;
+            margin: 0 auto;
+
+            a:nth-child(1) {
+                padding: 7.5px 15px;
+                background-color: #ffcc00;
+                border-color: 1px solid lightgray;
+                box-shadow: $box-shadow;
+                border-radius: 7.5px;
+                min-width: 125px;
+                text-align: center;
+                transition: 0.3s;
+
+            }
+
+            a:nth-child(2) {
+                padding: 7.5px 15px;
+                background-color: white;
+                border-radius: 7.5px;
+                box-shadow: $box-shadow;
+                min-width: 125px;
+                text-align: center;
+                transition: 0.3s;
+            }
+
+            .btn {
+                margin: 0 12.5px;
+
+                &:hover {
+                    box-shadow: $box-shadow-hover;
+                    transition: 0.3s;
+                }
+            }
+
+            .button-container {
+                margin: 50px 0;
             }
         }
     }
