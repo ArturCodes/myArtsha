@@ -109,12 +109,12 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
     #quote-1 {
         position: relative;
-        width: 90%;
+        width: calc(90% - 10vw);
         text-align: center;
         margin: 75px auto 0px;
 
         h2 {
-            font-size: clamp(1.5em, 5vw, 3em);
+            font-size: clamp(1.5em, 5vw, 3.5em);
             margin: 0 auto;
             line-height: 1.5;
         }
@@ -300,6 +300,8 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         h2 {
             margin-top: clamp(50px, 10vw, 100px);
             font-size: clamp(2em, 5vw, 3.75em);
+
+            line-height: 1.5;
         }
 
 
