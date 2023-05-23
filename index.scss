@@ -192,6 +192,8 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             color: white;
             font-size: clamp(1.5em, 10vw, 3em);
             margin: 50px 0 25px 0;
+            position: relative;
+            overflow: visible;
 
             span {
                 color: #38C6E5;
@@ -205,6 +207,8 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             height: auto;
             max-width: 500px;
             margin-bottom: 50px;
+
+
 
             .item {
                 padding: 0 12.5vw;
@@ -415,6 +419,30 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 // ##################################
 //  CONTACT SECTION GRID CSS ONLY
 // ##################################
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .included-container {
+        h2 {
+            overflow: visible;
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./images/cogs.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: calc(200px + 5vw);
+                height: calc(200px + 5vw);
+                position: absolute;
+                opacity: .05;
+                top: 300px;
+                right: calc(25px + 1vw);
+                transform: scaleX(-1);
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
     // ------------------------------------
@@ -463,11 +491,28 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-column-end: 9;
         grid-row-start: 5;
         grid-row-end: 14;
+        overflow: visible;
 
         h2 {
             text-align: left;
             padding-left: 100px;
             font-size: clamp(1.5em, 5vw, 2.25em);
+
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./images/cogs.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: -10px;
+                top: -70px;
+                opacity: .5;
+
+                z-index: 999;
+            }
         }
 
         .included-items {
@@ -501,11 +546,14 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
 @media only screen and (min-width: 1200px) and (max-width: 1920px) {
     #contract-section {
+        position: relative;
         padding: clamp(1em, 2vw, 5em);
         height: auto;
         display: grid;
         grid-template-columns: repeat(8, 12.5%);
         grid-template-rows: repeat(10, 125px);
+
+
     }
 
     .contract-container {
@@ -545,9 +593,27 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-column-end: 8;
         grid-row-start: 6;
         grid-row-end: 15;
+        overflow: visible;
 
         h2 {
             text-align: left;
+            position: relative;
+            overflow: visible;
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./images/cogs.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                opacity: .5;
+                top: -100px;
+                left: -160px;
+            }
+
         }
 
         .included-items {

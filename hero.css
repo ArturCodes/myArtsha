@@ -165,6 +165,7 @@ main {
   }
   #hero .hero-guy {
     display: none;
+    overflow-x: hidden;
   }
   .hero-blob {
     background-image: url("/images/hero-blob-mobile.png");
