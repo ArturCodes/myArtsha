@@ -113,6 +113,13 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         text-align: center;
         margin: 100px auto -25px;
 
+        h2 {
+            font-size: clamp(2em, 5vw, 3.5em);
+            max-width: 60vw;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
         blockquote {
             max-width: 800px;
             margin: 0 auto;
@@ -382,7 +389,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             flex-direction: row;
             justify-content: space-around;
             align-items: flex-start;
-            margin-bottom: 100px;
+            margin-bottom: 75px;
 
             .item {
                 margin: 0 15px;
@@ -421,7 +428,12 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 // ##################################
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .bank-girl {
+        margin: 25px 0 15px 0;
+    }
+
     .included-container {
+
         h2 {
             overflow: visible;
 
@@ -544,7 +556,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+@media only screen and (min-width: 1200px) {
     #contract-section {
         position: relative;
         padding: clamp(1em, 2vw, 5em);
@@ -619,7 +631,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         .included-items {
             display: grid;
             max-width: none;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
 
             .item {
                 padding: 0 35px;
