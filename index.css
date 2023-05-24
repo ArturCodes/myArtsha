@@ -225,34 +225,52 @@
     position: relative;
     width: 90%;
     text-align: center;
-    margin: 50px auto 150px auto;
+    margin: 50px auto 50px auto;
+    height: auto;
+    overflow: visible;
   }
   #quote-2 h2 {
     margin-top: clamp(50px, 10vw, 100px);
-    font-size: clamp(1.5em, 5vw, 3em);
+    font-size: clamp(2em, 5vw, 3em);
     line-height: 1.5;
+    margin-bottom: 15px;
   }
   #quote-2 p {
     font-size: clamp(1.25em, 5vw, 1.5em);
-    margin: 10px 0 50px 0;
+    margin: 10px 0 75px 0;
+  }
+  #quote-2 .button-container {
+    height: auto;
+    overflow: visible;
   }
   #quote-2 .button-container a {
     border-radius: 7.5px;
-    border: 1px solid #1a1a1a;
-    color: #38C6E5;
-    min-width: 100px;
+    border-color: 1px solid lightgray;
+    color: #1a1a1a;
     padding: 15px 20px;
-    text-align: center;
-    align-self: center;
-    font-weight: 700;
     transition: 0.3s;
-    box-shadow: 1px 1px 5px #1a1a1a;
+    box-shadow: 1px 1px 5px #3f3b51;
+    margin: 0 7.5px;
   }
   #quote-2 .button-container a:hover {
     background-color: white;
     color: #1a1a1a;
     transition: 0.3s;
-    border: 1px solid #1a1a1a;
+    border-color: 1px solid lightgray;
+  }
+  #quote-2 .button-container a:nth-child(1) {
+    background-color: #ffcc00;
+  }
+  #quote-2 .button-container a:nth-child(2) {
+    min-width: 150px;
+  }
+  .footer-bottom-blob {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100vw;
+    z-index: 1;
+    bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -313,7 +331,7 @@
     width: calc(200px + 5vw);
     height: calc(200px + 5vw);
     position: absolute;
-    opacity: 0.05;
+    opacity: 0.1;
     top: 300px;
     right: calc(25px + 1vw);
     transform: scaleX(-1);
