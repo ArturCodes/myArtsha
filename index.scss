@@ -282,7 +282,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         position: relative;
         width: 90%;
         text-align: center;
-        margin: 50px auto 50px auto;
+        margin: 75px auto 50px auto;
         height: auto;
         overflow: visible;
 
@@ -294,7 +294,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         }
 
         p {
-            font-size: clamp(1.25em, 5vw, 1.5em);
+            font-size: clamp(1.25em, 3vw, 1.5em);
             margin: 10px 0 75px 0;
         }
 
@@ -320,11 +320,12 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             }
 
             a:nth-child(1) {
+                min-width: 150px;
                 background-color: #ffcc00;
             }
 
             a:nth-child(2) {
-                min-width: 150px;
+                width: 150px;
             }
         }
     }
@@ -336,6 +337,29 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         width: 100vw;
         z-index: 1;
         bottom: 0;
+    }
+
+    footer {
+        display: block;
+        flex-direction: column;
+        height: auto;
+
+        .footer-container {
+            background-color: #3f3b51;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .footer-logo {
+            margin: 0 auto;
+
+            img {
+                margin: 50px auto;
+                height: 100px;
+            }
+        }
     }
 }
 
@@ -420,11 +444,26 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 background-size: contain;
                 background-repeat: no-repeat;
                 width: calc(200px + 5vw);
+                height: calc(125px + 5vw);
+                position: absolute;
+                opacity: .1;
+                top: 125px;
+                right: calc(25px + 1vw);
+                transform: scaleX(-1);
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./images/cogs2.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: calc(200px + 5vw);
                 height: calc(200px + 5vw);
                 position: absolute;
                 opacity: .1;
-                top: 300px;
-                right: calc(25px + 1vw);
+                top: 800px;
+                right: calc(100px + 1vw);
                 transform: scaleX(-1);
             }
         }
@@ -483,12 +522,13 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-row-end: 14;
         overflow: visible;
 
+
         h2 {
             text-align: left;
             padding-left: 100px;
             font-size: clamp(1.5em, 5vw, 2.25em);
 
-            &::after {
+            &::before {
                 display: block;
                 content: '';
                 background-image: url('./images/cogs.png');
@@ -502,6 +542,21 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 opacity: .5;
 
                 z-index: 999;
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./images/cogs2.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: calc(200px + 5vw);
+                height: calc(200px + 5vw);
+                position: absolute;
+                opacity: .1;
+                top: 900px;
+                right: calc(25px + 1vw);
+                transform: scaleX(-1);
             }
         }
 

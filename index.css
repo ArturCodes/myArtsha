@@ -225,7 +225,7 @@
     position: relative;
     width: 90%;
     text-align: center;
-    margin: 50px auto 50px auto;
+    margin: 75px auto 50px auto;
     height: auto;
     overflow: visible;
   }
@@ -236,7 +236,7 @@
     margin-bottom: 15px;
   }
   #quote-2 p {
-    font-size: clamp(1.25em, 5vw, 1.5em);
+    font-size: clamp(1.25em, 3vw, 1.5em);
     margin: 10px 0 75px 0;
   }
   #quote-2 .button-container {
@@ -259,10 +259,11 @@
     border-color: 1px solid lightgray;
   }
   #quote-2 .button-container a:nth-child(1) {
+    min-width: 150px;
     background-color: #ffcc00;
   }
   #quote-2 .button-container a:nth-child(2) {
-    min-width: 150px;
+    width: 150px;
   }
   .footer-bottom-blob {
     position: relative;
@@ -271,6 +272,25 @@
     width: 100vw;
     z-index: 1;
     bottom: 0;
+  }
+  footer {
+    display: block;
+    flex-direction: column;
+    height: auto;
+  }
+  footer .footer-container {
+    background-color: #3f3b51;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .footer-logo {
+    margin: 0 auto;
+  }
+  footer .footer-logo img {
+    margin: 50px auto;
+    height: 100px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -329,11 +349,25 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: calc(200px + 5vw);
+    height: calc(125px + 5vw);
+    position: absolute;
+    opacity: 0.1;
+    top: 125px;
+    right: calc(25px + 1vw);
+    transform: scaleX(-1);
+  }
+  .included-container h2::after {
+    display: block;
+    content: "";
+    background-image: url("./images/cogs2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: calc(200px + 5vw);
     height: calc(200px + 5vw);
     position: absolute;
     opacity: 0.1;
-    top: 300px;
-    right: calc(25px + 1vw);
+    top: 800px;
+    right: calc(100px + 1vw);
     transform: scaleX(-1);
   }
 }
@@ -384,7 +418,7 @@
     padding-left: 100px;
     font-size: clamp(1.5em, 5vw, 2.25em);
   }
-  .included-container h2::after {
+  .included-container h2::before {
     display: block;
     content: "";
     background-image: url("./images/cogs.png");
@@ -397,6 +431,20 @@
     top: -70px;
     opacity: 0.5;
     z-index: 999;
+  }
+  .included-container h2::after {
+    display: block;
+    content: "";
+    background-image: url("./images/cogs2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: calc(200px + 5vw);
+    height: calc(200px + 5vw);
+    position: absolute;
+    opacity: 0.1;
+    top: 900px;
+    right: calc(25px + 1vw);
+    transform: scaleX(-1);
   }
   .included-container .included-items {
     padding-left: 100px;
