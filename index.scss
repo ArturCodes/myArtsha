@@ -276,7 +276,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     }
 
     // ------------------------------------
-    //      SM - QUOTE & FOOTER
+    //      SM - QUOTE & FOOTER BLOB
     // ------------------------------------
     #quote-2 {
         position: relative;
@@ -337,29 +337,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         width: 100vw;
         z-index: 1;
         bottom: 0;
-    }
-
-    footer {
-        display: block;
-        flex-direction: column;
-        height: auto;
-
-        .footer-container {
-            background-color: #3f3b51;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .footer-logo {
-            margin: 0 auto;
-
-            img {
-                margin: 50px auto;
-                height: 110px;
-            }
-        }
     }
 }
 
@@ -669,3 +646,68 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
     }
 }
+
+
+// ##################################
+//       FOOTER SECTION CSS  
+// ##################################
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .footer-container {
+        overflow: visible;
+        background-color: #3f3b51;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        margin: 75px auto 125px auto;
+
+        img {
+            height: calc(75px + 5vw);
+            max-height: 125px;
+        }
+    }
+
+    .footer-content {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-around;
+
+        .footer-nav {
+            overflow: visible;
+
+            h2 {
+                color: white;
+                margin-bottom: 25px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid #38C6E5;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                overflow: visible;
+
+                li {
+                    overflow: visible;
+                    margin: 5px 0px;
+                }
+
+                li a {
+                    color: white;
+                    padding: 10px;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {}
