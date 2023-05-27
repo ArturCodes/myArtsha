@@ -664,7 +664,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
     .footer-logo {
         margin: 0 auto;
-        margin: 75px auto 125px auto;
+        margin: 75px auto;
 
         img {
             height: calc(75px + 5vw);
@@ -697,7 +697,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
                 li {
                     overflow: visible;
-                    margin: 5px 0px;
+                    margin: 10px 0px;
                 }
 
                 li a {
@@ -705,6 +705,18 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                     padding: 10px;
                     margin-left: -10px;
                 }
+
+            }
+        }
+
+        .footer-contact {
+            margin-top: 75px;
+
+            h2 {
+                color: white;
+                border-bottom: 4px solid #38C6E5;
+                margin-bottom: 25px;
+                padding-bottom: 5px;
             }
         }
     }
