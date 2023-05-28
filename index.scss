@@ -721,11 +721,12 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 background-image: url('./images/leaves2.png');
                 background-repeat: no-repeat;
                 background-size: contain;
-                height: 160px;
+                height: 150px;
                 width: 125px;
                 position: absolute;
-                right: calc(-25px + 3vw);
+                right: calc(-35px + 3vw);
                 bottom: 112px;
+                opacity: 0.75;
             }
 
             h2 {
