@@ -424,7 +424,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 height: calc(125px + 5vw);
                 position: absolute;
                 opacity: .1;
-                top: 125px;
+                top: -37px;
                 right: calc(25px + 1vw);
                 transform: scaleX(-1);
             }
@@ -438,7 +438,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 width: calc(200px + 5vw);
                 height: calc(200px + 5vw);
                 position: absolute;
-                opacity: .1;
+                opacity: .05;
                 top: 800px;
                 right: calc(100px + 1vw);
                 transform: scaleX(-1);
@@ -530,9 +530,9 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 width: calc(200px + 5vw);
                 height: calc(200px + 5vw);
                 position: absolute;
-                opacity: .1;
-                top: 900px;
-                right: calc(25px + 1vw);
+                opacity: .05;
+                top: 300px;
+                right: 0;
                 transform: scaleX(-1);
             }
         }
@@ -632,6 +632,21 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 left: -160px;
             }
 
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./images/cogs2.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: calc(200px + 5vw);
+                height: calc(200px + 5vw);
+                position: absolute;
+                opacity: .05;
+                top: 275px;
+                right: -150px;
+                transform: scaleX(-1);
+            }
+
         }
 
         .included-items {
@@ -664,7 +679,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
     .footer-logo {
         margin: 0 auto;
-        margin: 75px auto;
+        margin: 50px auto;
 
         img {
             height: calc(75px + 5vw);
@@ -695,6 +710,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 flex-direction: column;
                 overflow: visible;
 
+
                 li {
                     overflow: visible;
                     margin: 7.5px 0px;
@@ -704,6 +720,10 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                     color: white;
                     padding: 10px;
                     margin-left: -10px;
+
+                    &:hover {
+                        text-decoration: solid 2px underline #38C6E5;
+                    }
                 }
 
             }
@@ -736,16 +756,20 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 padding-bottom: 5px;
             }
 
-            ul {
+            div {
                 position: relative;
+                display: flex;
+                flex-direction: column;
 
-                li {
+                a {
                     color: white;
                     margin-left: 30px;
                     margin-bottom: 15px;
+
+
                 }
 
-                li:nth-child(1)::before {
+                a:nth-child(1)::before {
                     display: block;
                     content: '';
                     position: absolute;
@@ -754,11 +778,10 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                     background-repeat: no-repeat;
                     width: 25px;
                     height: 25px;
-                    bottom: 25p0x;
                     left: 0;
                 }
 
-                li:nth-child(2)::before {
+                a:nth-child(2)::before {
                     display: block;
                     content: '';
                     position: absolute;
@@ -767,15 +790,55 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                     background-repeat: no-repeat;
                     width: 25px;
                     height: 25px;
-                    bottom: 25p0x;
                     left: 2px;
                 }
-
             }
+        }
+    }
 
+    .footer-bottom {
+        background-color: #38C6E5;
+        text-align: center;
 
+        a:hover {
+            color: white;
+            transition: 0.2s;
         }
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .footer-container {
+        overflow: visible;
+        background-color: #3f3b51;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        margin: 50px auto;
+
+        img {
+            height: calc(75px + 5vw);
+            max-height: 125px;
+        }
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-bottom {
+        background-color: #38C6E5;
+        text-align: center;
+
+        a:hover {
+            color: white;
+            transition: 0.2s;
+        }
+    }
+}
