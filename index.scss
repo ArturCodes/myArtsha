@@ -685,7 +685,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
             h2 {
                 color: white;
-                margin-bottom: 25px;
+                margin-bottom: 15px;
                 padding-bottom: 5px;
                 border-bottom: 4px solid #38C6E5;
             }
@@ -715,8 +715,45 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             h2 {
                 color: white;
                 border-bottom: 4px solid #38C6E5;
-                margin-bottom: 25px;
+                margin-bottom: 15px;
                 padding-bottom: 5px;
+            }
+
+            ul {
+                position: relative;
+
+                li {
+                    color: white;
+                    margin-left: 30px;
+                    margin-bottom: 15px;
+                }
+
+                li:nth-child(1)::before {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    background-image: url('./images/mail.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 25px;
+                    bottom: 25p0x;
+                    left: 0;
+                }
+
+                li:nth-child(2)::before {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    background-image: url('./images/phone.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 25px;
+                    height: 25px;
+                    bottom: 25p0x;
+                    left: 2px;
+                }
+
             }
         }
     }
