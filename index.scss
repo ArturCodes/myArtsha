@@ -657,7 +657,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     .footer-container {
         overflow: visible;
         background-color: #3f3b51;
-        height: 1000px;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
@@ -678,7 +678,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         max-width: 1600px;
         display: flex;
         flex-direction: column;
-        // justify-content: space-around;
+        overflow: visible;
 
         .footer-nav {
             overflow: visible;
@@ -697,7 +697,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
                 li {
                     overflow: visible;
-                    margin: 10px 0px;
+                    margin: 7.5px 0px;
                 }
 
                 li a {
@@ -710,12 +710,28 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         }
 
         .footer-contact {
-            margin-top: 75px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: visible;
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./images/leaves2.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 160px;
+                width: 125px;
+                position: absolute;
+                right: calc(-25px + 3vw);
+                bottom: 112px;
+            }
 
             h2 {
                 color: white;
                 border-bottom: 4px solid #38C6E5;
-                margin-bottom: 15px;
+                margin-bottom: 25px;
                 padding-bottom: 5px;
             }
 
@@ -755,6 +771,8 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 }
 
             }
+
+
         }
     }
 }

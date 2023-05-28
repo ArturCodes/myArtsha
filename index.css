@@ -523,7 +523,7 @@
   .footer-container {
     overflow: visible;
     background-color: #3f3b51;
-    height: 1000px;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
@@ -541,6 +541,7 @@
     max-width: 1600px;
     display: flex;
     flex-direction: column;
+    overflow: visible;
   }
   .footer-content .footer-nav {
     overflow: visible;
@@ -558,7 +559,7 @@
   }
   .footer-content .footer-nav ul li {
     overflow: visible;
-    margin: 10px 0px;
+    margin: 7.5px 0px;
   }
   .footer-content .footer-nav ul li a {
     color: white;
@@ -566,12 +567,27 @@
     margin-left: -10px;
   }
   .footer-content .footer-contact {
-    margin-top: 75px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: visible;
+  }
+  .footer-content .footer-contact::before {
+    display: block;
+    content: "";
+    background-image: url("./images/leaves2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 160px;
+    width: 125px;
+    position: absolute;
+    right: calc(-25px + 3vw);
+    bottom: 112px;
   }
   .footer-content .footer-contact h2 {
     color: white;
     border-bottom: 4px solid #38C6E5;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding-bottom: 5px;
   }
   .footer-content .footer-contact ul {
