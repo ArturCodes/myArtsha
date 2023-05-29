@@ -664,7 +664,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
 
 // ##################################
-//       FOOTER SECTION CSS  
+//       FOOTER SECTION CSS ONLY  
 // ##################################
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -702,7 +702,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid #38C6E5;
+                border-bottom: 4px solid #3BD3F4;
             }
 
             ul {
@@ -722,7 +722,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                     margin-left: -10px;
 
                     &:hover {
-                        text-decoration: solid 2px underline #38C6E5;
+                        text-decoration: solid 2px underline #3BD3F4;
                     }
                 }
 
@@ -746,7 +746,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 position: absolute;
                 right: calc(-35px + 3vw);
                 bottom: 112px;
-                opacity: 0.75;
             }
 
             h2 {
@@ -833,7 +832,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     }
 
     .footer-bottom {
-        background-color: #38C6E5;
+        background-color: #3BD3F4;
         text-align: center;
 
         a:hover {
@@ -842,3 +841,5 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         }
     }
 }
+
+@media only screen and (min-width: 1200px) {}
