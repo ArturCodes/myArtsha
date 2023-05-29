@@ -231,7 +231,7 @@
   }
   #quote-2 h2 {
     margin-top: clamp(50px, 10vw, 100px);
-    font-size: clamp(2em, 5vw, 3em);
+    font-size: clamp(2em, 4.75vw, 3em);
     line-height: 1.5;
     margin-bottom: 15px;
   }
@@ -308,6 +308,10 @@
     background-size: cover;
     height: 300px;
     z-index: 999;
+  }
+  #quote-2 h2 {
+    overflow: visible;
+    white-space: nowrap;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -556,6 +560,7 @@
     display: flex;
     flex-direction: column;
     overflow: visible;
+    margin-bottom: 50px;
   }
   .footer-content .footer-nav {
     overflow: visible;
@@ -668,6 +673,92 @@
   .footer-content {
     display: flex;
     flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 75px;
+  }
+  .footer-content::after {
+    border-bottom: 4px solid #3BD3F4;
+  }
+  .footer-content .footer-nav {
+    width: 100%;
+  }
+  .footer-content .footer-nav h2 {
+    color: white;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #3BD3F4;
+  }
+  .footer-content .footer-contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-content .footer-contact h2 {
+    color: white;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #3BD3F4;
+  }
+  .footer-content .footer-contact a {
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  .footer-content .footer-contact a:nth-child(1)::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("./images/mail.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    left: 0;
+  }
+  .footer-content .footer-contact a:nth-child(2)::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("./images/phone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    left: 2px;
+  }
+  .footer-bottom {
+    background-color: #3BD3F4;
+    text-align: center;
+  }
+  .footer-bottom a:hover {
+    color: white;
+    transition: 0.2s;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+    overflow: visible;
+    background-color: #3f3b51;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo {
+    margin: 0 auto;
+    margin: 50px auto;
+  }
+  .footer-logo img {
+    height: calc(75px + 5vw);
+    max-height: 125px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
   }
   .footer-bottom {
     background-color: #3BD3F4;

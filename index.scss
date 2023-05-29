@@ -288,7 +288,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
         h2 {
             margin-top: clamp(50px, 10vw, 100px);
-            font-size: clamp(2em, 5vw, 3em);
+            font-size: clamp(2em, 4.75vw, 3em);
             line-height: 1.5;
             margin-bottom: 15px;
         }
@@ -296,6 +296,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         p {
             font-size: clamp(1.25em, 3vw, 1.5em);
             margin: 10px 0 75px 0;
+
         }
 
         .button-container {
@@ -391,6 +392,14 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             background-size: cover;
             height: 300px;
             z-index: 999;
+        }
+    }
+
+    #quote-2 {
+
+        h2 {
+            overflow: visible;
+            white-space: nowrap;
         }
     }
 }
@@ -694,6 +703,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         display: flex;
         flex-direction: column;
         overflow: visible;
+        margin-bottom: 50px;
 
         .footer-nav {
             overflow: visible;
@@ -814,6 +824,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         height: auto;
         display: flex;
         flex-direction: column;
+
     }
 
     .footer-logo {
@@ -829,7 +840,73 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     .footer-content {
         display: flex;
         flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+        margin-bottom: 75px;
+
+        &::after {
+            border-bottom: 4px solid #3BD3F4;
+        }
+
+        .footer-nav {
+            width: 100%;
+
+            h2 {
+                color: white;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid #3BD3F4;
+            }
+
+        }
+
+        .footer-contact {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                color: white;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid #3BD3F4;
+            }
+
+            a {
+                color: white;
+                margin-left: 30px;
+                margin-bottom: 15px;
+            }
+
+            a:nth-child(1)::before {
+                display: block;
+                content: '';
+                position: absolute;
+                background-image: url('./images/mail.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 25px;
+                height: 25px;
+                left: 0;
+            }
+
+            a:nth-child(2)::before {
+                display: block;
+                content: '';
+                position: absolute;
+                background-image: url('./images/phone.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 25px;
+                height: 25px;
+                left: 2px;
+            }
+        }
     }
+
+
+
 
     .footer-bottom {
         background-color: #3BD3F4;
@@ -842,4 +919,43 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     }
 }
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+    .footer-container {
+        overflow: visible;
+        background-color: #3f3b51;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        margin: 50px auto;
+
+        img {
+            height: calc(75px + 5vw);
+            max-height: 125px;
+        }
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .footer-bottom {
+        background-color: #3BD3F4;
+        text-align: center;
+
+        a:hover {
+            color: white;
+            transition: 0.2s;
+        }
+    }
+}
