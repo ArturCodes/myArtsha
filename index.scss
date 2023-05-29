@@ -152,7 +152,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         h2 {
             color: white;
             font-size: clamp(1.5em, 7vw, 3em);
-            line-height: 1.25;
+            line-height: 1.5;
 
             span {
                 color: #38C6E5;
@@ -475,19 +475,21 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 2;
+        position: relative;
 
         &::after {
             display: block;
             content: '';
             position: absolute;
-            background-image: url('./images/explosion.png');
+            background-image: url('./images/contract.png');
             background-size: contain;
             background-repeat: no-repeat;
-            width: 75%;
-            height: 75%;
-            bottom: 110px;
-            left: -75px;
-            opacity: .05;
+            width: 45%;
+            height: 45%;
+            bottom: 200px;
+            left: 0;
+            opacity: .5;
+            transform: rotate(15deg);
         }
 
         h2 {
@@ -610,14 +612,15 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             display: block;
             content: '';
             position: absolute;
-            background-image: url('./images/explosion.png');
+            background-image: url('./images/contract.png');
             background-size: contain;
             background-repeat: no-repeat;
-            width: 125%;
-            height: 125%;
-            bottom: 25px;
-            right: -100px;
-            opacity: .03;
+            width: 60%;
+            height: 60%;
+            top: -22px;
+            left: -140px;
+            opacity: .5;
+            transform: rotate(15deg);
         }
 
 
@@ -886,7 +889,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                padding-left: 10vw;
                 border-bottom: 4px solid #3BD3F4;
             }
 
@@ -935,9 +937,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             }
         }
     }
-
-
-
 
     .footer-bottom {
         background-color: #3BD3F4;
