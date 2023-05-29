@@ -370,6 +370,19 @@
     grid-row-start: 1;
     grid-row-end: 2;
   }
+  .contract-container::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("./images/explosion.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    bottom: 110px;
+    left: -75px;
+    opacity: 0.05;
+  }
   .contract-container h2 {
     font-size: 2.5em;
   }
@@ -468,6 +481,20 @@
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 5;
+    overflow: visible;
+  }
+  .contract-container::after {
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url("./images/explosion.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 125%;
+    height: 125%;
+    bottom: 25px;
+    right: -100px;
+    opacity: 0.03;
   }
   .contract-container h2 {
     min-width: 700px;
@@ -562,30 +589,30 @@
     overflow: visible;
     margin-bottom: 50px;
   }
-  .footer-content .footer-nav {
+  .footer-content .footer-navigation {
     overflow: visible;
   }
-  .footer-content .footer-nav h2 {
+  .footer-content .footer-navigation h2 {
     color: white;
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 4px solid #3BD3F4;
   }
-  .footer-content .footer-nav ul {
+  .footer-content .footer-navigation ul {
     display: flex;
     flex-direction: column;
     overflow: visible;
   }
-  .footer-content .footer-nav ul li {
+  .footer-content .footer-navigation ul li {
     overflow: visible;
     margin: 7.5px 0px;
   }
-  .footer-content .footer-nav ul li a {
+  .footer-content .footer-navigation ul li a {
     color: white;
     padding: 10px;
     margin-left: -10px;
   }
-  .footer-content .footer-nav ul li a:hover {
+  .footer-content .footer-navigation ul li a:hover {
     -webkit-text-decoration: solid 2px underline #3BD3F4;
             text-decoration: solid 2px underline #3BD3F4;
   }
@@ -681,13 +708,14 @@
   .footer-content::after {
     border-bottom: 4px solid #3BD3F4;
   }
-  .footer-content .footer-nav {
-    width: 100%;
+  .footer-content .footer-navigation {
+    width: 80%;
   }
-  .footer-content .footer-nav h2 {
+  .footer-content .footer-navigation h2 {
     color: white;
     margin-bottom: 15px;
     padding-bottom: 5px;
+    padding-left: 10vw;
     border-bottom: 4px solid #3BD3F4;
   }
   .footer-content .footer-contact {

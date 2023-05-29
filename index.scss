@@ -476,6 +476,20 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-row-start: 1;
         grid-row-end: 2;
 
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            background-image: url('./images/explosion.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 75%;
+            height: 75%;
+            bottom: 110px;
+            left: -75px;
+            opacity: .05;
+        }
+
         h2 {
             font-size: 2.5em;
         }
@@ -590,6 +604,22 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 5;
+        overflow: visible;
+
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            background-image: url('./images/explosion.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 125%;
+            height: 125%;
+            bottom: 25px;
+            right: -100px;
+            opacity: .03;
+        }
+
 
         h2 {
             min-width: 700px;
@@ -705,7 +735,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         overflow: visible;
         margin-bottom: 50px;
 
-        .footer-nav {
+        .footer-navigation {
             overflow: visible;
 
             h2 {
@@ -849,13 +879,14 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             border-bottom: 4px solid #3BD3F4;
         }
 
-        .footer-nav {
-            width: 100%;
+        .footer-navigation {
+            width: 80%;
 
             h2 {
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
+                padding-left: 10vw;
                 border-bottom: 4px solid #3BD3F4;
             }
 
