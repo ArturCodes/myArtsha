@@ -344,30 +344,35 @@ main {
     text-underline-position: under;
     text-decoration-color: #38c6e5;
     text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
   }
   nav #navbar-links .home a {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #38c6e5;
     text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
   }
   nav #navbar-links .about:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #7fd378;
     text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
   }
   nav #navbar-links .services:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #804dd4;
     text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
   }
   nav #navbar-links .blog:hover {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #e38025;
     text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
   }
   nav #navbar-links .contact a {
     color: #1f1f1f;
@@ -378,6 +383,7 @@ main {
   nav #navbar-links .contact a:hover {
     color: white;
     text-decoration: none;
+    text-underline-offset: 2px;
   }
   #hero {
     align-items: start;

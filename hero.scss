@@ -420,12 +420,15 @@ main {
                 text-underline-position: under;
                 text-decoration-color: #38c6e5;
                 text-decoration-thickness: 3px;
+                text-underline-offset: 2px;
+
 
                 a {
                     text-decoration: underline;
                     text-underline-position: under;
                     text-decoration-color: #38c6e5;
                     text-decoration-thickness: 3px;
+                    text-underline-offset: 2px;
                 }
 
             }
@@ -436,6 +439,7 @@ main {
                     text-underline-position: under;
                     text-decoration-color: #7fd378;
                     text-decoration-thickness: 3px;
+                    text-underline-offset: 2px;
                 }
             }
 
@@ -445,6 +449,7 @@ main {
                     text-underline-position: under;
                     text-decoration-color: #804dd4;
                     text-decoration-thickness: 3px;
+                    text-underline-offset: 2px;
                 }
             }
 
@@ -454,6 +459,7 @@ main {
                     text-underline-position: under;
                     text-decoration-color: #e38025;
                     text-decoration-thickness: 3px;
+                    text-underline-offset: 2px;
                 }
             }
 
@@ -467,6 +473,7 @@ main {
                     &:hover {
                         color: white;
                         text-decoration: none;
+                        text-underline-offset: 2px;
                     }
 
                 }

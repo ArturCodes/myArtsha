@@ -858,7 +858,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         height: auto;
         display: flex;
         flex-direction: column;
-
     }
 
     .footer-logo {
@@ -876,7 +875,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         display: flex;
         flex-direction: row;
         width: 80%;
-        margin: 0 auto;
+        margin: 75px auto;
         justify-content: space-around;
         margin-bottom: 75px;
         overflow: visible;
@@ -926,8 +925,218 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                     }
 
                     .home {
-                        text-decoration: 2px solid #38C6E5 underline;
+                        text-decoration: 3px solid #38C6E5 underline;
+                        text-underline-offset: 2px;
+                    }
 
+                    .about:hover {
+                        text-decoration: 3px solid #7fd378 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .services:hover {
+                        text-decoration: 3px solid #804dd4 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .blog:hover {
+                        text-decoration: 3px solid #e38025 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .contact:hover {
+                        text-decoration: 3px solid #ffcc00 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                }
+            }
+        }
+
+        .footer-contact {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            overflow: visible;
+
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./images/leaves2.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                right: -45px;
+                top: -90px;
+            }
+
+            h2 {
+                color: white;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid #3BD3F4;
+                padding-left: 75px;
+
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                padding-left: 50px;
+                position: relative;
+                margin: 7.5px 15px;
+
+            }
+
+            a {
+                color: white;
+                margin-left: 40px;
+                margin-bottom: 15px;
+                width: auto;
+            }
+
+            a:nth-child(1)::before {
+                display: block;
+                content: '';
+                position: absolute;
+                background-image: url('./images/mail.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                left: 60px;
+                top: 3px;
+
+            }
+
+            a:nth-child(2)::before {
+                display: block;
+                content: '';
+                position: absolute;
+                background-image: url('./images/phone.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                left: 62px;
+                top: 45px;
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: #38C6E5;
+        text-align: center;
+        font-size: 14px;
+
+        a:hover {
+            color: white;
+            transition: 0.2s;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .footer-container {
+        overflow: visible;
+        background-color: #3f3b51;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-logo {
+        margin: 0 auto;
+        margin: 50px auto;
+
+        img {
+            height: calc(75px + 5vw);
+            max-height: 100px;
+
+        }
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        max-width: 1400px;
+        margin: 0 auto;
+        justify-content: space-around;
+        margin: 75px auto;
+        overflow: visible;
+
+        &::after {
+            border-bottom: 4px solid #3BD3F4;
+        }
+
+        .footer-navigation {
+            width: 65vw;
+            position: relative;
+            overflow: visible;
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./images/leaves.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                left: 0px;
+                top: -90px;
+            }
+
+            h2 {
+                color: white;
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+                border-bottom: 4px solid #38C6E5;
+                padding-left: 110px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                margin-left: 90px;
+
+                li {
+                    line-height: 1.75;
+                    margin: 2.5px 15px;
+
+                    a {
+                        color: white;
+                        padding: 5px;
+                    }
+
+                    .home {
+                        text-decoration: 3px solid #38C6E5 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .about:hover {
+                        text-decoration: 3px solid #7fd378 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .services:hover {
+                        text-decoration: 3px solid #804dd4 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .blog:hover {
+                        text-decoration: 3px solid #e38025 underline;
+                        text-underline-offset: 2px;
+                    }
+
+                    .contact:hover {
+                        text-decoration: 3px solid #ffcc00 underline;
+                        text-underline-offset: 2px;
                     }
 
                 }
@@ -1012,49 +1221,9 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     }
 
     .footer-bottom {
-        background-color: #38C6E5;
-        text-align: center;
-
-        a:hover {
-            color: white;
-            transition: 0.2s;
-        }
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-
-    .footer-container {
-        overflow: visible;
-        background-color: #3f3b51;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .footer-logo {
-        margin: 0 auto;
-        margin: 50px auto;
-
-        img {
-            height: calc(75px + 5vw);
-            max-height: 125px;
-        }
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 80%;
-        margin: 0 auto;
-
-    }
-
-    .footer-bottom {
         background-color: #3BD3F4;
         text-align: center;
+        font-size: 14px;
 
         a:hover {
             color: white;
