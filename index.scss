@@ -757,16 +757,16 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 li {
                     overflow: visible;
                     margin: 7.5px 0px;
-                }
 
-                li a {
-                    color: white;
-                    padding: 10px;
-                    margin-left: -10px;
+                    a {
+                        color: white;
+                        padding: 10px;
+                        margin-left: -10px;
+                    }
 
                     .home {
-                        text-decoration: 2px #38C6E5 underline;
-
+                        text-decoration: 3px solid #38C6E5 underline;
+                        text-underline-offset: 2px;
                     }
                 }
 

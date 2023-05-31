@@ -615,9 +615,10 @@
     padding: 10px;
     margin-left: -10px;
   }
-  .footer-content .footer-navigation ul li a .home {
-    -webkit-text-decoration: 2px #38C6E5 underline;
-            text-decoration: 2px #38C6E5 underline;
+  .footer-content .footer-navigation ul li .home {
+    -webkit-text-decoration: 3px solid #38C6E5 underline;
+            text-decoration: 3px solid #38C6E5 underline;
+    text-underline-offset: 2px;
   }
   .footer-content .footer-contact {
     margin-top: 50px;
