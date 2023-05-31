@@ -488,7 +488,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             height: 45%;
             bottom: 200px;
             left: 0;
-            opacity: .5;
+            opacity: .15;
             transform: rotate(15deg);
         }
 
@@ -595,8 +595,8 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     #contract-section {
         position: relative;
         padding: clamp(1em, 2vw, 5em);
-        height: auto;
         display: grid;
+        margin-bottom: auto;
         grid-template-columns: repeat(8, 12.5%);
         grid-template-rows: repeat(10, 125px);
     }
@@ -684,9 +684,10 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 height: calc(200px + 5vw);
                 position: absolute;
                 opacity: .05;
-                top: 275px;
-                right: -150px;
+                top: 175px;
+                right: -225px;
                 transform: scaleX(-1);
+                overflow: hidden;
             }
 
         }
@@ -725,7 +726,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
         img {
             height: calc(75px + 5vw);
-            max-height: 125px;
+            max-height: 100px;
         }
     }
 
@@ -751,8 +752,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             ul {
                 display: flex;
                 flex-direction: column;
-                overflow: visible;
-
+                // overflow: visible;
 
                 li {
                     overflow: visible;
@@ -784,10 +784,10 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 background-image: url('./images/leaves2.png');
                 background-repeat: no-repeat;
                 background-size: contain;
-                height: 150px;
+                height: 100px;
                 width: 125px;
                 position: absolute;
-                right: calc(-35px + 3vw);
+                right: calc(-60px + 3vw);
                 bottom: 112px;
             }
 
@@ -807,7 +807,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                     color: white;
                     margin-left: 30px;
                     margin-bottom: 15px;
-
 
                 }
 
@@ -866,7 +865,8 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
 
         img {
             height: calc(75px + 5vw);
-            max-height: 125px;
+            max-height: 100px;
+
         }
     }
 
@@ -877,19 +877,38 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         margin: 0 auto;
         justify-content: space-around;
         margin-bottom: 75px;
+        overflow: visible;
+
 
         &::after {
             border-bottom: 4px solid #3BD3F4;
         }
 
         .footer-navigation {
-            width: 60%;
+            width: 50%;
 
             h2 {
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
                 border-bottom: 4px solid #3BD3F4;
+                padding-left: 25px;
+            }
+
+            ul {
+                padding-left: 25px;
+
+                li {
+                    line-height: 1.75;
+                    margin: 7.5px 0px;
+                    display: flex;
+                    flex-direction: row;
+
+                    a {
+                        color: white;
+
+                    }
+                }
             }
 
         }
@@ -898,12 +917,32 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             position: relative;
             display: flex;
             flex-direction: column;
+            width: 50%;
+            overflow: visible;
+
+            &::after {
+                display: block;
+                content: '';
+                background-image: url('./images/leaves2.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                right: calc(-60px + 3vw);
+                top: -90px;
+            }
 
             h2 {
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
                 border-bottom: 4px solid #3BD3F4;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
             }
 
             a {
