@@ -737,7 +737,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         display: flex;
         flex-direction: column;
         overflow: visible;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
 
         .footer-navigation {
             overflow: visible;
@@ -764,8 +764,9 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                     padding: 10px;
                     margin-left: -10px;
 
-                    &:hover {
-                        text-decoration: solid 2px underline #3BD3F4;
+                    .home {
+                        text-decoration: 2px #38C6E5 underline;
+
                     }
                 }
 
@@ -781,13 +782,13 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
             &::before {
                 display: block;
                 content: '';
-                background-image: url('./images/leaves2.png');
+                background-image: url('./images/leaves.png');
                 background-repeat: no-repeat;
                 background-size: contain;
-                height: 100px;
+                height: 125px;
                 width: 125px;
                 position: absolute;
-                right: calc(-60px + 3vw);
+                right: -45px;
                 bottom: 112px;
             }
 
@@ -840,6 +841,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     .footer-bottom {
         background-color: #38C6E5;
         text-align: center;
+        font-size: 14px;
 
         a:hover {
             color: white;
@@ -879,45 +881,64 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         margin-bottom: 75px;
         overflow: visible;
 
-
         &::after {
             border-bottom: 4px solid #3BD3F4;
         }
 
         .footer-navigation {
-            width: 50%;
+            width: 65vw;
+            position: relative;
+            overflow: visible;
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url('./images/leaves.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 125px;
+                width: 125px;
+                position: absolute;
+                left: 0px;
+                top: -90px;
+            }
 
             h2 {
                 color: white;
                 margin-bottom: 15px;
                 padding-bottom: 5px;
-                border-bottom: 4px solid #3BD3F4;
-                padding-left: 25px;
+                border-bottom: 4px solid #38C6E5;
+                padding-left: 110px;
             }
 
             ul {
-                padding-left: 25px;
+
+                display: flex;
+                flex-direction: row;
 
                 li {
                     line-height: 1.75;
-                    margin: 7.5px 0px;
-                    display: flex;
-                    flex-direction: row;
+                    margin: 2.5px 15px;
 
                     a {
                         color: white;
+                        padding: 5px;
+                    }
+
+                    .home {
+                        text-decoration: 2px solid #38C6E5 underline;
 
                     }
+
                 }
             }
-
         }
 
         .footer-contact {
             position: relative;
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 70%;
             overflow: visible;
 
             &::after {
@@ -929,7 +950,7 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 height: 125px;
                 width: 125px;
                 position: absolute;
-                right: calc(-60px + 3vw);
+                right: -45px;
                 top: -90px;
             }
 
@@ -938,17 +959,27 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 margin-bottom: 15px;
                 padding-bottom: 5px;
                 border-bottom: 4px solid #3BD3F4;
+                padding-left: 75px;
+
             }
 
             div {
                 display: flex;
                 flex-direction: column;
+                padding-left: 50px;
+                position: relative;
+                margin: 7.5px 15px;
+
             }
 
             a {
                 color: white;
-                margin-left: 30px;
+                margin-left: 40px;
                 margin-bottom: 15px;
+
+                &:hover {
+                    text-decoration: 2px underline #38C6E5;
+                }
             }
 
             a:nth-child(1)::before {
@@ -958,9 +989,11 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 background-image: url('./images/mail.png');
                 background-size: contain;
                 background-repeat: no-repeat;
-                width: 25px;
-                height: 25px;
-                left: 0;
+                width: 20px;
+                height: 20px;
+                left: 60px;
+                top: 3px;
+
             }
 
             a:nth-child(2)::before {
@@ -970,15 +1003,16 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
                 background-image: url('./images/phone.png');
                 background-size: contain;
                 background-repeat: no-repeat;
-                width: 25px;
-                height: 25px;
-                left: 2px;
+                width: 20px;
+                height: 20px;
+                left: 62px;
+                top: 45px;
             }
         }
     }
 
     .footer-bottom {
-        background-color: #3BD3F4;
+        background-color: #38C6E5;
         text-align: center;
 
         a:hover {

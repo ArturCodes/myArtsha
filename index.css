@@ -591,7 +591,7 @@
     display: flex;
     flex-direction: column;
     overflow: visible;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .footer-content .footer-navigation {
     overflow: visible;
@@ -615,9 +615,9 @@
     padding: 10px;
     margin-left: -10px;
   }
-  .footer-content .footer-navigation ul li a:hover {
-    -webkit-text-decoration: solid 2px underline #3BD3F4;
-            text-decoration: solid 2px underline #3BD3F4;
+  .footer-content .footer-navigation ul li a .home {
+    -webkit-text-decoration: 2px #38C6E5 underline;
+            text-decoration: 2px #38C6E5 underline;
   }
   .footer-content .footer-contact {
     margin-top: 50px;
@@ -628,13 +628,13 @@
   .footer-content .footer-contact::before {
     display: block;
     content: "";
-    background-image: url("./images/leaves2.png");
+    background-image: url("./images/leaves.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height: 100px;
+    height: 125px;
     width: 125px;
     position: absolute;
-    right: calc(-60px + 3vw);
+    right: -45px;
     bottom: 112px;
   }
   .footer-content .footer-contact h2 {
@@ -678,6 +678,7 @@
   .footer-bottom {
     background-color: #38C6E5;
     text-align: center;
+    font-size: 14px;
   }
   .footer-bottom a:hover {
     color: white;
@@ -713,32 +714,50 @@
     border-bottom: 4px solid #3BD3F4;
   }
   .footer-content .footer-navigation {
-    width: 50%;
+    width: 65vw;
+    position: relative;
+    overflow: visible;
+  }
+  .footer-content .footer-navigation::before {
+    display: block;
+    content: "";
+    background-image: url("./images/leaves.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    left: 0px;
+    top: -90px;
   }
   .footer-content .footer-navigation h2 {
     color: white;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 4px solid #3BD3F4;
-    padding-left: 25px;
+    border-bottom: 4px solid #38C6E5;
+    padding-left: 110px;
   }
   .footer-content .footer-navigation ul {
-    padding-left: 25px;
-  }
-  .footer-content .footer-navigation ul li {
-    line-height: 1.75;
-    margin: 7.5px 0px;
     display: flex;
     flex-direction: row;
   }
+  .footer-content .footer-navigation ul li {
+    line-height: 1.75;
+    margin: 2.5px 15px;
+  }
   .footer-content .footer-navigation ul li a {
     color: white;
+    padding: 5px;
+  }
+  .footer-content .footer-navigation ul li .home {
+    -webkit-text-decoration: 2px solid #38C6E5 underline;
+            text-decoration: 2px solid #38C6E5 underline;
   }
   .footer-content .footer-contact {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     overflow: visible;
   }
   .footer-content .footer-contact::after {
@@ -750,7 +769,7 @@
     height: 125px;
     width: 125px;
     position: absolute;
-    right: calc(-60px + 3vw);
+    right: -45px;
     top: -90px;
   }
   .footer-content .footer-contact h2 {
@@ -758,15 +777,23 @@
     margin-bottom: 15px;
     padding-bottom: 5px;
     border-bottom: 4px solid #3BD3F4;
+    padding-left: 75px;
   }
   .footer-content .footer-contact div {
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
+    position: relative;
+    margin: 7.5px 15px;
   }
   .footer-content .footer-contact a {
     color: white;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 15px;
+  }
+  .footer-content .footer-contact a:hover {
+    -webkit-text-decoration: 2px underline #38C6E5;
+            text-decoration: 2px underline #38C6E5;
   }
   .footer-content .footer-contact a:nth-child(1)::before {
     display: block;
@@ -775,9 +802,10 @@
     background-image: url("./images/mail.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    left: 0;
+    width: 20px;
+    height: 20px;
+    left: 60px;
+    top: 3px;
   }
   .footer-content .footer-contact a:nth-child(2)::before {
     display: block;
@@ -786,12 +814,13 @@
     background-image: url("./images/phone.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    left: 2px;
+    width: 20px;
+    height: 20px;
+    left: 62px;
+    top: 45px;
   }
   .footer-bottom {
-    background-color: #3BD3F4;
+    background-color: #38C6E5;
     text-align: center;
   }
   .footer-bottom a:hover {
