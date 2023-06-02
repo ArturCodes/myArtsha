@@ -488,6 +488,7 @@ main {
         margin: 0 auto;
         left: 100px;
         margin-bottom: -100px;
+        overflow: visible;
 
 
         h1 {
@@ -496,7 +497,9 @@ main {
             padding: 0;
             text-align: left;
             width: auto;
+            min-width: 800px;
             z-index: 5;
+            margin-top: -20px;
 
         }
 

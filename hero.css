@@ -391,6 +391,7 @@ main {
     margin: 0 auto;
     left: 100px;
     margin-bottom: -100px;
+    overflow: visible;
   }
   #hero h1 {
     position: relative;
@@ -398,7 +399,9 @@ main {
     padding: 0;
     text-align: left;
     width: auto;
+    min-width: 800px;
     z-index: 5;
+    margin-top: -20px;
   }
   #hero P {
     position: relative;
