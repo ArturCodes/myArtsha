@@ -160,8 +160,8 @@ main {
     margin: 0 7.5px;
   }
   #hero div .btn:hover {
-    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176), -1px -1px 3px rgba(63, 59, 81, 0.6352941176);
-    transition: 0.3s;
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176);
+    transition: 0.2s;
   }
   #hero .hero-guy {
     display: none;

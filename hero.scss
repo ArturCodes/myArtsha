@@ -5,8 +5,8 @@ $box-shadow: 1px 1px 3px #3f3b51,
 
 $box-shadow-hover: 1px 1px 3px #3f3b51a2,
     1px -1px 3px #3f3b51a2,
-    -1px 1px 3px #3f3b51a2,
-    -1px -1px 3px #3f3b51a2;
+    -1px 1px 3px #3f3b51a2;
+
 
 
 header,
@@ -195,7 +195,7 @@ main {
 
                 &:hover {
                     box-shadow: $box-shadow-hover;
-                    transition: 0.3s;
+                    transition: 0.2s;
                 }
             }
 

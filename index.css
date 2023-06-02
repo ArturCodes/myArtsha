@@ -261,9 +261,19 @@
   #quote-2 .button-container a:nth-child(1) {
     min-width: 150px;
     background-color: #ffcc00;
+    transition: 0.3s;
+  }
+  #quote-2 .button-container a:nth-child(1):hover {
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176);
+    transition: 0.2s;
   }
   #quote-2 .button-container a:nth-child(2) {
     width: 150px;
+    transition: 0.3s;
+  }
+  #quote-2 .button-container a:nth-child(2):hover {
+    box-shadow: 1px 1px 3px rgba(63, 59, 81, 0.6352941176), 1px -1px 3px rgba(63, 59, 81, 0.6352941176), -1px 1px 3px rgba(63, 59, 81, 0.6352941176);
+    transition: 0.2s;
   }
   .footer-bottom-blob {
     position: relative;
@@ -275,6 +285,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  #what-we-do-section .header {
+    margin-bottom: 50px;
+  }
   #what-we-do-section .header p {
     max-width: 600px;
   }
@@ -358,20 +371,6 @@
     grid-row-start: 1;
     grid-row-end: 2;
     position: relative;
-  }
-  .contract-container::after {
-    display: block;
-    content: "";
-    position: absolute;
-    background-image: url("./images/contract.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 45%;
-    height: 45%;
-    bottom: 200px;
-    left: 0;
-    opacity: 0.15;
-    transform: rotate(15deg);
   }
   .contract-container h2 {
     font-size: 2.5em;
@@ -461,6 +460,7 @@
   #contract-section {
     position: relative;
     padding: clamp(1em, 2vw, 5em);
+    margin-top: -75px;
     display: grid;
     margin-bottom: auto;
     grid-template-columns: repeat(8, 12.5%);
@@ -469,7 +469,7 @@
   .contract-container {
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 5;
     overflow: visible;
   }
@@ -480,8 +480,8 @@
     background-image: url("./images/contract.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     top: -22px;
     left: -140px;
     opacity: 0.5;
@@ -497,19 +497,21 @@
     z-index: 5;
   }
   .bank-girl {
-    max-height: 600px;
+    max-height: 575px;
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 7;
     margin-top: 75px;
+    overflow: visible;
+    z-index: 5;
   }
   .included-container {
     display: flex;
     flex-direction: column;
     grid-column-start: 2;
     grid-column-end: 8;
-    grid-row-start: 6;
+    grid-row-start: 5;
     grid-row-end: 15;
     overflow: visible;
     margin-top: 150px;
