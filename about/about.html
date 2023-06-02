@@ -2,10 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.artshawebdesign.com">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="ARTSHA Web Design | Affordable Websites For Small Businesses" />
+    <meta property="og:description"
+        content="ARTSHA Web Design is an agency that specialized in custom made websites, specializing in website performance, optimized for google search, and making it affordable for small business." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.artshawebdesign.com/" />
+    <meta property="og:image" content="./images/social.jpg" />
+    <meta property="og:image:secure_url" content="./images/social.jpg" />
+
+    <meta name="description"
+        content="ARTSHA Web Design is an independent agency that specialized in custom made websites,website performance, and optimization for google search. All the while making it affordable for small business." />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" src="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" src="./icon/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" src="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload images & fonts-->
+    <link rel="preload" as="image" src="/images/logo-index-white.png">
+    <link rel="preload" as="image" src="/images/mobile-index-nav.png">
+    <link rel="preload" as="image" src="/images/index-guy.png">
+
+    <link rel="preload" as="font" type="font/woff2" src="./fonts/roboto-regular.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" src="./fonts/Roboto-bold.woff2" crossorigin />
+
+    <!--  JS -->
+    <script src="mobile-menu-button.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="core.css" />
+    <link rel="stylesheet" href="hero.css"> <!-- Above the fold css -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>ARTSHA Web Design</title>
+
 </head>
 
 <body>
@@ -21,8 +63,8 @@
             <picture>
                 <source media="(max-width: 767px)" srcset="/images/navbar-mobile.png">
                 <source media="(min-width: 768px) and (max-width: 1299px)" srcset="/images/navbar-tablet.png">
-                <source media="(min-width: 1300px)" srcset="/images/navbar-desktop.png">
-                <img class="navbarBG" src="./images/navbar-desktop.png" alt="Navbar Background" aria-hidden="true"
+                <source media="(min-width: 1300px)" srcset="./images/about-navbar-desktop.png">
+                <img class="navbarBG" src="./images/about-navbar-desktop.png" alt="Navbar Background" aria-hidden="true"
                     decoding="async" width="1248px" height="340px">
             </picture>
 
