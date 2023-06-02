@@ -379,22 +379,6 @@ $box-shadow-hover: 1px 1px 3px #3f3b51a2,
         margin: 100px auto 50px;
     }
 
-    .contract-top-blob {
-
-        &::after {
-            position: absolute;
-            top: -200px;
-            right: 0;
-            content: '';
-            display: block;
-            width: 50vw;
-            background-image: url('./images/cat2.png');
-            background-size: cover;
-            height: 300px;
-            z-index: 999;
-        }
-    }
-
     #quote-2 {
 
         h2 {
