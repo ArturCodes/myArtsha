@@ -1,3 +1,145 @@
+@media screen and (min-width: 1200px) {
+
+    header {
+        max-width: 1920px;
+        position: relative;
+        background-color: #8a9094;
+    }
+
+    .navbar-bg {
+        display: block;
+        content: '';
+        position: absolute;
+        background-image: url('./images/navbar-desktop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 65vw;
+        max-width: 1300px;
+        height: 400px;
+        right: 0;
+        z-index: 5;
+    }
+
+    .logo {
+
+        a {
+            content: '';
+            display: block;
+            background-image: url('./images/logo-index.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 330px;
+            height: 110px;
+            top: 50px;
+            left: 100px;
+            z-index: 5;
+
+        }
+    }
+
+    .navbar {
+        #navbar-links {
+            position: absolute;
+            z-index: 5;
+            top: 50px;
+            right: clamp(50px, 1vw, 100px);
+            display: flex;
+            flex-direction: row;
+            color: white;
+            width: auto;
+            height: auto;
+
+            li {
+                margin: 0 clamp(20px, 1.75vw, 35px);
+                width: auto;
+                padding: 0 10px;
+
+                a {
+                    width: auto;
+                    color: white;
+                    font-weight: 700;
+                    font-size: 1.125em;
+                }
+            }
+        }
+
+        // items
+        #navbar-links {
+            background-color: transparent;
+
+            .home {
+                text-decoration: underline;
+                text-underline-position: under;
+                text-decoration-color: #38c6e5;
+                text-decoration-thickness: 3px;
+                text-underline-offset: 2px;
+
+
+                a {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-color: #38c6e5;
+                    text-decoration-thickness: 3px;
+                    text-underline-offset: 2px;
+                }
+
+            }
+
+            .about {
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-color: #7fd378;
+                    text-decoration-thickness: 3px;
+                    text-underline-offset: 2px;
+                }
+            }
+
+            .services {
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-color: #804dd4;
+                    text-decoration-thickness: 3px;
+                    text-underline-offset: 2px;
+                }
+            }
+
+            .blog {
+                &:hover {
+                    text-decoration: underline;
+                    text-underline-position: under;
+                    text-decoration-color: #e38025;
+                    text-decoration-thickness: 3px;
+                    text-underline-offset: 2px;
+                }
+            }
+
+            .contact {
+                a {
+                    color: #1f1f1f;
+                    background-color: #ffcc00;
+                    border-radius: 12.5px;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        color: white;
+                        text-decoration: none;
+                        text-underline-offset: 2px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+
 $box-shadow: 1px 1px 3px #3f3b51,
     1px -1px 3px #3f3b510e,
     -1px 1px 3px #3f3b510e,

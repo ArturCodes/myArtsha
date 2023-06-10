@@ -15,11 +15,11 @@ Green - #7FD378
 
 Purple - #804DD4
 
-Orange - #E38025
+Red - #D44D4D
 
-yellow - #ffcc00
+yellow - #F2C613
 
-Background - 3F3B51
+Background - #3f3b51
 
 ### FONT SIZES
 
@@ -37,4 +37,5 @@ height: 60%;
 bottom: 25px;
 left: -75px;
 opacity: .5;
+z-index: 5;
 }
