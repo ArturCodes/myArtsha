@@ -1,40 +1,42 @@
-/*-- -------------------------- -->
-<---        Core Styles         -->
-<--- -------------------------- -*/
-*,
-*:before,
-*:after {
-  text-underline-position: under;
-  box-sizing: border-box;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  overflow-x: hidden;
-  list-style: none;
-  font-family: "Poppins", Arial, Helvetica, Verdana;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  color: #1a1a1a;
-}
-
-p,
-li,
-a {
-  font-size: 1em;
-  line-height: 1.75;
-  margin: 0;
-  color: #1a1a1a;
-}
-
-button:hover,
-a:hover {
-  cursor: pointer;
+/*-- --------------------------- -->
+<---            FONTS            -->
+<--- --------------------------- -*/
+/*-- --------------------------- -->
+<---         Core Styles        -->
+<--- --------------------------- -*/
+@media only screen and (min-width: 0em) {
+  *,
+  *:before,
+  *:after {
+    text-underline-position: under;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+    list-style: none;
+    font-family: "Poppins", Arial, Helvetica, Verdana;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    color: #1a1a1a;
+  }
+  p,
+  li,
+  a {
+    font-size: 1em;
+    line-height: 1.75;
+    margin: 0;
+    color: #1a1a1a;
+  }
+  button:hover,
+  a:hover {
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=core.css.map */
