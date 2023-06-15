@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <link rel="stylesheet" href="header.css">
+
+    <script src="./menu-toggle.js" async preload></script>
+</head>
+
+<body>
+    <!--For screen reader, a skip to main content-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                  Navigation                  -->
+    <!-- ============================================ -->
+    <header>
+
+        <div class="navbar-bg-container">
+            <picture>
+                <source media="(min-width: 0px) and (max-width: 849px)" srcset="/images/nav-about-sm.png">
+                <source media="(min-width: 850px)" srcset="/images/nav-about-lg.png">
+
+                <img class="home-navbar" src="./images/home-nav-bg-l.png" alt="Navbar background image">
+            </picture>
+        </div>
+
+        <a class="logo" href="index.html">
+            <picture>
+                <source media="(max-width: 849px)" srcset="/images/logo-home-w.png">
+                <source media="(min-width: 850px)" srcset="/images/logo-home.png">
+                <img class="home-navbar" src="./images/home-nav-bg-l.png" alt="Navbar background image">
+            </picture>
+        </a>
+
+        <nav role="navigation">
+
+            <button id="menu-toggle-button" onclick="toggleMenu()">
+
+                <div class="menu-toggle">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+            </button>
+
+            <ul id="navbar-links" class="">
+                <li class="home"><a href="index.html">Home</a></li>
+                <li class="about"><a href="./about/about.html">About</a></li>
+                <li class="services"><a href="./services/services.html">Services</a></li>
+                <li class="blog"><a href="./blog/blog.html">Blog</a></li>
+                <li class="contact"><a href="./contact/contact.html">Contact</a></li>
+            </ul>
+
+            <div id="opacity-bg" class="" onclick="toggleMenu()"></div>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <!-- ============================================ -->
+        <!--                     Hero                     -->
+        <!-- ============================================ -->
+
+    </main>
+
+
+</body>
+
+</html>

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
     <!--Swap our for actual link-->
     <link rel="canonical" href="https://www.artshawebdesign.com">
 
@@ -34,30 +33,56 @@
     <title>ARTSHA Web Design</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="core.css" />
+    <!-- <link rel="stylesheet" href="core.css" /> -->
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="hero.css"> <!-- Above the fold css -->
     <link rel="stylesheet" href="index.css">
 
     <!--  JS -->
     <script src="./mobile-menu-button.js"></script>
+    <script src="./menu-toggle.js" async preload></script>
 
 </head>
 
 <body>
-    <!-- ██████████████████████████ -->
-    <!--   Header CSS in hero.css   -->
-    <!-- ██████████████████████████ -->
+    <!--For screen readers, a skip button to the main content-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
+    <!-- ============================================ -->
+    <!--                  Navigation                  -->
+    <!-- ============================================ -->
     <header>
 
-        <div class="logo">
-            <a href="index.html" aria-label="click to go to home page"></a>
+        <div class="navbar-bg-container">
+            <picture>
+                <source media="(min-width: 0px) and (max-width: 849px)" srcset="/images/nav-about-sm.png">
+                <source media="(min-width: 850px)" srcset="/images/nav-about-lg.png">
+
+                <img class="home-navbar" src="./images/home-nav-bg-l.png" alt="Navbar background image">
+            </picture>
         </div>
 
-        <div class="navbar">
-            <div class="navbar-bg"></div>
+        <a class="logo" href="index.html">
+            <picture>
+                <source media="(max-width: 849px)" srcset="/images/logo-home-w.png">
+                <source media="(min-width: 850px)" srcset="/images/logo-home.png">
+                <img class="home-navbar" src="./images/home-nav-bg-l.png" alt="Navbar background image">
+            </picture>
+        </a>
 
-            <ul id="navbar-links">
+        <nav role="navigation">
+
+            <button id="menu-toggle-button" onclick="toggleMenu()">
+
+                <div class="menu-toggle">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+            </button>
+
+            <ul id="navbar-links" class="">
                 <li class="home"><a href="index.html">Home</a></li>
                 <li class="about"><a href="./about/about.html">About</a></li>
                 <li class="services"><a href="./services/services.html">Services</a></li>
@@ -65,91 +90,38 @@
                 <li class="contact"><a href="./contact/contact.html">Contact</a></li>
             </ul>
 
-            <div id="mobile-menu-close" onclick="hide()" role="button" aria-label="close the menu">
-                <div></div>
-                <div></div>
-            </div>
-
-            <div id="mobile-menu-open" onclick="show()" role="button" aria-label="open the menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            <div id="opacity-bg" onclick="hide()"></div>
-        </div>
+            <div id="opacity-bg" class="" onclick="toggleMenu()"></div>
+        </nav>
 
     </header>
 
-
-    <!----------------------------->
-    <!--     NAVBAR BLOB BG      -->
-    <!----------------------------->
-    <picture>
-        <source media="(max-width: 767px)" srcset="/images/navbar-mobile.png">
-        <source media="(min-width: 768px) and (max-width: 1299px)" srcset="/images/navbar-tablet.png">
-        <source media="(min-width: 1300px)" srcset="/images/navbar-desktop.png">
-        <img class="navbarBG" src="./images/navbar-desktop.png" alt="Navbar Background" aria-hidden="true"
-            decoding="async" width="1248px" height="340px">
-    </picture>
-
-    <!-- ========================= -->
-    <!--        NAVIGATION         -->
-    <!-- ========================= -->
-    <nav>
-        <a class="logo" aria-label="click to go to home page" href="index.html"></a>
-
-        <ul id="navbar-links">
-            <li class="home"><a href="index.html">Home</a></li>
-            <li class="about"><a href="./about/about.html">About</a></li>
-            <li class="services"><a href="./services/services.html">Services</a></li>
-            <li class="blog"><a href="./blog/blog.html">Blog</a></li>
-            <li class="contact"><a href="./contact/contact.html">Contact</a></li>
-        </ul>
-
-        <div id="mobile-menu-close" onclick="hide()" role="button" aria-label="close the menu">
-            <div></div>
-            <div></div>
-        </div>
-
-        <div id="mobile-menu-open" onclick="show()" role="button" aria-label="open the menu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-
-        <div id="opacity-bg" onclick="hide()"></div>
-    </nav>
-
-    <!-- ========================= -->
-    <!--           HERO            -->
-    <!-- ========================= -->
-
-    <div id="hero">
-
-        <h1> Affordable <br> Websites for <br>Small Business </h1>
-        <p>Professionally designed and developed websites. Priced at $150/month with full transparency and no hidden
-            fees.</p>
-        <div>
-            <a class="btn" href="./contact/contact.html">Contact</a>
-            <a class="btn" href="./services/services.html">Services</a>
-        </div>
-
-    </div>
-
-
-    <div class="hero-guy"></div>
-
-    <!----------------------------->
-    <!--      HERO BLOB BG       -->
-    <!----------------------------->
-
-
-    <!-- ██████████████████████████ -->
-    <!--     Main CSS index.css     -->
-    <!-- ██████████████████████████ -->
     <main>
-        <div class="hero-blob"></div>
+        <section>
+            <!-- ========================= -->
+            <!--           HERO            -->
+            <!-- ========================= -->
+
+            <div id="hero">
+
+                <h1> Affordable <br> Websites for <br>Small Business </h1>
+                <p>Professionally designed and developed websites. Priced at $150/month with full transparency and no
+                    hidden
+                    fees.</p>
+                <div>
+                    <a class="btn" href="./contact/contact.html">Contact</a>
+                    <a class="btn" href="./services/services.html">Services</a>
+                </div>
+
+            </div>
+
+            <div class="hero-guy"></div>
+
+            <!----------------------------->
+            <!--      HERO BLOB BG       -->
+            <!----------------------------->
+            <div class="hero-blob"></div>
+        </section>
+
         <!-- ========================= -->
         <!--    What We Do Section    -->
         <!-- ========================= -->
